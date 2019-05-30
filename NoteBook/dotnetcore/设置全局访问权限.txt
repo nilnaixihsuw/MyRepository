@@ -1,0 +1,4 @@
+    [Authorize(AuthenticationSchemes = CookieAuthenticationDefaults.AuthenticationScheme)]
+    public class BaseApiController : EduControllerBase
+    {
+    }

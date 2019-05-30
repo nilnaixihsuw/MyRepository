@@ -1,0 +1,20 @@
+http://www.cnblogs.com/anding/p/5018363.html
+一、图标字体
+1下载图标，打包成ttf文件，添加至项目
+2<TextBlock Text="&#xeb94;" FontSize="20"Foreground="Green" FontFamily="pack://application:,,,/WpfApp1;component/#iconfont"/>
+Text:图标unicode编码
+FontFamily：引用
+
+
+eg:
+    <Window.Resources>
+        <Style x:Key="FIcon" TargetType="Button">
+            <Setter Property="FontFamily" Value="pack://application:,,,/WpfApp1;component/NewFolder1/#iconfont"></Setter
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="50"/>
+        </Style>
+    </Window.Resources>
+    <StackPanel Orientation="Horizontal">
+        <Button  Content="&#xeb94;" Style="{StaticResource FIcon}" Foreground="Green" BorderThickness="0" Background="White"         />
+    </StackPanel>

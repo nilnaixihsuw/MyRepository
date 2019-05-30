@@ -1,0 +1,10 @@
+1注册服务
+services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            }).AddCookie("Cookies",options=>{});
+2添加中间件
+   app.UseAuthentication();
+注意：app.UseAuthentication和app.UseMvc的调用顺序不能反，app.UseAuthentication应该在app.UserMvc前使用
+附加：session使用链接 https://www.cnblogs.com/subendong/p/9052590.html

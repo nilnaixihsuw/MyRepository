@@ -1,0 +1,18 @@
+public static void Main(string[] args)
+    {
+        var pro = new Process();
+        pro.StartInfo.FileName = @"C:\Users\nilsuw\Desktop\sjmn\sjmn\bin\Debug\sjmn.exe";
+        pro.EnableRaisingEvents = true;
+        pro.Exited += new EventHandler(pro_Exited);
+        pro.Start();
+        pro.WaitForExit();
+    }
+    static void pro_Exited(object sender, EventArgs e)
+    {
+        var pro = new Process();
+        pro.StartInfo.FileName = @"C:\Users\nilsuw\Desktop\sjmn\sjmn\bin\Debug\sjmn.exe";
+        pro.EnableRaisingEvents = true;
+        pro.Exited += new EventHandler(pro_Exited);
+        pro.Start();
+        pro.WaitForExit();
+    }

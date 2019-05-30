@@ -1,0 +1,14 @@
+F:\File\My Study\MyLibray\zhh.Xml\bin\Debug\zhh.Xml.dll
+F:\File\My Study\MyLibray\zhh.Xml\bin\Debug\zhh.Xml.pdb
+F:\File\My Study\MyLibray\zhh.Xml\obj\Debug\ResolveAssemblyReference.cache
+F:\File\My Study\MyLibray\zhh.Xml\obj\Debug\zhh.Xml.dll
+F:\File\My Study\MyLibray\zhh.Xml\obj\Debug\zhh.Xml.pdb
+C:\Documents and Settings\Administrator\桌面\OpLink\zhh.Xml\bin\Debug\zhh.Xml.dll
+C:\Documents and Settings\Administrator\桌面\OpLink\zhh.Xml\bin\Debug\zhh.Xml.pdb
+C:\Documents and Settings\Administrator\桌面\OpLink\zhh.Xml\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\OpLink\zhh.Xml\obj\Debug\zhh.Xml.dll
+C:\Documents and Settings\Administrator\桌面\OpLink\zhh.Xml\obj\Debug\zhh.Xml.pdb
+D:\Git\Source\Repos\dotnet\EasySocket.vs13\OpLink\zhh.Xml\bin\Debug\zhh.Xml.dll
+D:\Git\Source\Repos\dotnet\EasySocket.vs13\OpLink\zhh.Xml\bin\Debug\zhh.Xml.pdb
+D:\Git\Source\Repos\dotnet\EasySocket.vs13\OpLink\zhh.Xml\obj\Debug\zhh.Xml.dll
+D:\Git\Source\Repos\dotnet\EasySocket.vs13\OpLink\zhh.Xml\obj\Debug\zhh.Xml.pdb

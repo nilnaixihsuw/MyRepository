@@ -1,0 +1,16 @@
+1Nuget安装
+  Pomelo.EntityFrameworkCore.MySql
+  Pomelo.EntityFrameworkCore.MySql.Design
+  MySql.Data.EntityFrameworkCore
+
+2appsettings.json中添加连接字符串
+    "MySqlContextConnection": "Server=127.0.0.1;port=3307;Database=database;uid=root;pwd=123456;sslmode=none;"
+    //SQLSERVER连接字符串   "WebMVCContext": "Server=localhost; Database=MVCDB; Trusted_Connection=True;"
+
+3Startup类ConfigureServices方法中添加数据库服务
+    services.AddDbContext<WebMVCContext>(options =>
+            options.UseMySQL(Configuration.GetConnectionString("MySqlContextConnection")));
+
+4迁移命令
+  Add-Migration version
+  Update_Database

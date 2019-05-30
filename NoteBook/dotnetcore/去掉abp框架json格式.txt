@@ -1,0 +1,1 @@
+在最终继承controller上添加    [DontWrapResult]特性

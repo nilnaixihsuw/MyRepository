@@ -1,0 +1,59 @@
+1绑定元素对象
+<StackPanel>
+        <Slider Name="sliderFontSize" Margin="3"
+            Minimum="1" Maximum="40" Value="10" TickFrequency="1" TickPlacement="TopLeft"/>
+        <TextBlock Margin="10" 
+          Text="LearningHard" Name="lbtext"
+          FontSize（目标属性）="{Binding ElementName=sliderFontSize（源对象）, Path=Value源属性，必须是依赖属性）}">
+       </TextBlock>
+</StackPanel>
+
+2绑定非元素对象
+   当绑定一个非元素对象时，不能使用Binding.ElementName属性，但可以使用以下属性中的一个：
+（1）Source——该属性是指向源对象的引用，即提供数据的对象，经常配合Window.Resources使用。
+         <Window.Resources>
+        <FontFamily x:Key="CostomFont">Microsoft YaHei UI Light</FontFamily>
+    </Window.Resources>
+    <Grid>
+        <TextBox Text="{Binding Source={StaticResource CostomFont},Path=Source,Mode=OneWay}" ></TextBox>
+    </Grid>
+（2）RelativeSource——该属性使用RelativeSource对象指定绑定源的相对位置，默认值为null。
+        <TextBox Text="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type Window}},Path=Title}"></TextBox>
+（3）DataContext属性——如果没有使用Source或RelativeSource属性指定一个数据源，WPF会从当前元素开始在元素树中向上查找。检查每个元素的        DataContext属性，并使用第一个非空的DataContext属性。当然你也可以自己设置DataContext属性。
+       <TextBox Text={binding Path=Name}></TextBox>
+        this.DataContext=new Stuent{Name="wnp"};
+（4）ItemsSource:该属性用于绑定集合数据源
+        <1>后台绑定
+        前台：
+        <Grid>
+        <ListBox Name="listBox"></ListBox> 
+       </Grid>
+        后台：
+        List<string> list=new List<string>();
+        listBox.ItemSource=list;
+      <2>前台绑定
+      <ListBox Name="listBox" ItemsSource="{Binding Path=MyListString}"></ListBox> 
+       MyListString为后台定义的集合属性
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

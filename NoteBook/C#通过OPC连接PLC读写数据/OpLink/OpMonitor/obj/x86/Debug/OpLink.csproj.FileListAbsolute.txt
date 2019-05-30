@@ -1,0 +1,35 @@
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\obj\x86\Debug\OpLink.Properties.Resources.resources
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\obj\x86\Debug\Interop.OPCAutomation.dll
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\obj\x86\Debug\OpLink.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\obj\x86\Debug\OpLink.FormServerRun.resources
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\bin\Debug\OpLink.exe
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\bin\Debug\OpLink.pdb
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\obj\x86\Debug\OpLink.exe
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\obj\x86\Debug\OpLink.pdb
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\obj\x86\Debug\OpLink.FormTest1.resources
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\obj\x86\Debug\OpLink.Setting.resources
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\obj\x86\Debug\OpLink.AddTags.resources
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\obj\x86\Debug\OpLink.AddBlock.resources
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\bin\Debug\IniFile.dll
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\bin\Debug\IniFile.pdb
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\obj\x86\Debug\OpLink.IniSetting.resources
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\bin\Debug\OpLink.exe.config
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\桌面\OpLink\OpLink\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\shj87\Desktop\OpLink\OpLink\bin\Debug\OpLink.exe
+C:\Users\shj87\Desktop\OpLink\OpLink\bin\Debug\OpLink.exe.config
+C:\Users\shj87\Desktop\OpLink\OpLink\bin\Debug\IniFile.dll
+C:\Users\shj87\Desktop\OpLink\OpLink\bin\Debug\IniFile.pdb
+C:\Users\shj87\Desktop\OpLink\OpLink\obj\x86\Debug\Interop.OPCAutomation.dll
+C:\Users\shj87\Desktop\OpLink\OpLink\obj\x86\Debug\OpLink.csproj.ResolveComReference.cache
+C:\Users\shj87\Desktop\OpLink\OpLink\obj\x86\Debug\OpLink.AddBlock.resources
+C:\Users\shj87\Desktop\OpLink\OpLink\obj\x86\Debug\OpLink.AddTags.resources
+C:\Users\shj87\Desktop\OpLink\OpLink\obj\x86\Debug\OpLink.IniSetting.resources
+C:\Users\shj87\Desktop\OpLink\OpLink\obj\x86\Debug\OpLink.Properties.Resources.resources
+C:\Users\shj87\Desktop\OpLink\OpLink\obj\x86\Debug\OpLink.Setting.resources
+C:\Users\shj87\Desktop\OpLink\OpLink\obj\x86\Debug\OpLink.csproj.GenerateResource.Cache
+C:\Users\shj87\Desktop\OpLink\OpLink\obj\x86\Debug\OpLink.exe
+C:\Users\shj87\Desktop\OpLink\OpLink\obj\x86\Debug\OpLink.pdb
+C:\Users\shj87\Desktop\OpLink\OpLink\bin\Debug\OpLink.pdb
+C:\Users\shj87\Desktop\OpLink\OpLink\obj\x86\Debug\OpLink.csprojResolveAssemblyReference.cache

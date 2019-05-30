@@ -1,0 +1,10 @@
+          <Grid DockPanel.Dock="Left" Width="100">
+                <Grid.Background> 
+                <LinearGradientBrush>   
+                <GradientStopCollection>    
+                <GradientStop Offset="0" Color="#6b3dff" />    
+                <GradientStop Offset="1" Color="#364eea"  />  
+                </GradientStopCollection>       
+                </LinearGradientBrush>    
+                </Grid.Background>
+            </Grid> 

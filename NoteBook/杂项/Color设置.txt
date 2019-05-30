@@ -1,0 +1,2 @@
+Color.FromArgb(int,int,int);//RGB三基色
+ColorTranslator.FromHtml("#23BEE8");//十六进制颜色

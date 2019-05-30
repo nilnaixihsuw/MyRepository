@@ -1,0 +1,14 @@
+//两种方法结果一致
+        public static string GetMd5(string str)
+       {
+            MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
+            return BitConverter.ToString(md5.ComputeHash(Encoding.UTF8.GetBytes(str))).Replace("-", "").ToUpper();
+        }
+        public static string GetMD5String(string str)
+        {
+            MD5 md5 = MD5.Create();
+            byte[] data = Encoding.UTF8.GetBytes(str);
+            byte[] data2 = md5.ComputeHash(data);
+            return BitConverter.ToString(data2).Replace("-", "").ToUpper();
+         }
+        

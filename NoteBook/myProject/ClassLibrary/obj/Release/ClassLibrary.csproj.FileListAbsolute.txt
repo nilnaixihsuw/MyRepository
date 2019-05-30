@@ -1,0 +1,17 @@
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\bin\Release\ClassLibrary.dll.config
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\bin\Release\ClassLibrary.dll
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\bin\Release\ClassLibrary.pdb
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\bin\Release\EntityFramework.dll
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\bin\Release\System.Data.SQLite.dll
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\bin\Release\System.Data.SQLite.EF6.dll
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\bin\Release\System.Data.SQLite.Linq.dll
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\bin\Release\EntityFramework.xml
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\bin\Release\System.Data.SQLite.xml
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\bin\Release\System.Data.SQLite.dll.config
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\obj\Release\ClassLibrary.csprojAssemblyReference.cache
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\obj\Release\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\obj\Release\ClassLibrary.csproj.CopyComplete
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\obj\Release\ClassLibrary.dll
+C:\Users\nilsuw\Desktop\myProject\ClassLibrary\obj\Release\ClassLibrary.pdb

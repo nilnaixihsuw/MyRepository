@@ -1,0 +1,16 @@
+create proc proc_transcation as
+begin 
+begin tran-->开启事务
+......-->执行要操作的过程
+if @@error<>0-->不等于0表示执行过程出错
+begin
+begin rollback tran-->回滚
+return 0
+end
+
+else-->执行过程成功
+begin
+begin commit tran-->提交事务
+return 1
+end
+end

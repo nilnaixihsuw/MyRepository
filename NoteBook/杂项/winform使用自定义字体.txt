@@ -1,0 +1,10 @@
+          string path = @"C:\Users\nilsuw\Desktop\CallSystem\CallSystem\font\iconfont.ttf";         
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile(path);            
+            Font font = new Font(pfc.Families[0], 32);        
+            this.button1.Font = font;
+            this.button1.Text = "\ue606";
+
+×¢ÒâÂ·¾¶£º          string path = Application.StartupPath;
+                          string fontPath = path + "\\font\\iconfont.ttf";
+-----https://www.cnblogs.com/gordensong/p/3835763.html

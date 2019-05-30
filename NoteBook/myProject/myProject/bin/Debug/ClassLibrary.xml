@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:ClassLibrary.Config">
+            <summary>
+            配置文件操作类
+            </summary>
+        </member>
+        <member name="M:ClassLibrary.Config.SaveAppSetting(System.String,System.String)">
+            <summary>
+            设置appSetting的add子项
+            </summary>
+            <param name="key">key</param>
+            <param name="value">value</param>
+        </member>
+        <member name="M:ClassLibrary.Config.ReadAppSetting(System.String)">
+            <summary>
+            读取appSetting的add子项
+            </summary>
+            <param name="key">key</param>
+            <returns></returns>
+        </member>
+        <member name="M:ClassLibrary.Config.SaveConnectionStrings(System.String,System.String)">
+            <summary>
+            设置connectionStrings的add子项
+            </summary>
+            <param name="name">name</param>
+            <param name="connectionString">connectionString</param>
+        </member>
+        <member name="M:ClassLibrary.Config.ReadConnectionStrings(System.String)">
+            <summary>
+            读取connectionStrings的add子项
+            </summary>
+            <param name="name">name</param>
+            <returns></returns>
+        </member>
+        <member name="T:ClassLibrary.SQLite">
+            <summary>
+            SQlite操作类
+            </summary>
+        </member>
+        <member name="M:ClassLibrary.SQLite.ExecuteNonQuery(System.String,System.Int32)">
+            <summary>
+            执行SQL语句，返回影响的记录数
+            </summary>
+            <param name="sqlString">sql语句</param>
+            <param name="commandTimeout">执行超时设置，默认30s</param>
+            <returns></returns>
+        </member>
+        <member name="M:ClassLibrary.SQLite.ExecuteNonQueryBatch(System.Collections.Generic.List{System.String})">
+            <summary>  
+            执行多条SQL语句，用事物批量操作  
+            </summary>  
+            <param name="sqlStringList">多条SQL语句</param>          
+        </member>
+        <member name="M:ClassLibrary.SQLite.ExecuteScalar(System.String)">
+            <summary>  
+            返回查询的第一行第一列 
+            </summary>  
+            <param name="sqlString">查询语句</param>  
+            <returns>查询结果</returns>  
+        </member>
+        <member name="M:ClassLibrary.SQLite.ExecuteReader(System.String)">
+             <summary>  
+             返回SQLiteDataReader,使用完毕手动关闭SQLiteDataReader
+            </summary>  
+             <param name = "sqlString" > 查询语句 </param >
+             <returns > SQLiteDataReader </returns >
+        </member>
+        <member name="M:ClassLibrary.SQLite.ExecuteDataTable(System.String)">
+            <summary>
+            返回DataSet的第一张表,数据类型DataTable
+            </summary>
+            <param name="sqlString">查询语句</param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:opc.OPC.ConnectOPC">
+            <summary>
+            连接opc
+            </summary>
+        </member>
+        <member name="M:opc.OPC.DisConnectOPC">
+            <summary>
+            断开opc
+            </summary>
+        </member>
+        <member name="M:opc.OPC.AddGroup(System.String,System.Int32,System.Boolean,OPCAutomation.DIOPCGroupEvent_AsyncReadCompleteEventHandler,OPCAutomation.DIOPCGroupEvent_AsyncWriteCompleteEventHandler,OPCAutomation.DIOPCGroupEvent_DataChangeEventHandler)">
+            <summary>
+            添加组
+            </summary>
+            <param name="groupName"></param>
+            <param name="updataRate"></param>
+            <param name="isSubscribed"></param>
+            <param name="AsyncReadEvent"></param>
+            <param name="AsyncWriteEvent"></param>
+            <param name="DataChangeEvent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:opc.OPC.GroupAsyncReadComplete(System.Int32,System.Int32,System.Array@,System.Array@,System.Array@,System.Array@,System.Array@)">
+            <summary>
+            异步读触发事件原型
+            </summary>
+            <param name="TransactionID"></param>
+            <param name="NumItems"></param>
+            <param name="ClientHandles"></param>
+            <param name="ItemValues"></param>
+            <param name="Qualities"></param>
+            <param name="TimeStamps"></param>
+            <param name="Errors"></param>
+        </member>
+        <member name="M:opc.OPC.GroupAsyncWriteComplete(System.Int32,System.Int32,System.Array@,System.Array@)">
+            <summary>
+            异步写触发事件原型
+            </summary>
+            <param name="TransactionID"></param>
+            <param name="NumItems"></param>
+            <param name="ClientHandles"></param>
+            <param name="Errors"></param>
+        </member>
+        <member name="M:opc.OPC.GroupDataChange(System.Int32,System.Int32,System.Array@,System.Array@,System.Array@,System.Array@)">
+            <summary>
+            数据改变触发事件原型
+            </summary>
+            <param name="TransactionID"></param>
+            <param name="NumItems"></param>
+            <param name="ClientHandles"></param>
+            <param name="ItemValues"></param>
+            <param name="Qualities"></param>
+            <param name="TimeStamps"></param>
+        </member>
+        <member name="M:opc.OPCGroupExtend.AddItem(OPCAutomation.OPCGroup,System.String,System.Int32)">
+            <summary>
+            添加项
+            </summary>
+            <param name="group"></param>
+            <param name="itemID"></param>
+            <param name="clientHandle"></param>
+        </member>
+        <member name="M:opc.OPCGroupExtend.GetServerhandles(OPCAutomation.OPCGroup,System.Collections.Generic.List{OPCAutomation.OPCItem})">
+            <summary>
+            获取所有项的服务句柄
+            </summary>
+            <param name=""></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

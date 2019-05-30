@@ -1,0 +1,143 @@
+1 Canvas
+<Canvas Margin="0,0,0,0" Background="White">
+
+            <Rectangle Fill="Blue" 
+
+                Stroke="Azure" 
+
+                Width="250" 
+
+                Height="200" 
+
+                Canvas.Left="210" Canvas.Top="101"/>
+
+</Canvas>
+
+2WrapPanel
+<WrapPanel  Orientation="Horizontal">
+      
+                <TextBlock Name="textBlock_CityID" Text="CityID:" />
+
+                <TextBox Name="textBox_CityID" MinWidth="100" />
+
+</WrapPanel>
+
+3StackPanel
+<StackPanel Name="stackPanel" Margin="0,0,0,0" Background="White" Orientation="Vertical">
+
+            <Button Content="第一个"/>
+
+            <Button Content="第二个"/>
+
+</StackPanel>
+当把StackPanel的FlowDirection属性设置为RightToLeft，Orientation属性设置为Horizontal，StackPanel将从右向左排列元素
+
+4Grid
+<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" Fill="Red"></Rectangle>
+        <!--合并往下的3行-->
+        <Rectangle Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Fill="Red"></Rectangle>
+        <!--合并往右的3列-->
+</Grid>
+
+5UniformGrid 
+        <UniformGrid Rows="2" Columns="2">
+
+            <Button>第一个(0,0)</Button>
+
+            <Button>第二个(0,1)</Button>
+
+            <Button>第三个(1,0)</Button>
+
+            <Button>第四个(1,1)</Button>
+
+        </UniformGrid>
+
+6DockPanel
+<DockPanel Width="Auto" Height="Auto">
+
+            <Button DockPanel.Dock="Left" Content="1" />
+
+            <Button DockPanel.Dock="Top" Content="2" />
+
+            <Button DockPanel.Dock="Right" Content="3" />
+
+            <Button DockPanel.Dock="Bottom" Content="4" />
+
+</DockPanel>
+如果将 LastChildFill 属性设置为 true(默认设置)，那么无论对 DockPanel 的最后一个子元素设置的其他任何停靠值如何，该子元素都将始终填满剩余的空间。若要将子元素停靠在另一个方向，必须将 LastChildFill 属性设置为 false，还必须为最后一个子元素指定显式停靠方向。
+
+7Border
+Border 是一个装饰的控件，此控件绘制边框及背景，在 Border 中只能有一个子控件，若要显示多个子控件，需要将一个附加的 Panel 控件放置在父 Border 中。然后可以将子控件放置在该 Panel控件中。
+Border 的几个重要属性：
+Background:用用一个 Brush 对象来绘制背景 ；
+BorderBrush:用一个Brush 对象来绘制边框 ；
+BorderThickness:此属性设置 Border 边框的大小；
+CornerRadius:此属性设置 Border 的每一个角圆的半径；
+Padding:此r属性设置 Border 里的内容与边框的之间的间隔。
+接下来我们使用XAML代码做个示例，通过对Border的属性设置做出扑克牌的效果:
+
+<Border BorderBrush="DarkGray" BorderThickness=".0,.0,2,2" CornerRadius="18" Width="160" Height="230" Canvas.Left="53" Canvas.Top="30">
+
+                <Border BorderBrush="White" BorderThickness="5" CornerRadius="15" >
+
+                    <Border BorderBrush="Black" BorderThickness="1.5" CornerRadius="15">
+
+                        <Border.Background>
+
+                            <ImageBrush>
+
+                                <ImageBrush.ImageSource>
+
+                                    <BitmapImage UriSource="meinv.png" />
+
+                                </ImageBrush.ImageSource>
+
+                            </ImageBrush>
+
+                        </Border.Background>
+
+                    </Border>
+
+                </Border>
+
+            </Border>
+
+8ScrollViewer
+ScrollViewer 控件可以方便地使应用程序中的内容具备滚动条功能:
+
+<ScrollViewer Name="scroll" Width="480"  Height="350" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Visible" >
+
+                <TextBlock    Name="txtShowArticle"   Foreground="Gray" Margin="20,10" />
+
+            </ScrollViewer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

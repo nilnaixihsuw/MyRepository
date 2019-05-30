@@ -1,0 +1,24 @@
+WPF：全局异常
+Application.Current.DispatcherUnhandledException += new System.Windows.Threading.DispatcherUnhandledExceptionEventHandler(Current_DispatcherUnhandledException);
+void Current_DispatcherUnhandledException(object sender, DispatcherUnhandledExceptionEventArgs e)
+{
+ MessageBox.Show(e.Exception.Message + "\r\n" + e.Exception.StackTrace, "系统信息");
+ }
+
+
+
+
+
+WINFORM:全局异常
+System.Windows.Forms.Application.ThreadException += new ThreadExceptionEventHandler(Application_ThreadException);
+System.Windows.Forms.Application.SetUnhandledExceptionMode(System.Windows.Forms.UnhandledExceptionMode.CatchException);
+AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
+void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+{
+ MessageBox.Show(((Exception)e.ExceptionObject).Message + "\r\n" + ((Exception)e.ExceptionObject).StackTrace, "系统信息");
+}
+void Application_ThreadException(object sender, System.Threading.ThreadExceptionEventArgs e)
+ {
+  MessageBox.Show(e.Exception.Message + "\r\n" + e.Exception.StackTrace, "系统信息");
+ }
+

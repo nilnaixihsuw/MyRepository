@@ -1,0 +1,10 @@
+C:\Documents and Settings\Administrator\桌面\OpLink\IniFile\bin\Debug\IniFile.dll
+C:\Documents and Settings\Administrator\桌面\OpLink\IniFile\bin\Debug\IniFile.pdb
+C:\Documents and Settings\Administrator\桌面\OpLink\IniFile\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\OpLink\IniFile\obj\Debug\IniFile.dll
+C:\Documents and Settings\Administrator\桌面\OpLink\IniFile\obj\Debug\IniFile.pdb
+D:\Git\Source\Repos\dotnet\EasySocket.vs13\OpLink\IniFile\bin\Debug\IniFile.dll
+D:\Git\Source\Repos\dotnet\EasySocket.vs13\OpLink\IniFile\bin\Debug\IniFile.pdb
+D:\Git\Source\Repos\dotnet\EasySocket.vs13\OpLink\IniFile\obj\Debug\IniFile.dll
+D:\Git\Source\Repos\dotnet\EasySocket.vs13\OpLink\IniFile\obj\Debug\IniFile.pdb
+D:\Git\Source\Repos\dotnet\EasySocket.vs13\OpLink\IniFile\obj\Debug\Ini.csprojResolveAssemblyReference.cache

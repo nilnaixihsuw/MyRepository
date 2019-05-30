@@ -1,0 +1,22 @@
+D:\Documents and Settings\Administrator\桌面\C#代码OPC\OPC_Client\OPC_Client\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Administrator\桌面\C#代码OPC\OPC_Client\OPC_Client\obj\x86\Debug\Interop.OPCAutomation.dll
+D:\Documents and Settings\Administrator\桌面\C#代码OPC\OPC_Client\OPC_Client\obj\x86\Debug\OPC_Client.csproj.ResolveComReference.cache
+D:\Documents and Settings\Administrator\桌面\C#代码OPC\OPC_Client\OPC_Client\obj\x86\Debug\OPC_Client.Form1.resources
+D:\Documents and Settings\Administrator\桌面\C#代码OPC\OPC_Client\OPC_Client\obj\x86\Debug\OPC_Client.Properties.Resources.resources
+D:\Documents and Settings\Administrator\桌面\C#代码OPC\OPC_Client\OPC_Client\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Documents and Settings\Administrator\桌面\C#代码OPC\OPC_Client\OPC_Client\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Documents and Settings\Administrator\桌面\C#代码OPC\OPC_Client\OPC_Client\bin\Debug\OPC_Client.exe
+D:\Documents and Settings\Administrator\桌面\C#代码OPC\OPC_Client\OPC_Client\bin\Debug\OPC_Client.pdb
+D:\Documents and Settings\Administrator\桌面\C#代码OPC\OPC_Client\OPC_Client\obj\x86\Debug\OPC_Client.exe
+D:\Documents and Settings\Administrator\桌面\C#代码OPC\OPC_Client\OPC_Client\obj\x86\Debug\OPC_Client.pdb
+C:\Users\nilsuw\Desktop\C#通过OPC连接PLC读写数据\OPC_Client\OPC_Client\bin\Debug\OPC_Client.exe
+C:\Users\nilsuw\Desktop\C#通过OPC连接PLC读写数据\OPC_Client\OPC_Client\bin\Debug\OPC_Client.pdb
+C:\Users\nilsuw\Desktop\C#通过OPC连接PLC读写数据\OPC_Client\OPC_Client\obj\x86\Debug\OPC_Client.csprojAssemblyReference.cache
+C:\Users\nilsuw\Desktop\C#通过OPC连接PLC读写数据\OPC_Client\OPC_Client\obj\x86\Debug\Interop.OPCAutomation.dll
+C:\Users\nilsuw\Desktop\C#通过OPC连接PLC读写数据\OPC_Client\OPC_Client\obj\x86\Debug\OPC_Client.csproj.ResolveComReference.cache
+C:\Users\nilsuw\Desktop\C#通过OPC连接PLC读写数据\OPC_Client\OPC_Client\obj\x86\Debug\OPC_Client.Form1.resources
+C:\Users\nilsuw\Desktop\C#通过OPC连接PLC读写数据\OPC_Client\OPC_Client\obj\x86\Debug\OPC_Client.Properties.Resources.resources
+C:\Users\nilsuw\Desktop\C#通过OPC连接PLC读写数据\OPC_Client\OPC_Client\obj\x86\Debug\OPC_Client.csproj.GenerateResource.cache
+C:\Users\nilsuw\Desktop\C#通过OPC连接PLC读写数据\OPC_Client\OPC_Client\obj\x86\Debug\OPC_Client.csproj.CoreCompileInputs.cache
+C:\Users\nilsuw\Desktop\C#通过OPC连接PLC读写数据\OPC_Client\OPC_Client\obj\x86\Debug\OPC_Client.exe
+C:\Users\nilsuw\Desktop\C#通过OPC连接PLC读写数据\OPC_Client\OPC_Client\obj\x86\Debug\OPC_Client.pdb

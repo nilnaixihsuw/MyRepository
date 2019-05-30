@@ -1,0 +1,6 @@
+Process process = Process.GetCurrentProcess();
+            Process[] processes = Process.GetProcessesByName(process.ProcessName);
+            if (processes.Length > 1)
+            {
+                Environment.Exit(0);
+            }

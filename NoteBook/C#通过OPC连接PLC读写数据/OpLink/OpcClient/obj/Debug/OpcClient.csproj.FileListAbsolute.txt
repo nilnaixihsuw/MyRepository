@@ -1,0 +1,7 @@
+C:\Users\shj87\Desktop\OpLink\OpcClient\obj\Debug\Interop.OPCAutomation.dll
+C:\Users\shj87\Desktop\OpLink\OpcClient\obj\Debug\OpcClient.csproj.ResolveComReference.cache
+C:\Users\shj87\Desktop\OpLink\OpcClient\bin\Debug\OpcClient.dll
+C:\Users\shj87\Desktop\OpLink\OpcClient\bin\Debug\OpcClient.pdb
+C:\Users\shj87\Desktop\OpLink\OpcClient\bin\Debug\IniFile.dll
+C:\Users\shj87\Desktop\OpLink\OpcClient\obj\Debug\OpcClient.dll
+C:\Users\shj87\Desktop\OpLink\OpcClient\obj\Debug\OpcClient.pdb

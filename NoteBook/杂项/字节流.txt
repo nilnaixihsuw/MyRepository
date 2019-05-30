@@ -1,0 +1,12 @@
+1读取文件，转换为字节流
+FileStream fs = new FileStream(filename,FileMode.Open,FileAccess.Read);
+byte[] infbytes = new byte[(int)fs.Length];
+fs.Read(infbytes, 0, infbytes.Length);
+fs.Close();
+return infbytes;
+
+
+2将字节流写入文件
+FileStream fs = new FileStream("D:\inf.dlv",FileMode.Create,FileAccess.Write);
+fs.Write(infbytes, 0, inf.Length);
+fs.Close();

@@ -1,0 +1,4 @@
+在<head></head>标签之间引入
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="bootstrap-3.3.7-dist/js/jquery-3.2.1.js"></script>//jquery文件，需要另行下载，且要在bootsrap.min.js之前引入
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>

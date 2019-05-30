@@ -1,0 +1,6 @@
+https://www.cnblogs.com/pqchao/p/6558688.html
+
+关闭持久化：
+客户端输入下面两条command,将配置文件中“save”注释掉
+config set stop-writes-on-bgsave-error no
+command：CONFIG SET save ""

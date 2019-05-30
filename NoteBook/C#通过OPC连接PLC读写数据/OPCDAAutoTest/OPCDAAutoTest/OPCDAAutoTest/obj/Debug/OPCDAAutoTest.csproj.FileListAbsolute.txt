@@ -1,0 +1,17 @@
+E:\MyDocuments\Visual Studio 2008\Projects\OPCDAAutoTest\OPCDAAutoTest\bin\Debug\OPCDAAutoTest.exe
+E:\MyDocuments\Visual Studio 2008\Projects\OPCDAAutoTest\OPCDAAutoTest\bin\Debug\OPCDAAutoTest.pdb
+E:\MyDocuments\Visual Studio 2008\Projects\OPCDAAutoTest\OPCDAAutoTest\bin\Debug\Interop.OPCAutomation.dll
+E:\MyDocuments\Visual Studio 2008\Projects\OPCDAAutoTest\OPCDAAutoTest\obj\Debug\ResolveAssemblyReference.cache
+E:\MyDocuments\Visual Studio 2008\Projects\OPCDAAutoTest\OPCDAAutoTest\obj\Debug\Interop.OPCAutomation.dll
+E:\MyDocuments\Visual Studio 2008\Projects\OPCDAAutoTest\OPCDAAutoTest\obj\Debug\OPCDAAutoTest.csproj.ResolveComReference.cache
+E:\MyDocuments\Visual Studio 2008\Projects\OPCDAAutoTest\OPCDAAutoTest\obj\Debug\OPCDAAutoTest.exe
+E:\MyDocuments\Visual Studio 2008\Projects\OPCDAAutoTest\OPCDAAutoTest\obj\Debug\OPCDAAutoTest.pdb
+C:\Users\nilsuw\Desktop\OPCDAAutoTest\OPCDAAutoTest\OPCDAAutoTest\bin\Debug\OPCDAAutoTest.exe
+C:\Users\nilsuw\Desktop\OPCDAAutoTest\OPCDAAutoTest\OPCDAAutoTest\bin\Debug\OPCDAAutoTest.pdb
+C:\Users\nilsuw\Desktop\OPCDAAutoTest\OPCDAAutoTest\OPCDAAutoTest\bin\Debug\Interop.OPCAutomation.dll
+C:\Users\nilsuw\Desktop\OPCDAAutoTest\OPCDAAutoTest\OPCDAAutoTest\obj\Debug\OPCDAAutoTest.csprojAssemblyReference.cache
+C:\Users\nilsuw\Desktop\OPCDAAutoTest\OPCDAAutoTest\OPCDAAutoTest\obj\Debug\Interop.OPCAutomation.dll
+C:\Users\nilsuw\Desktop\OPCDAAutoTest\OPCDAAutoTest\OPCDAAutoTest\obj\Debug\OPCDAAutoTest.csproj.ResolveComReference.cache
+C:\Users\nilsuw\Desktop\OPCDAAutoTest\OPCDAAutoTest\OPCDAAutoTest\obj\Debug\OPCDAAutoTest.csproj.CoreCompileInputs.cache
+C:\Users\nilsuw\Desktop\OPCDAAutoTest\OPCDAAutoTest\OPCDAAutoTest\obj\Debug\OPCDAAutoTest.exe
+C:\Users\nilsuw\Desktop\OPCDAAutoTest\OPCDAAutoTest\OPCDAAutoTest\obj\Debug\OPCDAAutoTest.pdb

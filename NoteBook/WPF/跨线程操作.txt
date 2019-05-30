@@ -1,0 +1,45 @@
+1 对象Dispatcher
+private void ModifyUI()
+
+    {
+
+        // 模拟一些工作正在进行
+
+        Thread.Sleep(TimeSpan.FromSeconds(2));
+
+        //lblHello.Content = "欢迎你光临WPF的世界,Dispatcher";
+
+        this.Dispatcher.Invoke(DispatcherPriority.Normal, (ThreadStart)delegate()
+
+        {
+
+            lblHello.Content = "欢迎你光临WPF的世界,Dispatche  同步方法 ！！";
+
+        });
+
+}
+
+2 Dispatcher类
+private void btnAppBeginInvoke_Click(object sender, RoutedEventArgs e)
+
+    {
+
+               new Thread(() =>
+
+        {
+
+            Application.Current.Dispatcher.BeginInvoke(DispatcherPriority.Normal,
+
+                new Action(() =>
+
+                {
+
+                    Thread.Sleep(TimeSpan.FromSeconds(2));
+
+                    this.lblHello.Content = "欢迎你光临WPF的世界,Dispatche 异步方法！！"+ DateTime.Now.ToString();
+
+                }));
+
+        }).Start();
+
+    }

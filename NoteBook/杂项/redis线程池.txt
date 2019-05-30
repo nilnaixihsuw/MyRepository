@@ -1,0 +1,12 @@
+RedisClientManagerConfig redisConfig = new RedisClientManagerConfig();
+                redisConfig.AutoStart = true;
+                redisConfig.MaxReadPoolSize = 60;
+                redisConfig.MaxWritePoolSize = 60;
+                PooledRedisClientManager prcm = new PooledRedisClientManager(new List<string>()
+                    { "127.0.0.1" }, new List<string>() { "127.0.0.1" }, redisConfig);
+
+                //插入数据到Redis，写操作
+                using (ICacheClient client = prcm.GetCacheClient())
+                {
+                    client.Set<string>（key,value）;
+                }

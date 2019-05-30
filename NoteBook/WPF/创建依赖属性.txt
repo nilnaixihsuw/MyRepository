@@ -1,0 +1,94 @@
+ 一、普通依赖属性
+ (1) 让自己的类继承自 DependencyObject基类
+ (2) 声明一个DependencyProperty变量，作为真正的依赖属性
+      eg:
+      public static readonly DependencyProperty NameProperty;
+ (3) 在静态构造函数中向属性系统注册依赖属性，并获取对象引用
+     eg:
+     NameProperty = DependencyProperty.Register("Name", typeof(string), typeof(Student),  new                                     PropertyMetadata("名称", OnValueChanged));
+     其中第一个参数：依赖属性的包装属性的名称
+     第二个参数 :  依赖属性的实际类型
+     第三个参数： 注册此依赖属性的类名
+     PropertyMetadata: 第一个参数代表依赖属性的默认值，第二个参数代表属性值变化时的通知函数
+（4）定义依赖属性的包装属性
+         eg:
+         public string Name
+         {
+          get { return (string)GetValue(NameProperty); }
+          set { SetValue(NameProperty, value); }
+         }
+
+  以上四部代码综合如下：
+  public class Student : DependencyObject 
+ 
+    {
+ 
+        //声明一个静态只读的DependencyProperty字段
+ 
+        public static readonly DependencyProperty NameProperty;
+ 
+        static Student()
+ 
+        {
+ 
+            //注册我们定义的依赖属性Name
+ 
+            NameProperty = DependencyProperty.Register("Name", typeof(string), typeof(Student),
+ 
+                new PropertyMetadata("名称", OnValueChanged));
+ 
+        }
+ 
+        private static void OnValueChanged(DependencyObject o, DependencyPropertyChangedEventArgs e)
+ 
+        {
+            //当值改变时，我们可以在此做一些逻辑处理
+        }
+ 
+        //属性包装器，通过它来读取和设置我们刚才注册的依赖属性
+ 
+        public string Name
+ 
+        {
+ 
+            get { return (string)GetValue(NameProperty); }
+ 
+            set { SetValue(NameProperty, value); }
+ 
+        }
+  }
+
+二、只读依赖属性
+      创建一个只读的依赖属性和创建一个一般的依赖属性大同小异。不同的地方就是DependencyProperty.Register      变成了DependencyProperty.RegisterReadOnly。和前面的普通依赖属性一样，它将返回一个       DependencyPropertyKey。而且只提供一个GetValue给外部，这样便可以像一般属性一样使用了，只是不能在      外部设置它的值罢了
+      eg：
+      public partial class WindowReadOnly : Window
+      {
+          public WindowReadOnly ()
+          {
+              InitializeComponent();
+
+              //在内部用SetValue的方法来设置值
+              DispatcherTimer timer =
+                  new DispatcherTimer(TimeSpan.FromSeconds(1),
+                                 DispatcherPriority.Normal,
+                                 (object sender, EventArgs e)=>
+                                 {
+                                     int newValue = Counter == int.MaxValue ? 0 : Counter + 1;
+                                     SetValue(counterKey, newValue);
+                                 },
+                                 Dispatcher);       
+          }
+
+          //属性包装器，只提供GetValue
+          public int Counter
+          {
+              get { return (int)GetValue(counterKey.DependencyProperty); }
+          }
+
+         //用RegisterReadOnly来代替Register来注册一个只读的依赖属性
+         private static readonly DependencyPropertyKey counterKey =
+         DependencyProperty.RegisterReadOnly("Counter",
+                                             typeof(int),
+                                             typeof(WindowReadOnly),
+                                             new PropertyMetadata(0));
+      }

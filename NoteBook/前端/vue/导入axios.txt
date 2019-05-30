@@ -1,0 +1,20 @@
+1安装 npm i axios --save
+2在main.js中全局引入
+import axios from 'axios'
+Vue.prototype.$axios=axios
+3在config文件夹下index.js中进行配置，解决跨域问题
+找到proxyTable:{},在里面加入
+'/api': {
+        target: 'https://api.douban.com', //设置你调用的接口域名和端口号 别忘了加http
+        changeOrigin: true,//允许跨域
+        pathRewrite: {
+            '^/api': ''//这个是定义要访问的路径，名字随便写
+        }
+    }
+4使用
+this.$axios.get(url).then(res=>{}).catch(error=>{})
+this.$axios.({
+method:'post',
+url:'/api/...',
+data:{}
+}).then(response=>{}).catch(error=>{})

@@ -1,0 +1,10 @@
+Ping p = new Ping();
+                PingReply r = p.Send(IP);
+                if (r.Status == IPStatus.Success)
+                {
+                    Console.WriteLine("success");
+                }
+                else
+                {
+                    Console.WriteLine("false");
+                }

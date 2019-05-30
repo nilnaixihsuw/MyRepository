@@ -1,0 +1,9 @@
+        [DllImport("wininet")] private extern static bool InternetGetConnectedState(out int connectionDescription, int reservedValue);
+        public static void Main(string[] args)
+        {   
+            int i;
+            if (InternetGetConnectedState(out i, 0)) 
+               Console.WriteLine(i);//已联网，i 的值代表连接方式，如拨号，代理，局域网等……
+            else 
+               Console.WriteLine("error"+i);//未联网
+        }

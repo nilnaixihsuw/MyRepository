@@ -1,0 +1,8 @@
+1安装jquery
+npm install jquery --save-dev
+2安装boostrap
+npm install --save-dev bootstrap
+3在main.js中全局导入
+import  $ from 'jquery'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min'

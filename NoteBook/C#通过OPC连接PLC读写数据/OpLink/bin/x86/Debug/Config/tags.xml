@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Groups>
+  <Group Name="GroupTrigger">
+    <Block Name="milltm1" />
+    <Block Name="milltm2" />
+    <Block Name="milltm4">
+      <Tag TagName="Sine3" OpcTagName="Channel_0_User_Defined.Sine.Sine3" />
+      <Tag TagName="RampXL3" OpcTagName="Channel_0_User_Defined.Ramp.RampXL3" />
+      <Tag TagName="RampXL2" OpcTagName="Channel_0_User_Defined.Ramp.RampXL2" />
+      <Tag TagName="RampXL1" OpcTagName="Channel_0_User_Defined.Ramp.RampXL1" />
+      <Tag TagName="Word_2" OpcTagName="Channel_3.Device_4.Word_2" />
+    </Block>
+    <Block Name="milltm3">
+      <Tag TagName="User4" OpcTagName="Channel_0_User_Defined.User.User4" />
+      <Tag TagName="User3" OpcTagName="Channel_0_User_Defined.User.User3" />
+      <Tag TagName="User2" OpcTagName="Channel_0_User_Defined.User.User2" />
+      <Tag TagName="User1" OpcTagName="Channel_0_User_Defined.User.User1" />
+      <Tag TagName="Sine5" OpcTagName="Channel_0_User_Defined.Sine.Sine5" />
+      <Tag TagName="Sine4" OpcTagName="Channel_0_User_Defined.Sine.Sine4" />
+      <Tag TagName="Sine2" OpcTagName="Channel_0_User_Defined.Sine.Sine2" />
+      <Tag TagName="Ramp4" OpcTagName="Channel_0_User_Defined.Ramp.Ramp4" />
+      <Tag TagName="Ramp3" OpcTagName="Channel_0_User_Defined.Ramp.Ramp3" />
+      <Tag TagName="Ramp2" OpcTagName="Channel_0_User_Defined.Ramp.Ramp2" />
+      <Tag TagName="Ramp_Float" OpcTagName="Channel_0_User_Defined.Ramp.Ramp_Float" />
+    </Block>
+  </Group>
+  <Group Name="GroupData">
+    <Block Name="furtm">
+      <Tag TagName="RandomXaxis" OpcTagName="Channel_0_User_Defined.Random.RandomXaxis" />
+      <Tag TagName="RandomYaxis" OpcTagName="Channel_0_User_Defined.Random.RandomYaxis" />
+      <Tag TagName="Random3" OpcTagName="Channel_0_User_Defined.Random.Random3" />
+      <Tag TagName="Random2" OpcTagName="Channel_0_User_Defined.Random.Random2" />
+      <Tag TagName="Random1" OpcTagName="Channel_0_User_Defined.Random.Random1" />
+    </Block>
+  </Group>
+</Groups>

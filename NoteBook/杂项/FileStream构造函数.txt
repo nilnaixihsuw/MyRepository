@@ -1,0 +1,2 @@
+https://blog.csdn.net/chen_zw/article/details/7920445
+http://blog.sina.com.cn/s/blog_67299aec0100snk4.html //FileStreamºÍStreamReader¡¢StreamWriterÇø±ð

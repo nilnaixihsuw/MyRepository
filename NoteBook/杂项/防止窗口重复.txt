@@ -1,0 +1,23 @@
+
+        private static NewForm newForm;
+        /// <summary>
+        /// 防止子窗口重复出现
+        /// 此处不用ShowDialog，因为那样使父窗口不可用，会有很多限制与不方便；
+        /// 本例关键是定义一个子窗口的全局变量，并作判断
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnNewForm_Click(object sender, EventArgs e)
+        {
+            
+            if (newForm == null || newForm.IsDisposed)
+            {
+                newForm = new NewForm();
+                newForm.Show();
+            }
+            else
+            {
+                newForm.WindowState = FormWindowState.Normal;
+                newForm.Activate();
+            }
+        }

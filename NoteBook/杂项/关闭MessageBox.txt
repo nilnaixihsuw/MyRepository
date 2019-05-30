@@ -1,0 +1,22 @@
+        1.引入DLL
+        [DllImport("user32.dll", EntryPoint = "FindWindow", CharSet = CharSet.Auto)]
+        public extern static IntPtr FindWindow(string lpClassName, string lpWindowName);
+
+        [DllImport("user32.dll", CharSet = CharSet.Auto)]
+        public static extern int PostMessage(IntPtr hWnd, int msg, IntPtr wParam, IntPtr lParam);
+        public const int WM_CLOSE = 0x10;
+      
+        2.定义关闭Message方法
+        void TimerMethod(object o)
+        {
+            IntPtr ptr = FindWindow(null, "caption");
+            if (ptr != IntPtr.Zero)
+            {
+                //找到则关闭MessageBox窗口
+                PostMessage(ptr, WM_CLOSE, IntPtr.Zero, IntPtr.Zero);
+            }
+        }
+        3.执行
+        Timer timer=new Timer(TimerMethod,null,0,1000);
+        MessageBox.Show("content","caption");//MessageBox会同步阻塞程序，需提前开启其他线程，对其异步关闭
+        

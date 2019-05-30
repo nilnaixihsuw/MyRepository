@@ -1,0 +1,7 @@
+1找到配置文件C:\ProgramData\MySQL\MySQL Server 5.7\my.ini（ProgramData为隐藏文件）
+2编辑my.ini:
+  在[client]和[mysqld]下分别添加配置命令
+  loose-default-character-set = utf8
+  loose-character-set-database = utf8
+  loose-character-set-server = utf8
+3重启mysql服务

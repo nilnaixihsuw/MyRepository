@@ -1,0 +1,16 @@
+        static int count = 0;
+        public static double RandomData(int start, int end)
+        {
+            Guid guid = Guid.NewGuid();
+            int key1 = guid.GetHashCode();
+            int key2 = unchecked((int)DateTime.Now.Ticks);
+            int seed = unchecked(key1 * key2 * count);----->随机数种子
+            count++;
+            Random random = new Random(seed);
+            int intData = random.Next(start, end - 1);----->范围是左闭右开
+            double doubleData = random.Next(0, 99) * 0.01;
+            return intData + doubleData;
+        }
+
+注解
+Next(int min ,int max)会传回随机整数，范围从min至max-1.不过如果min等于max ,方法会传回min

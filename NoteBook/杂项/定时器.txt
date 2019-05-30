@@ -1,0 +1,13 @@
+
+         Timer timer= new Timer (TimerMethod,null, 0, 1000);
+         public static void TimerMethod(object o)
+         {    
+         }
+         Лђеп
+
+         Timer t = new System.Timers.Timer(1000);
+         t.Elapsed += Timers.ElapsedEventHandler(TimerMethod);
+         t.Start();
+         public static void TimerMethod(object source, ElapsedEventArgs e)
+         {
+         }

@@ -1,0 +1,46 @@
+StaruUp中注入服务
+  // 用户登陆认证
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, o =>
+            {
+                o.LoginPath = new PathString("/User/Login");
+                o.AccessDeniedPath = new PathString("/Error/Forbidden");
+            });
+StartUp添加组件
+            app.UseAuthentication();
+
+
+[HttpPost]
+        public async Task<IActionResult> Login()
+        {
+            RLogin param = new RLogin() {UserName="Admin",PassWord="123456" };
+            if(param==null)
+            {
+                return BadRequest("请求对象不可为空");
+            }
+            User user = _dbContext.User.FirstOrDefault(s=>s.UserName==param.UserName&&s.PassWord==param.PassWord);
+            if (user == null)
+            {
+                return BadRequest("账号或密码错误"); 
+            }
+            var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme);
+            identity.AddClaim(new Claim(ClaimTypes.Name, user.UserName));
+
+            ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(identity);
+            HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+                claimsPrincipal,
+                //设置cookie过期时间
+                new AuthenticationProperties
+                {
+                    IsPersistent=true,
+                    ExpiresUtc=DateTime.UtcNow.AddMinutes(1)
+                });
+            //this.User.FindFirst("userName").Value;
+            return Content(HttpContext.User.Claims.FirstOrDefault(s => s.Type == ClaimTypes.Name)?.Value);
+
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return Content("已退出");
+        }

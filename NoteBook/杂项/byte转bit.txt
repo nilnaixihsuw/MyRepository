@@ -1,0 +1,13 @@
+        public static string getBit(byte by)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append((by >> 7) & 0x1)
+             .Append((by >> 6) & 0x1)
+             .Append((by >> 5) & 0x1)
+             .Append((by >> 4) & 0x1)
+             .Append((by >> 3) & 0x1)
+             .Append((by >> 2) & 0x1)
+             .Append((by >> 1) & 0x1)
+             .Append((by >> 0) & 0x1);
+            return sb.ToString();
+        }

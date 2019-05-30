@@ -1,0 +1,34 @@
+首先在数据库中创建Student 表
+create table Student
+(
+id int primary key,
+name nvarchar(20) not null,
+age int not null
+);
+
+1创建存储过程
+create proc 存储过程名称(@name nvarchar(20), @age int)  as 
+begin 
+select * from Student where name=@name and  sex=@age;
+end
+
+2使用存储过程
+exec 存储过程名称 ‘张无忌’，12；
+
+3修改存储过程
+alter proc 存储过程名称（@age int）as
+begin
+//使用条件语句
+if(@age<18)
+begin
+print('这是未成年');
+end
+
+else
+begin
+//变量声明
+declare @realage int;
+set @realage=@age+12;
+select * from Student where age=@realage
+end
+end

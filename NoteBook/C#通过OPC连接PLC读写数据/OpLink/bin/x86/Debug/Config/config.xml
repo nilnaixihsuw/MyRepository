@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+<OpcServer>
+  <ServerName>KEPware.KEPServerEx.V4</ServerName>
+  <Ip>127.0.0.1</Ip>  
+</OpcServer>
+<Tag>
+  <TagPath>\\Config\\tags.xml</TagPath>
+</Tag>
+</Config>

@@ -1,0 +1,13 @@
+<Button x:Name="BtnPop" Width="100" Height="30" Content="Popup" Click="click"/>
+        <Popup x:Name="Pop" PopupAnimation="Slide" Width="100" Height="100" PlacementTarget="{Binding ElementName=BtnPop}" Placement="Bottom" AllowsTransparency="True" StaysOpen="False">
+            <Border Background="#FFCFCFCF" CornerRadius="5" BorderBrush="#FF000000" BorderThickness="1">
+                <StackPanel>
+                    <Button Content="A"/>
+                    <Button Content="B"/>
+                    <Button Content="C"/>
+                </StackPanel>
+            </Border>
+        </Popup>
+
+click后台事件：Pop.IsOpen = True；
+HorizontalOffset="-35" VerticalOffset="20"：分别控制水平、垂直方向的平移

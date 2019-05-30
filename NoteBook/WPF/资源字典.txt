@@ -1,0 +1,10 @@
+1创建文件夹Resources,并在其中创建资源字典style.xaml
+2App.xaml中引用资源字典，引用方式如下：
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/style.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+    之后即可在全局使用该资源字典中定义的样式

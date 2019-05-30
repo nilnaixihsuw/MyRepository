@@ -1,0 +1,33 @@
+public interface IBook
+    {
+        void Read();
+    }
+    public class Novel : IBook
+    {
+        public void Read()
+        {          
+        }
+    }
+    public class Classify:IBook
+    {
+        public void Read()
+        {
+        }
+    }
+    public class Person
+    {
+        private IBook _book;
+        public Person(IBook book)-->依赖注入
+        {
+            _book = book;
+        }
+        public void PersonRead()
+        {
+            _book.Read();
+        }
+    }
+上层对象为Person，下层对象为Novel、Classify
+依赖倒置：Person不具体依赖于Novel、Classify,而是依赖于抽象的IBook,而下层对象则要实现IBook已达到依赖倒置的目的
+控制反转：Person类中不具体决定使用何种IBook，而将决定权交由调用者
+依赖注入：是控制反转的手断。
+参考链接：https://blog.csdn.net/briblue/article/details/75093382

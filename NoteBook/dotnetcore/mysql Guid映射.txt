@@ -1,0 +1,9 @@
+在数据库上下文中定义模型ID的数据类型
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<User>(m =>
+            {
+                m.Property(n => n.ID).HasColumnType("char(36)");
+            });
+            base.OnModelCreating(modelBuilder);
+        }

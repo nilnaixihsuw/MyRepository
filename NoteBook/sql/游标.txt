@@ -1,0 +1,23 @@
+首先在数据库中创建Student 表
+create table Student
+(
+id int primary key,
+name nvarchar(20) not null,
+age int not null
+);
+
+
+游标的使用
+declare @storage_age int -->定义存储变量
+declare cur_student  cursor -->定义游标，将for后的查询结果放入游标
+for 
+select age from Student
+open cur_student-->打开游标
+fetch from cur_student into @storage_age -->在游标中取出一个值放入存储变量中
+while @@fetch_status=0-->在游标中取值成功
+begin
+print(@storage_age);-->执行要对取出值的操作
+fetch from cur_student into @storage_age-->继续遍历游标
+end
+close cur_student -->关闭游标
+deallocate cur_student-->释放游标

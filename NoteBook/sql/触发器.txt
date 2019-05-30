@@ -1,0 +1,8 @@
+定义：一种由事件触发的自动执行的存储过程
+
+create trigger trigger_student on Student -->在Student表上定义触发器
+for update（delete/insert）-->定义触发类型，update表示更新表时触发，delete表示删除表时触发，insert表示插入时触发,在前面添加instead of表示不执行定义的（insert,update,delete）操作，而仅是执行触发器本身的内容
+as
+begin
+.......-->定义触发器内容
+end

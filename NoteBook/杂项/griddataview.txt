@@ -1,0 +1,57 @@
+            dataGridView1.RowHeadersVisible = false;//隐藏选中栏
+            dataGridView1.EnableHeadersVisualStyles = false;//这样就可以使用当前的主题的样式了，这句话十分关键！
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = ColorTranslator.FromHtml("#eff0f5");//标题背景色
+            dataGridView1.DefaultCellStyle.SelectionBackColor = ColorTranslator.FromHtml("#15dde6");//选中时颜色
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;//去掉标题网格线
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;//去掉内容网格线
+            this.dataGridView1.AutoGenerateColumns = true;//自动创建绑定的属性列
+            dataGridView1.ColumnHeadersDefaultCellStyle.WrapMode = DataGridViewTriState.False;  //设置列标题不换行
+            //颜色设置：https://blog.csdn.net/u014658115/article/details/48243957
+        
+        /// <summary>
+        /// 设置边框色
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void dataGridView1_Paint(object sender, PaintEventArgs e)
+        {
+            Pen pen = new Pen(ColorTranslator.FromHtml("#dbdce0"));
+            e.Graphics.DrawRectangle(pen, new Rectangle(0, 0, this.dataGridView1.Width - 1, this.dataGridView1.Height - 1));
+        }
+
+        /// <summary>
+        /// 设置鼠标进入某一行时的背景颜色
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void dataGridView1_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex>=0)
+            {
+                dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Red;
+            }
+        }
+
+        /// <summary>
+        /// 鼠标离开某一行后恢复原色
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void dataGridView1_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.White;
+            }
+        }
+         /// <summary>
+        /// 禁止选中某一个单元格
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            dataGridView2.ClearSelection();
+        }
+

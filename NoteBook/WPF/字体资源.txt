@@ -1,0 +1,13 @@
+1下载字体文件，在项目中新建文件夹，将字体文件复制其中
+2设置字体文件“复制到输出目录”：“如果较新则复制”，“生成操作”：“Resource”
+3定义样式：
+            <Style x:Key="font">
+                <Setter Property="TextElement.FontFamily" Value="pack://application:,,,/Font/#iconfont" />
+            </Style>
+            其中"Font"为新建文件夹名称，"iconfont"为字体文件名称
+4给目标控件添加定义的样式，将其文本属性设置为对应的Unicode码
+
+
+——————————————————————————————
+简单来说
+<Button  FontFamily="pack://application:,,,/Font/#iconfont"  Content="&#xe62d;"></Button>

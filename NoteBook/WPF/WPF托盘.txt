@@ -1,0 +1,46 @@
+1在MainWindow.xaml中创建自定义右键菜单资源
+  eg：
+  <Window.Resources>
+        <pu:PUContextMenu x:Key="pucontextmenu">
+            <pu:PUContextMenuItem Header="开始" InputGestureText="00"></pu:PUContextMenuItem>
+            <pu:PUContextMenuItem Header="开始"></pu:PUContextMenuItem>
+            <pu:PUContextMenuItem Header="退出"></pu:PUContextMenuItem>
+        </pu:PUContextMenu>
+    </Window.Resources>
+
+2在MainWindow.cs中初始化托盘
+  eg：
+     public MainWindow()
+        {
+            InitializeComponent();
+            notifyIcon = new NotifyIcon();
+            notifyIcon.BalloonTipText = "数据采集";
+            notifyIcon.Text = "数据采集";
+            notifyIcon.Icon = new System.Drawing.Icon                       (AppDomain.CurrentDomain.SetupInformation.ApplicationBase+@"Icon\正常.ico");
+            notifyIcon.Visible = true;
+            notifyIcon.ShowBalloonTip(2000);
+            //注册右键弹出菜单事件
+            notifyIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(notify_click);
+        }
+3实现右键弹出菜单事件
+     private void notify_click(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                PUContextMenu NotifyIconMenu = (PUContextMenu)FindResource("pucontextmenu");
+                NotifyIconMenu.IsOpen = true;
+                if(!this.IsActive)
+                this.Activate();
+            }
+        }
+
+
+注意：
+如果直接隐藏窗口，窗口将不能获取焦点，此时鼠标点击其他区域右键菜单将不能自动隐藏，我们可以通过将窗口
+状态设置为最小化，然后不在任务栏中显示即可解决这个问题
+WindowState = WindowState.Minimized;
+ShowInTaskbar = false;
+
+
+————————————
+第三方notify控件：https://lindexi.gitee.io/post/WPF-托盘显示.html

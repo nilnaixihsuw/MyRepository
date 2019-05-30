@@ -1,0 +1,24 @@
+
+            //创建线程池
+            PooledRedisClientManager prcm = new PooledRedisClientManager(
+            new List<string>() { "127.0.0.1" },
+            new List<string>() { "127.0.0.1" },
+            new RedisClientManagerConfig
+            {
+                AutoStart = true,
+                MaxReadPoolSize = 50,
+                MaxWritePoolSize = 50,
+            });
+            //使用事物
+           using (IRedisClient RClient = prcm.GetClient())
+           {
+            RClient.Add("key",1);
+            using (IRedisTransaction IRT = RClient.CreateTransaction())
+            {
+            IRT.QueueCommand(r => r.Set("key", 20));
+            IRT.QueueCommand(r => r.Increment("key",1)); 
+            IRT.Commit(); 
+            }
+           Response.Write(RClient.Get<string>("key"));
+           }
+                
