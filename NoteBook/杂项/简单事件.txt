@@ -1,0 +1,27 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Ring ring = new Ring();
+            Student student = new Student();
+            ring.RingEvent += student.GetUp;
+            ring.StartRing();
+            Console.ReadKey();
+        }
+    }
+    public class Ring
+    {
+        public event Action RingEvent;
+        public void StartRing()
+        {
+            Console.WriteLine("¶£¶£¶£¡£¡£¡£");
+            RingEvent?.Invoke();
+        }
+    }
+    public class Student
+    {
+        public void GetUp()
+        {
+            Console.WriteLine("Æð´²£¡");
+        }
+    }

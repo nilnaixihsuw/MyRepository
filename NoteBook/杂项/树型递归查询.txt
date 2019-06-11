@@ -1,0 +1,45 @@
+    public class Depart
+    {
+        public List<Data> datas = new List<Data>()
+        {
+            new Data(){ id=0,pid=null,name="一级"},
+            new Data(){ id=1,pid=0,name="二级"},
+            new Data(){ id=2,pid=0,name="二级"},
+            new Data(){ id=3,pid=1,name="三级"},
+            new Data(){ id=4,pid=1,name="三级"},
+            new Data(){ id=5,pid=2,name="三级"},
+            new Data(){ id=6,pid=2,name="三级"},
+            new Data(){ id=7,pid=2,name="三级"},
+            new Data(){ id=8,pid=3,name="四级"}
+        };
+
+        public List<Node> GetList(int? id)
+        {
+            List<Node> tree = new List<Node>();
+            List<Data> sons = datas.Where(s => s.pid == id).ToList();
+            if (sons.Count > 0)
+            {
+                sons.ForEach(s =>
+                {
+                    Node node = new Node();
+                    node.id = s.id;
+                    node.name = s.name;
+                    node.sons = GetList(s.id);
+                    tree.Add(node);
+                });
+            }
+            return tree;
+        }
+    }
+    public class Data
+    {
+        public int id { get; set; }
+        public int? pid { get; set; }
+        public string name { get; set; }
+    }
+    public class Node
+    {
+        public int id { get; set; }
+        public string name { get; set; }
+        public List<Node> sons { get; set; } = new List<Node>();
+    }
