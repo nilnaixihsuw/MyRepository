@@ -1,4 +1,4 @@
-//API声明：获取当前焦点控件句柄      
+//API声明：获取当前焦点控件句柄       
 
 [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.Winapi)]
 
