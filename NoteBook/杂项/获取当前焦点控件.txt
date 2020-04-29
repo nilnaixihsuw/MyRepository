@@ -1,0 +1,47 @@
+//API声明：获取当前焦点控件句柄      
+
+[DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.Winapi)]
+
+internal static extern IntPtr GetFocus();
+
+        ///获取 当前拥有焦点的控件
+        private Control GetFocusedControl()
+        {
+
+            Control focusedControl = null;
+
+            // To get hold of the focused control:
+
+            IntPtr focusedHandle = GetFocus();
+
+            if (focusedHandle != IntPtr.Zero)
+
+                //focusedControl = Control.FromHandle(focusedHandle);
+
+              focusedControl = Control.FromChildHandle(focusedHandle);
+
+            return focusedControl ;
+
+        }
+
+ 
+
+说明：
+
+Control.FromHandle 方法
+
+返回当前与指定句柄关联的控件。
+
+一个 Control，它表示与指定句柄关联的控件；如果找不到带有指定句柄的控件，就返回 空引用
+
+ 
+
+Control.FromChildHandle 方法
+
+如果需要返回拥有多个句柄的控件，应使用 FromChildHandle 方法。
+
+此方法沿着窗口句柄父级链向上搜索，直到找到与控件关联的句柄。此方法比 FromHandle 方法更可靠，因为它正确返回拥有多个句柄的控件。
+
+ 
+
+对于用户自定义控件，应当使用FromChildHandle 方法
