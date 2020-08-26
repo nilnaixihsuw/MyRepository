@@ -1,0 +1,91 @@
+static int[] MP(int[] param)
+        {
+            for (int i = 0; i < param.Length - 1; i++)
+            {
+                for (int j = 0; j < param.Length - 1 - i; j++)
+                {
+                    if (param[j] < param[j + 1])
+                    {
+                        int t = param[j + 1];
+                        param[j + 1] = param[j];
+                        param[j] = t;
+                    }
+                }
+            }
+            return param;
+        }
+        static int[] CR(int[] param)
+        {
+            for (int i = 1; i < param.Length; i++)
+            {
+                int position = 0;
+                for (int j = 0; j <= i; j++)
+                {
+                    position = j;
+                    if (param[i] <= param[j])
+                    {
+                        break;
+                    }
+                }
+                int t = param[i];
+                for (int k = i; k > position; k--)
+                {
+                    param[k] = param[k - 1];
+                }
+                param[position] = t;
+            }
+            return param;
+        }
+        static int[] XZ(int[] param)
+        {
+            for (int i = 0; i < param.Length - 1; i++)
+            {
+                int index = i;
+                for (int j = i + 1; j < param.Length; j++)
+                {
+                    if (param[j] < param[index])
+                    {
+                        index = j;
+                    }
+                }
+                if (index != i)
+                {
+                    int t = param[index];
+                    param[index] = param[i];
+                    param[i] = t;
+                }
+            }
+            return param;
+        }
+        static void KP(int[] param, int start, int end)
+        {
+            if (start < end)
+            {
+                int point = param[start];
+                int i = start;
+                int j = end;
+                while (i < j)
+                {
+                    while (i < j && param[j] >= point)
+                    {
+                        j--;
+                    }
+                    while (i < j && param[i] <= point)
+                    {
+                        i++;
+                    }
+                    if (i != j)
+                    {
+                        int t = param[j];
+                        param[j] = param[i];
+                        param[i] = t;
+                    }
+                }
+                int temp = param[i];
+                param[i] = param[start];
+                param[start] = temp;
+
+                KP(param, start, i - 1);
+                KP(param, i + 1, end);
+            }
+        }
