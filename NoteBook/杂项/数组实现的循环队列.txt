@@ -1,0 +1,36 @@
+class Queue<T>
+    {
+        private T[] array;
+        private int last = 0;
+        private int next = 0;
+        private int length = 5;
+        public Queue(int length)
+        {
+            this.length = length;
+            array = new T[this.length];
+        }
+        public Queue()
+        {
+            array = new T[length];
+        }
+        public void Enqueue(T param)
+        {
+            if((next+1)%length==last)
+            {
+                Console.WriteLine("满");
+                return;
+            }
+            array[next] = param;
+            next = (next + 1) % array.Length;
+        }
+        public void Dequeue()
+        {
+            if (last == next)
+            {
+                Console.WriteLine("空");
+                return;
+            }
+            Console.WriteLine($"出：{array[last]}");
+            last=(last+1) % array.Length;
+        }
+    }

@@ -1,0 +1,78 @@
+class Link<T>
+    {
+        public T Data { get; set; }
+        public Link<T> Next { get; set; }
+        public bool Find<T>(T param) where T : struct
+        {
+            Link<T> currentNode = this.Next as Link<T>;
+            do
+            {
+                if (currentNode.Data.Equals(param))
+                {
+                    return true;
+                }
+                else
+                {
+                    if (currentNode.Next != null)
+                    {
+                        currentNode = currentNode.Next;
+                    }
+                }
+            }
+            while (currentNode.Next != null);
+            return false;
+        }
+        public void Query()
+        {
+            Link<T> currentNode = this as Link<T>;
+
+            while (currentNode.Next != null)
+            {
+                currentNode = currentNode.Next;
+                Console.WriteLine(currentNode.Data);
+            }
+        }
+        public void Insert<T>(T param)
+        {
+            Link<T> currentNode = this as Link<T>;
+            while (currentNode.Next != null)
+            {
+                currentNode = currentNode.Next;
+            }
+            currentNode.Next = new Link<T>
+            {
+                Data = param,
+                Next = null
+            };
+        }
+        public void Delete<T>(T param)
+        {
+            Link<T> currentNode = this as Link<T>;        //head->1->2->3->4->null
+            Link<T> lastNode;
+            Link<T> nextNode;
+            while (currentNode.Next != null)
+            {
+                if(currentNode.Next.Data.Equals(param))
+                {
+                    lastNode = currentNode;
+                    currentNode = currentNode.Next;
+                    nextNode = currentNode.Next;
+                    lastNode.Next = nextNode;
+                    currentNode = null;
+                    return;
+                }
+                currentNode = currentNode.Next;
+            }
+        }
+        public int GetCount()
+        {
+            Link<T> currentNode = this as Link<T>;
+            int count = 0;
+            while (currentNode.Next != null)
+            {
+                currentNode = currentNode.Next;
+                count++;
+            }
+            return count;
+        }
+    }
