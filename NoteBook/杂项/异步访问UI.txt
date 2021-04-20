@@ -1,0 +1,11 @@
+if (InvokeRequired)
+                {
+                    this.BeginInvoke(new Action(() =>
+                    {
+                        MediMsgBox.Failure(this, "调用病人身份核查接口失败："+ex.Message);
+                    }));
+                }
+                else
+                {
+                    MediMsgBox.Failure(this, "调用病人身份核查接口失败："+ex.Message);
+                }

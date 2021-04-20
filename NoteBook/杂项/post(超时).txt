@@ -1,0 +1,43 @@
+        /// <summary>
+        /// post超时
+        /// </summary>
+        /// <param name="url"></param>
+        /// <param name="postData"></param>
+        /// <returns></returns>
+        public static string HttpPostForTimeOut(string url, string postData)
+        {
+            //System.Diagnostics.Stopwatch watch = new System.Diagnostics.Stopwatch();
+            //watch.Start();
+            GC.Collect();
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "POST";
+            request.ContentType = "application/json";
+            //request.ContentLength = Encoding.UTF8.GetByteCount(postDataStr);
+            //int a = Encoding.UTF8.GetByteCount(postData);
+            request.Timeout = 1000;
+
+
+            ServicePointManager.Expect100Continue = false;
+            ServicePointManager.DefaultConnectionLimit = 200;
+
+
+            request.KeepAlive = false;
+            request.ProtocolVersion = HttpVersion.Version10;
+
+            Stream myRequestStream = request.GetRequestStream();
+            StreamWriter myStreamWriter = new StreamWriter(myRequestStream, Encoding.GetEncoding("utf-8")); //如果JSON有中文则是UTF-8
+            myStreamWriter.Write(postData);
+            myStreamWriter.Close(); //请求中止,是因为长度不够,还没写完就关闭了.
+
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            //watch.Stop();  //停止监视
+            //TimeSpan timespan = watch.Elapsed;  //获取当前实例测量得出的总时间
+            //System.Diagnostics.Debug.WriteLine("打开窗口代码执行时间：{0}(毫秒)", timespan.TotalMinutes);  //总毫秒数
+
+            Stream myResponseStream = response.GetResponseStream();
+            StreamReader myStreamReader = new StreamReader(myResponseStream ?? throw new InvalidOperationException(), Encoding.GetEncoding("utf-8"));
+            string registerResult = myStreamReader.ReadToEnd();
+            myStreamReader.Close();
+            myResponseStream.Close();
+            return registerResult;
+        }
