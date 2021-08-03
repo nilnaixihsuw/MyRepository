@@ -1,0 +1,1 @@
+select jianchajf from yj_shenqingdan  as of timestamp to_timestamp('2021-08-03 7:38:40','YYYY-MM-DD HH24:MI:SS')
