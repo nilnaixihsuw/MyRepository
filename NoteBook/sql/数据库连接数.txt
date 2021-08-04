@@ -1,0 +1,1 @@
+select program,count(1) from v$session where type='USER' group by program order by count(1) desc;
