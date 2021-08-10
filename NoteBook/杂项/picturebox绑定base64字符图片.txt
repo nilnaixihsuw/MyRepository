@@ -1,0 +1,8 @@
+                    byte[] bytes = Convert.FromBase64String(base64String);
+                    MemoryStream s = new MemoryStream(bytes, true);
+                    s.Write(bytes, 0, bytes.Length);
+                    Image a = new Bitmap(s);
+                    Bitmap bit = new Bitmap(500, 350);
+                    Graphics g = Graphics.FromImage(bit);//从指定的 Image 创建新的 Graphics(绘图)。
+                    g.DrawImage(a, new Rectangle(0, 0, bit.Width, bit.Height), new Rectangle(0, 0, a.Width, a.Height), GraphicsUnit.Pixel);
+                    pictureBox.Image = bit;
