@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA047347-0EA2-4584-817E-290F32278063}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediinfo.Utility</RootNamespace>
+    <AssemblyName>Mediinfo.Utility</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\AssemblyCore\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\..\ThirdPartyLibraries\net40\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.BL">
+      <HintPath>..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.BL.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.GY">
+      <HintPath>..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.GY.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.MZ">
+      <HintPath>..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.MZ.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.YJ">
+      <HintPath>..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.YJ.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.ZJ">
+      <HintPath>..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.ZJ.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.ZY">
+      <HintPath>..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.ZY.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.LIS.JY">
+      <HintPath>..\..\AssemblyBase\Core\Mediinfo.DTO.LIS.JY.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\ThirdPartyLibraries\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\..\ThirdPartyLibraries\net40\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PlainElastic.Net">
+      <HintPath>..\..\ThirdPartyLibraries\net40\PlainElastic.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Polly, Version=4.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdPartyLibraries\net40\Polly.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BirthdayValidation.cs" />
+    <Compile Include="CacheHelper.cs" />
+    <Compile Include="CommonMethod\ColorTransfer.cs" />
+    <Compile Include="CommonMethod\DLLHandlerTimeOut.cs" />
+    <Compile Include="CommonMethod\MyExamFormat.cs" />
+    <Compile Include="Compress\CompressExtension.cs" />
+    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="DelegateFactory.cs" />
+    <Compile Include="DESHelper.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="Extensions\PolicyExecutor.cs" />
+    <Compile Include="ListComparer.cs" />
+    <Compile Include="ManagedThreadPool.cs" />
+    <Compile Include="OperateIniFile.cs" />
+    <Compile Include="OperateXMLFile.cs" />
+    <Compile Include="ProcessHelper.cs" />
+    <Compile Include="Reflection\DynamicProxy.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\NumberExtensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\StopWatchExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Reflection\FieldAccessor.cs" />
+    <Compile Include="FTPHelper.cs" />
+    <Compile Include="GlobalExceptionHandler.cs" />
+    <Compile Include="IDCardValidation.cs" />
+    <Compile Include="Reflection\ILGeneratorExtensions.cs" />
+    <Compile Include="Reflection\IMemberAccessor.cs" />
+    <Compile Include="Reflection\IMemberInfo.cs" />
+    <Compile Include="Reflection\IMethodAccessor.cs" />
+    <Compile Include="Reflection\MemberAccessor.cs" />
+    <Compile Include="Reflection\MethodAccessor.cs" />
+    <Compile Include="IOHelper.cs" />
+    <Compile Include="LogHelper.cs" />
+    <Compile Include="NamedPipeClient.cs" />
+    <Compile Include="NamedPipeListenServer.cs" />
+    <Compile Include="NetworkHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyAccessor.cs" />
+    <Compile Include="SHA256.cs" />
+    <Compile Include="ShuRuMaHelper.cs" />
+    <Compile Include="SYSManagement.cs" />
+    <Compile Include="TelePhoneNoValidation.cs" />
+    <Compile Include="TypeAccessor.cs" />
+    <Compile Include="UpdateHelper.cs" />
+    <Compile Include="Util\Base64Util.cs" />
+    <Compile Include="Util\JsonUtil.cs" />
+    <Compile Include="Util\XmlUtility.cs" />
+    <Compile Include="WinApiHelper.cs" />
+    <Compile Include="WindowsServiceHelper.cs" />
+    <Compile Include="WMHelper.cs" />
+    <Compile Include="XiaoXi\ReceiveMessageHelper.cs" />
+    <Compile Include="XiaoXi\SendMessageHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ShuRuMa.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DuoYinZi.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

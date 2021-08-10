@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E3DA3EF-FCF8-4392-9B9E-0FBB2CAB8550}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediinfo.Infrastructure.Core</RootNamespace>
+    <AssemblyName>Mediinfo.Infrastructure.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\AssemblyServer\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=4.6.2.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="CacheManager.Core, Version=1.1.2.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\CacheManager.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CacheManager.SystemRuntimeCaching, Version=1.1.2.0, Culture=neutral, PublicKeyToken=5b450b4fb65c4cdb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\CacheManager.SystemRuntimeCaching.dll</HintPath>
+    </Reference>
+    <Reference Include="Consul, Version=0.7.2.4, Culture=neutral, PublicKeyToken=20a6ad9a81df1d95, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\Consul.dll</HintPath>
+    </Reference>
+    <Reference Include="EmitMapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\EmitMapper.1.0.0\lib\EmitMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Diagnostics.Tracing.EventSource, Version=1.1.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\Microsoft.Diagnostics.Tracing.EventSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLite, Version=0.9.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\NLite.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Polly">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\Polly.dll</HintPath>
+    </Reference>
+    <Reference Include="RabbitMQ.Client, Version=5.0.0.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\RabbitMQ.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.2.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseParm.cs" />
+    <Compile Include="Cache\CacheManager.cs" />
+    <Compile Include="Cache\ContextCache.cs" />
+    <Compile Include="Cache\ICache.cs" />
+    <Compile Include="Cache\InMemoryCache.cs" />
+    <Compile Include="Config\DbConfig.cs" />
+    <Compile Include="Config\RabbitMQConfig.cs" />
+    <Compile Include="Controller\ApiBaseController.cs" />
+    <Compile Include="Controller\QueryUrl.cs" />
+    <Compile Include="Controller\ServiceCheck.cs" />
+    <Compile Include="DBContext\DBContextBase.cs" />
+    <Compile Include="DBContext\IDBBulkOperations.cs" />
+    <Compile Include="DBContext\IMessagePlugin.cs" />
+    <Compile Include="DBContext\IPagedQuery.cs" />
+    <Compile Include="DBContext\IPagedTableQuery.cs" />
+    <Compile Include="DBContext\MessagePlugin.cs" />
+    <Compile Include="DBEntity\IQueryableExtensions.cs" />
+    <Compile Include="DbMessage\DbMessage.cs" />
+    <Compile Include="DbMessage\IDbMessageHandler.cs" />
+    <Compile Include="DbMessage\MessageEntity.cs" />
+    <Compile Include="DbMessage\ServiceInfo.cs" />
+    <Compile Include="DomainService\DomainServiceBase.cs" />
+    <Compile Include="DomainService\DomainServiceCheck.cs" />
+    <Compile Include="DomainService\DomainServiceLocator.cs" />
+    <Compile Include="DomainService\DomainServicePlugin.cs" />
+    <Compile Include="DomainService\IDomainService.cs" />
+    <Compile Include="Domain\ExpressionGenericMapper.cs" />
+    <Compile Include="Domain\MapExtesion.cs" />
+    <Compile Include="Entity\EntityBase.cs" />
+    <Compile Include="Entity\EntityTypeConfigurationBase.cs" />
+    <Compile Include="Entity\IAggregateRoot.cs" />
+    <Compile Include="Entity\IDefaultValue.cs" />
+    <Compile Include="Entity\IDependency.cs" />
+    <Compile Include="Entity\IEntityMapper.cs" />
+    <Compile Include="Entity\IEntityTypeConfiguration.cs" />
+    <Compile Include="EventBus\IMQMessageEventArgs.cs" />
+    <Compile Include="EventBus\MessageEventArgs.cs" />
+    <Compile Include="EventBus\MessageEventBus.cs" />
+    <Compile Include="EventBus\MessageEventHandle.cs" />
+    <Compile Include="EventBus\MQConnect.cs" />
+    <Compile Include="EventBus\MQConnParms.cs" />
+    <Compile Include="EventBus\MQHelper.cs" />
+    <Compile Include="EventBus\MQMessage.cs" />
+    <Compile Include="EventBus\MSMQHelper.cs" />
+    <Compile Include="EventBus\RabbitMQHelper.cs" />
+    <Compile Include="Filter\ApiActionFilterAttribute.cs" />
+    <Compile Include="Filter\ApiExceptionFilterAttribute.cs" />
+    <Compile Include="Consul\ClusterClient.cs" />
+    <Compile Include="InteractivePreGeneratedViews\DatabaseViewCache.cs" />
+    <Compile Include="InteractivePreGeneratedViews\DatabaseViewCacheContext.cs" />
+    <Compile Include="InteractivePreGeneratedViews\DatabaseViewCacheFactory.cs" />
+    <Compile Include="InteractivePreGeneratedViews\FileViewCacheFactory.cs" />
+    <Compile Include="InteractivePreGeneratedViews\InteractiveViews.cs" />
+    <Compile Include="InteractivePreGeneratedViews\MappingViewCache.cs" />
+    <Compile Include="InteractivePreGeneratedViews\OracleViewCacheFactory.cs" />
+    <Compile Include="InteractivePreGeneratedViews\SqlServerViewCacheFactory.cs" />
+    <Compile Include="InteractivePreGeneratedViews\Utils.cs" />
+    <Compile Include="InteractivePreGeneratedViews\ViewCacheFactoryBase.cs" />
+    <Compile Include="Job\IJob.cs" />
+    <Compile Include="Job\QuartZJob.cs" />
+    <Compile Include="Job\JobFactory.cs" />
+    <Compile Include="Job\WebClientEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MessageQueue\IDbMessageClient.cs" />
+    <Compile Include="MessageQueue\IMessageClient.cs" />
+    <Compile Include="MessageQueue\IUserMessageClient.cs" />
+    <Compile Include="Parallel\ParallelExtension.cs" />
+    <Compile Include="Redis\IRedisClient.cs" />
+    <Compile Include="Redis\RedisClient.cs" />
+    <Compile Include="Redis\StackRedis.cs" />
+    <Compile Include="Redis\RedisService.cs" />
+    <Compile Include="Settings\SettingContainer.cs" />
+    <Compile Include="Level2CacheRegister.cs" />
+    <Compile Include="Log\LogHelper.cs" />
+    <Compile Include="MessageQueue\BindingsEntity\Arguments.cs" />
+    <Compile Include="MessageQueue\BindingsEntity\BindingsModel.cs" />
+    <Compile Include="MessageQueue\ExchangeEntity\Arguments.cs" />
+    <Compile Include="MessageQueue\ExchangeEntity\ExchangeModel.cs" />
+    <Compile Include="MessageQueue\ExchangeEntity\Message_stats.cs" />
+    <Compile Include="MessageQueue\ExchangeEntity\Publish_in_details.cs" />
+    <Compile Include="MessageQueue\MessageQueueClientFactory.cs" />
+    <Compile Include="MessageQueue\QueueEntity\Arguments.cs" />
+    <Compile Include="MessageQueue\QueueEntity\Backing_queue_status.cs" />
+    <Compile Include="MessageQueue\QueueEntity\Garbage_collection.cs" />
+    <Compile Include="MessageQueue\QueueEntity\Messages_details.cs" />
+    <Compile Include="MessageQueue\MessageEntity.cs" />
+    <Compile Include="MessageQueue\Messager.cs" />
+    <Compile Include="MessageQueue\QueueEntity\Messages_ready_details.cs" />
+    <Compile Include="MessageQueue\QueueEntity\Messages_unacknowledged_details.cs" />
+    <Compile Include="MessageQueue\QueueEntity\QueueModel.cs" />
+    <Compile Include="MessageQueue\QueueEntity\Reductions_details.cs" />
+    <Compile Include="MessageQueue\RabitMQChannel.cs" />
+    <Compile Include="Parm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryService.cs" />
+    <Compile Include="Repository\ICanShu.cs" />
+    <Compile Include="Repository\IGetOrder.cs" />
+    <Compile Include="Repository\ILockEntity.cs" />
+    <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Repository\IRepositoryContext.cs" />
+    <Compile Include="Repository\ISaveChanges.cs" />
+    <Compile Include="Repository\ISysTime.cs" />
+    <Compile Include="Repository\RepositoryBase.cs" />
+    <Compile Include="ServiceLocator.cs" />
+    <Compile Include="Service\IService.cs" />
+    <Compile Include="Service\ServiceBase.cs" />
+    <Compile Include="UnitOfWork\ICacheMangager.cs" />
+    <Compile Include="UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="UnitOfWork\UnitOfWorkBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\01.基础组件\Mediinfo.Enterprise\Mediinfo.Enterprise.csproj">
+      <Project>{d207fda6-9f22-4a8a-96be-291898abdb1a}</Project>
+      <Name>Mediinfo.Enterprise</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\01.基础组件\Mediinfo.Utility\Mediinfo.Utility.csproj">
+      <Project>{aa047347-0ea2-4584-817e-290f32278063}</Project>
+      <Name>Mediinfo.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\02.DTO\Mediinfo.DTO.Core\Mediinfo.DTO.Core.csproj">
+      <Project>{F6BA3E59-17EA-4B55-95D5-02487E6797F2}</Project>
+      <Name>Mediinfo.DTO.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

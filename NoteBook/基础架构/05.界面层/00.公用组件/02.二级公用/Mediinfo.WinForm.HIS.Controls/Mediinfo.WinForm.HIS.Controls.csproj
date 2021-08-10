@@ -1,0 +1,939 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{90D86B4A-1E21-4936-A5BB-0ACD4014A48A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediinfo.WinForm.HIS.Controls</RootNamespace>
+    <AssemblyName>Mediinfo.WinForm.HIS.Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\AssemblyClient\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.2.UI, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Diagram.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.2.Drawing, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.Extensions, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.UI, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Mediinfo.DTO.HIS.BL">
+      <HintPath>..\..\..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.BL.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.GY, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.GY.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.MZ">
+      <HintPath>..\..\..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.MZ.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.SM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.SM.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.XT, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.XT.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.ZJ, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.ZJ.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.ZY, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.ZY.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net40\Microsoft.Threading.Tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO, Version=2.6.8.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net40\Microsoft.Bcl.Build\lib\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime, Version=2.6.8.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net40\Microsoft.Bcl.Build\lib\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Threading.Tasks, Version=2.6.8.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net40\Microsoft.Bcl.Build\lib\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xilium.CefGlue">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net40\Xilium.CefGlue.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseFormCommonHelper.cs" />
+    <Compile Include="ButtonForOpenChuangKouInit.cs" />
+    <Compile Include="Cef\ImportFromDLL.cs" />
+    <Compile Include="Cef\MediAv8Handler.cs" />
+    <Compile Include="Cef\MediCefApp.cs" />
+    <Compile Include="Cef\MediCefContextMenuHandler.cs" />
+    <Compile Include="Cef\MediCefDownloadHandler.cs" />
+    <Compile Include="Cef\MediCefJavaScriptEx.cs" />
+    <Compile Include="Cef\MediCefKeyboardHandler.cs" />
+    <Compile Include="Cef\MediCefRenderHandler.cs" />
+    <Compile Include="Cef\MediJsEvent.cs" />
+    <Compile Include="Cef\MediRenderProcessHandler.cs" />
+    <Compile Include="FirstLevelFramework\ShouFeiMainFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstLevelFramework\ShouFeiMainFormBase.designer.cs">
+      <DependentUpon>ShouFeiMainFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediPopupContainerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediPopupContainerEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediZhiGong.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SecondaryFramework\W_CAIDANKJ_BSAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondaryFramework\W_CAIDANKJ_BSAE.designer.cs">
+      <DependentUpon>W_CAIDANKJ_BSAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediSuperTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChuangKouCD.cs" />
+    <Compile Include="ClientDataLayoutObject.cs" />
+    <Compile Include="ClientGridViewPropertyGridObject.cs" />
+    <Compile Include="CommonUserCusotmControl\AsynWaitForm.cs" />
+    <Compile Include="CommonUserCusotmControl\CustomProgressBarFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonUserCusotmControl\CustomProgressBarFrm.Designer.cs">
+      <DependentUpon>CustomProgressBarFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonUserCusotmControl\mediCustomProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonUserCusotmControl\mediCustomProgressBar.Designer.cs">
+      <DependentUpon>mediCustomProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonUserCusotmControl\MediDataNavigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonUserCusotmControl\MediDataNavigator.Designer.cs">
+      <DependentUpon>MediDataNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonUserCusotmControl\MediNavigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonUserCusotmControl\MediNavigator.Designer.cs">
+      <DependentUpon>MediNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonUserCusotmControl\MediUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonUserCusotmControl\MediUserControl.Designer.cs">
+      <DependentUpon>MediUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateTabHeaderControlHelper.cs" />
+    <Compile Include="HelperLocator.cs" />
+    <Compile Include="IHelperInterface.cs" />
+    <Compile Include="LabelControlCloseBase.cs" />
+    <Compile Include="LinChuangBase.cs" />
+    <Compile Include="LinChuangEventArgs.cs" />
+    <Compile Include="FirstLevelFramework\LinChuangMainFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstLevelFramework\LinChuangMainFormBase.designer.cs">
+      <DependentUpon>LinChuangMainFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabForm\LinChuangTabForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabForm\LinChuangTabForm.designer.cs">
+      <DependentUpon>LinChuangTabForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediChartControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediCollpasedPanelControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediCollpasedPanelControl.Designer.cs">
+      <DependentUpon>MediCollpasedPanelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediCollpasedPanelControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediCollpasedPanelControlEx.Designer.cs">
+      <DependentUpon>MediCollpasedPanelControlEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediFloatMsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediFloatMsgBox.Designer.cs">
+      <DependentUpon>MediFloatMsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediFormLCWithQX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediFormLCWithQX.Designer.cs">
+      <DependentUpon>MediFormLCWithQX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediFormMask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediFormMask.designer.cs">
+      <DependentUpon>MediFormMask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediGridSplitContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediPromptBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediPromptBox.Designer.cs">
+      <DependentUpon>MediPromptBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediPromptDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediPromptDialog.Designer.cs">
+      <DependentUpon>MediPromptDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediTimeCards.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediUcGridControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MediUcGridControl.Designer.cs">
+      <DependentUpon>MediUcGridControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediUcGridControlzj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MediUcGridControlzj.Designer.cs">
+      <DependentUpon>MediUcGridControlzj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediUniversalMFBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediUniversalMFBase.Designer.cs">
+      <DependentUpon>MediUniversalMFBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RefreshUIEventArgs.cs" />
+    <Compile Include="RuleEngine.cs" />
+    <Compile Include="ShiShiDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShiShiDialog.Designer.cs">
+      <DependentUpon>ShiShiDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQM.cs" />
+    <Compile Include="DataLayoutStyleSetFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataLayoutStyleSetFrm.Designer.cs">
+      <DependentUpon>DataLayoutStyleSetFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpressionHelper.cs" />
+    <Compile Include="FrmButtonSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmButtonSetting.Designer.cs">
+      <DependentUpon>FrmButtonSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridViewEditor.cs" />
+    <Compile Include="GridViewStyleSetFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridViewStyleSetFrm.Designer.cs">
+      <DependentUpon>GridViewStyleSetFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFormInterface.cs" />
+    <Compile Include="FirstLevelFramework\MainFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstLevelFramework\MainFormBase.Designer.cs">
+      <DependentUpon>MainFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediAdvBandedGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessesControl\MediBingQu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessesControl\MediDaiMa.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessesControl\MediFeiYongLB.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessesControl\MediFeiYongXZ.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediDataLayoutControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediDialog.Designer.cs">
+      <DependentUpon>MediDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediFormWithoutTitleQX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediFormWithoutTitleQX.Designer.cs">
+      <DependentUpon>MediFormWithoutTitleQX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediFormWithQX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediFormWithQX.Designer.cs">
+      <DependentUpon>MediFormWithQX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediGridControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediGridLookUpEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessesControl\MediKeShi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediLayoutView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediMsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediMsgBox.Designer.cs">
+      <DependentUpon>MediMsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediPanelButtonQX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediPanelButtonQX.Designer.cs">
+      <DependentUpon>MediPanelButtonQX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediReportView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MediReportView.Designer.cs">
+      <DependentUpon>MediReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediSelect.Designer.cs">
+      <DependentUpon>MediSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediTileView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediXtraReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessesControl\MediYingYong.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessesControl\MediYuanQu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessesControl\MediZhiGong.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediZiDianFromWithButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediZiDianFromWithButton.Designer.cs">
+      <DependentUpon>MediZiDianFromWithButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediZiDianTYForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediZiDianTYForm.designer.cs">
+      <DependentUpon>MediZiDianTYForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessesControl\MedYouHuiLB.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PRTBase.cs" />
+    <Compile Include="PRTReport.cs" />
+    <Compile Include="ReportPrint.cs" />
+    <Compile Include="SkinCat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediXiTongFZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediXiTongFZForm.Designer.cs">
+      <DependentUpon>MediXiTongFZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SwitchSystemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SwitchSystemForm.Designer.cs">
+      <DependentUpon>SwitchSystemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabForm\TabFormHelper.cs" />
+    <Compile Include="TabForm\TabFormOpenHelper.cs" />
+    <Compile Include="UserControl_DiZhi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_DiZhi.Designer.cs">
+      <DependentUpon>UserControl_DiZhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_ZDYXX.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_ZDYXX.Designer.cs">
+      <DependentUpon>UserControl_ZDYXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowser\BrowserClient.cs" />
+    <Compile Include="WebBrowser\MediWebFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebBrowser\MediWebFormBase.Designer.cs">
+      <DependentUpon>MediWebFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowser\MediWebFromControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebBrowser\MediWebFromControl.Designer.cs">
+      <DependentUpon>MediWebFromControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowser\WebBrowserHelper.cs" />
+    <Compile Include="WinFormLocator.cs" />
+    <Compile Include="W_GY_GZTBSAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="W_GY_GZTBSAE.designer.cs">
+      <DependentUpon>W_GY_GZTBSAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="W_GY_SAOMA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="W_GY_SAOMA.Designer.cs">
+      <DependentUpon>W_GY_SAOMA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="W_GY_WEBREPORT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="W_GY_WEBREPORT.designer.cs">
+      <DependentUpon>W_GY_WEBREPORT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="W_GY_YONGHUGRXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="W_GY_YONGHUGRXX.Designer.cs">
+      <DependentUpon>W_GY_YONGHUGRXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="W_Msg_ChooseReceiver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="W_Msg_ChooseReceiver.designer.cs">
+      <DependentUpon>W_Msg_ChooseReceiver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="W_GY_SUODINGPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="W_GY_SUODINGPM.Designer.cs">
+      <DependentUpon>W_GY_SUODINGPM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="W_GY_XIUGAIMM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="W_GY_XIUGAIMM.Designer.cs">
+      <DependentUpon>W_GY_XIUGAIMM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="W_GY_TISIXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="W_GY_TISIXX.Designer.cs">
+      <DependentUpon>W_GY_TISIXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecondaryFramework\W_BINGRENKJ_BASE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondaryFramework\W_BINGRENKJ_BASE.designer.cs">
+      <DependentUpon>W_BINGRENKJ_BASE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabForm\W_LINCHUANG_BASE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabForm\W_LINCHUANG_BASE.designer.cs">
+      <DependentUpon>W_LINCHUANG_BASE.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FirstLevelFramework\ShouFeiMainFormBase.resx">
+      <DependentUpon>ShouFeiMainFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondaryFramework\W_CAIDANKJ_BSAE.resx">
+      <DependentUpon>W_CAIDANKJ_BSAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediSuperTabControl.resx">
+      <DependentUpon>MediSuperTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonUserCusotmControl\CustomProgressBarFrm.resx">
+      <DependentUpon>CustomProgressBarFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonUserCusotmControl\mediCustomProgressBar.resx">
+      <DependentUpon>mediCustomProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonUserCusotmControl\MediDataNavigator.resx">
+      <DependentUpon>MediDataNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonUserCusotmControl\MediNavigator.resx">
+      <DependentUpon>MediNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonUserCusotmControl\MediUserControl.resx">
+      <DependentUpon>MediUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataLayoutStyleSetFrm.resx">
+      <DependentUpon>DataLayoutStyleSetFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmButtonSetting.resx">
+      <DependentUpon>FrmButtonSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridViewStyleSetFrm.resx">
+      <DependentUpon>GridViewStyleSetFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstLevelFramework\LinChuangMainFormBase.resx">
+      <DependentUpon>LinChuangMainFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabForm\LinChuangTabForm.resx">
+      <DependentUpon>LinChuangTabForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstLevelFramework\MainFormBase.resx">
+      <DependentUpon>MainFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediDataLayoutControl.resx">
+      <DependentUpon>MediDataLayoutControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediDialog.resx">
+      <DependentUpon>MediDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediFloatMsgBox.resx">
+      <DependentUpon>MediFloatMsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediFormLCWithQX.resx">
+      <DependentUpon>MediFormLCWithQX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediFormMask.resx">
+      <DependentUpon>MediFormMask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediFormWithoutTitleQX.resx">
+      <DependentUpon>MediFormWithoutTitleQX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediFormWithQX.resx">
+      <DependentUpon>MediFormWithQX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediGridView.resx">
+      <DependentUpon>MediGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediMsgBox.resx">
+      <DependentUpon>MediMsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediPanelButtonQX.resx">
+      <DependentUpon>MediPanelButtonQX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediPromptBox.resx">
+      <DependentUpon>MediPromptBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediPromptDialog.resx">
+      <DependentUpon>MediPromptDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediReportView.resx">
+      <DependentUpon>MediReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediSelect.resx">
+      <DependentUpon>MediSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediUcGridControl.resx">
+      <DependentUpon>MediUcGridControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediUcGridControlzj.resx">
+      <DependentUpon>MediUcGridControlzj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediUniversalMFBase.resx">
+      <DependentUpon>MediUniversalMFBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediXtraReport.resx">
+      <DependentUpon>MediXtraReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediZiDianFromWithButton.resx">
+      <DependentUpon>MediZiDianFromWithButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediZiDianTYForm.resx">
+      <DependentUpon>MediZiDianTYForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBaseForm.resx">
+      <DependentUpon>MessageBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="MediXiTongFZForm.resx">
+      <DependentUpon>MediXiTongFZForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShiShiDialog.resx">
+      <DependentUpon>ShiShiDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SwitchSystemForm.resx">
+      <DependentUpon>SwitchSystemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_DiZhi.resx">
+      <DependentUpon>UserControl_DiZhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_ZDYXX.resx">
+      <DependentUpon>UserControl_ZDYXX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebBrowser\MediWebFormBase.resx">
+      <DependentUpon>MediWebFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebBrowser\MediWebFromControl.resx">
+      <DependentUpon>MediWebFromControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="W_GY_GZTBSAE.resx">
+      <DependentUpon>W_GY_GZTBSAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="W_GY_SAOMA.resx">
+      <DependentUpon>W_GY_SAOMA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="W_GY_WEBREPORT.resx">
+      <DependentUpon>W_GY_WEBREPORT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="W_GY_YONGHUGRXX.resx">
+      <DependentUpon>W_GY_YONGHUGRXX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="W_Msg_ChooseReceiver.resx">
+      <DependentUpon>W_Msg_ChooseReceiver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="W_GY_SUODINGPM.resx">
+      <DependentUpon>W_GY_SUODINGPM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="W_GY_XIUGAIMM.resx">
+      <DependentUpon>W_GY_XIUGAIMM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="W_GY_TISIXX.resx">
+      <DependentUpon>W_GY_TISIXX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondaryFramework\W_BINGRENKJ_BASE.resx">
+      <DependentUpon>W_BINGRENKJ_BASE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabForm\W_LINCHUANG_BASE.resx">
+      <DependentUpon>W_LINCHUANG_BASE.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\01.基础组件\Mediinfo.Enterprise\Mediinfo.Enterprise.csproj">
+      <Project>{d207fda6-9f22-4a8a-96be-291898abdb1a}</Project>
+      <Name>Mediinfo.Enterprise</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\01.基础组件\Mediinfo.HIS.Core\Mediinfo.HIS.Core.csproj">
+      <Project>{06719def-5d99-4628-b35b-ae25c0bee420}</Project>
+      <Name>Mediinfo.HIS.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\01.基础组件\Mediinfo.Utility\Mediinfo.Utility.csproj">
+      <Project>{aa047347-0ea2-4584-817e-290f32278063}</Project>
+      <Name>Mediinfo.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\02.DTO\Mediinfo.DTO.Core\Mediinfo.DTO.Core.csproj">
+      <Project>{f6ba3e59-17ea-4b55-95d5-02487e6797f2}</Project>
+      <Name>Mediinfo.DTO.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\04.ServiceProxy\Mediinfo.ServiceProxy.Core\Mediinfo.ServiceProxy.Core.csproj">
+      <Project>{4F7EEA75-54A8-4C5A-BF23-AA63C202A69B}</Project>
+      <Name>Mediinfo.ServiceProxy.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\04.ServiceProxy\Mediinfo.ServiceProxy.JCJG.GongYong\Mediinfo.ServiceProxy.JCJG.GongYong.csproj">
+      <Project>{F21BF8B6-A8D2-4AFE-8946-66D01B854AF7}</Project>
+      <Name>Mediinfo.ServiceProxy.JCJG.GongYong</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\01.一级公用\Mediinfo.WinForm\Mediinfo.WinForm.csproj">
+      <Project>{f3d971f2-5ddf-4336-86b9-463eb826e1fc}</Project>
+      <Name>Mediinfo.WinForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mediinfo.WinForm.HIS.Core\Mediinfo.WinForm.HIS.Core.csproj">
+      <Project>{4281c850-7c68-4f0b-b250-f10fd6bf3d5d}</Project>
+      <Name>Mediinfo.WinForm.HIS.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagination_first.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagination_previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagination_next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagination_last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagination_first_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagination_first_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagination_previous_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagination_previous_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagination_next_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagination_next_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagination_last_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagination_last_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\锁屏bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\head.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\编辑.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\replace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quxiaotihuan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zzd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tixingicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_small_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow0001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_guanbi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_chuangkou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_zuixiaohua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_xiaoxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_xiaoxiredbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_mediinfologo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_zuixiaohua_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_xiaoxi_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_doctor_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_zuidahua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_zuidahua_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_chuangkou_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_guanbi_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_gm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_message_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_chart.png" />
+    <None Include="Resources\icon_shanchu.png" />
+    <None Include="Resources\icon_xinzeng.png" />
+    <None Include="Resources\icon-gengduocaozuo.png" />
+    <None Include="Resources\icon-tingzhu.png" />
+    <None Include="Resources\logo64.ico" />
+    <Content Include="Resources\tishi-xuanzhe.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\..\..\ThirdPartyLibraries\net40\Microsoft.Bcl.Build\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\..\..\ThirdPartyLibraries\net40\Microsoft.Bcl.Build\tools\Microsoft.Bcl.Build.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,5 @@
+<Config>
+  <ipAddress>192.168.120.208:9000</ipAddress>
+  <startUrl>AssemblyClient</startUrl>
+  <upDateMode>HTTP</upDateMode>
+</Config>

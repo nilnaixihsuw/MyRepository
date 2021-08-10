@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AbsDescription" xml:space="preserve">
+    <value>绝对值表达式</value>
+  </data>
+  <data name="AcosDescription" xml:space="preserve">
+    <value>ACOS（值）
+返回数字的反余弦（角度，以弧度表示，其余弦是给定的浮点表达式）。</value>
+  </data>
+  <data name="AddDaysDescription" xml:space="preserve">
+    <value>AddDays（DateTime，DaysCount）
+返回一个日期时间值，该值是指定DateTime的指定天数。</value>
+  </data>
+  <data name="AddHoursDescription" xml:space="preserve">
+    <value>AddHours(DateTime, HoursCount)
+返回一个日期时间值，该值是指定DateTime的指定小时数。</value>
+  </data>
+  <data name="AddMilliSecondsDescription" xml:space="preserve">
+    <value>AddMilliSeconds（DateTime，MilliSecondsCount）
+返回一个日期时间值，该值是指定DateTime的指定毫秒数。</value>
+  </data>
+  <data name="AddMinutesDescription" xml:space="preserve">
+    <value>AddMinutes（DateTime，MinutesCount）
+返回一个日期时间值，该值是指定DateTime的指定分钟数。</value>
+  </data>
+  <data name="AddMonthsDescription" xml:space="preserve">
+    <value>AddMonths（DateTime，MonthsCount）
+返回一个日期时间值，该值是指定DateTime的指定月数。</value>
+  </data>
+  <data name="AddSecondsDescription" xml:space="preserve">
+    <value>AddSeconds（DateTime，SecondsCount）
+返回一个日期时间值，该值是指定DateTime的指定秒数。</value>
+  </data>
+  <data name="AddTicksDescription" xml:space="preserve">
+    <value>AddTicks（DateTime，TicksCount）
+返回一个日期时间值，该值是指定的DateTime之外的指定舍入数。</value>
+  </data>
+  <data name="AddTimeSpanDescription" xml:space="preserve">
+    <value>AddTimeSpan（DateTime，TimeSpan）
+返回远离给定TimeSpan的指定DateTime的日期时间值。</value>
+  </data>
+  <data name="AddYearsDescription" xml:space="preserve">
+    <value>AddYears（DateTime，YearsCount）
+返回一个日期时间值，该值是远离特定DateTime的指定年数。</value>
+  </data>
+  <data name="AndDescription" xml:space="preserve">
+    <value>对两个表达式执行逻辑连接。</value>
+  </data>
+  <data name="AsciiDescription" xml:space="preserve">
+    <value>ASCII（字符串）
+返回字符表达式中最左侧字符的ASCII代码值。</value>
+  </data>
+  <data name="AsinDescription" xml:space="preserve">
+    <value>ASIN（值）
+返回数字的反正弦（角度，以弧度表示，其正弦值为给定的浮点表达式）。</value>
+  </data>
+  <data name="Atn2Description" xml:space="preserve">
+    <value>Atn2（Value1，Value2）
+返回其切线为两个指定数字的商的角度，以弧度为单位。</value>
+  </data>
+  <data name="AtnDescription" xml:space="preserve">
+    <value>ATN（value）
+返回数字的反正切值（角度，以弧度表示，其正切值是给定的浮点表达式）。</value>
+  </data>
+  <data name="AvgAggregateDescription" xml:space="preserve">
+    <value>Avg(Value)
+评估集合中值的平均值。</value>
+  </data>
+  <data name="BCRGBDescription" xml:space="preserve">
+    <value>背景色表达式</value>
+  </data>
+  <data name="BetweenDescription" xml:space="preserve">
+    <value>Between (,)
+指定要测试的范围。 如果值大于或等于第一个操作数且小于或等于第二个操作数，则返回true。</value>
+  </data>
+  <data name="BigMulDescription" xml:space="preserve">
+    <value>BigMul(Value1, Value2)
+返回包含两个指定32位数的完整乘积的Int64。</value>
+  </data>
+  <data name="BitwiseAndDescription" xml:space="preserve">
+    <value>在两个整数值之间执行按位逻辑AND运算。</value>
+  </data>
+  <data name="BitwiseOrDescription" xml:space="preserve">
+    <value>将其第一个操作数的每个位与其第二个操作数的相应位进行比较。 如果任一位为1，则相应的结果位设置为1.否则，相应的结果位设置为0。</value>
+  </data>
+  <data name="BitwiseXorDescription" xml:space="preserve">
+    <value>对两个布尔表达式执行逻辑排除，或对两个数值表达式执行按位排除。</value>
+  </data>
+  <data name="buttonCancelText" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="buttonOKText" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="CeilingDescription" xml:space="preserve">
+    <value>Ceiling(Value)
+返回大于或等于给定数值表达式的最小整数。</value>
+  </data>
+  <data name="CharDescription" xml:space="preserve">
+    <value>Char(Number)
+将integerASCIICode转换为字符。</value>
+  </data>
+  <data name="CharIndex3ParamDescription" xml:space="preserve">
+    <value>CharIndex(String1, String2, StartLocation)
+返回String2中String1的起始位置，从StartLocation字符位置开始到字符串结尾。</value>
+  </data>
+  <data name="CharIndexDescription" xml:space="preserve">
+    <value>CharIndex(String1, String2)
+返回String2中String1的起始位置，从零字符位置开始到字符串结尾。</value>
+  </data>
+  <data name="ConcatDescription" xml:space="preserve">
+    <value>Concat(String1, ... , StringN)
+返回一个字符串值，其中包含当前字符串与任何其他字符串的串联。</value>
+  </data>
+  <data name="ConditionCaption" xml:space="preserve">
+    <value>条件表达编辑器</value>
+  </data>
+  <data name="ConditionText" xml:space="preserve">
+    <value>条件编辑器</value>
+  </data>
+  <data name="ConstantsText" xml:space="preserve">
+    <value>常量</value>
+  </data>
+  <data name="ContainsDescription" xml:space="preserve">
+    <value>Contains(String, SubString)
+如果SubString出现在String中，则返回True; 否则，返回False</value>
+  </data>
+  <data name="CosDescription" xml:space="preserve">
+    <value>Cos(Value)
+返回以弧度定义的角度的余弦值。</value>
+  </data>
+  <data name="CoshDescription" xml:space="preserve">
+    <value>Cosh(Value)
+返回以弧度定义的角度的双曲余弦值。</value>
+  </data>
+  <data name="CountAggregateDescription" xml:space="preserve">
+    <value>Count()
+返回集合中的对象数。</value>
+  </data>
+  <data name="CurrentRowIndexDescription" xml:space="preserve">
+    <value>返回数据源中当前数据行的索引。 请注意，此索引从零开始。</value>
+  </data>
+  <data name="DateDiffDayDescription" xml:space="preserve">
+    <value>DateDiffDay(startDate, endDate)
+返回两个不可为空的日期之间的日期边界数。</value>
+  </data>
+  <data name="DateDiffHourDescription" xml:space="preserve">
+    <value>DateDiffHour(startDate, endDate)
+返回两个不可为空的日期之间的小时边界数。</value>
+  </data>
+  <data name="DateDiffMilliSecondDescription" xml:space="preserve">
+    <value>DateDiffMilliSecond(startDate, endDate)
+返回两个不可为空的日期之间的毫秒边界数。</value>
+  </data>
+  <data name="DateDiffMinuteDescription" xml:space="preserve">
+    <value>DateDiffMinute(startDate, endDate)
+返回两个不可为空的日期之间的分钟边界数。</value>
+  </data>
+  <data name="DateDiffMonthDescription" xml:space="preserve">
+    <value>DateDiffMonth(startDate, endDate)
+返回两个不可为空的日期之间的月边界数。</value>
+  </data>
+  <data name="DateDiffSecondDescription" xml:space="preserve">
+    <value>DateDiffSecond(startDate, endDate)
+返回两个不可为空的日期之间的第二个边界的数量。</value>
+  </data>
+  <data name="DateDiffTickDescription" xml:space="preserve">
+    <value>DateDiffTick(startDate, endDate)
+返回两个不可为空的日期之间的刻度线边界数。</value>
+  </data>
+  <data name="DateDiffYearDescription" xml:space="preserve">
+    <value>DateDiffYear(startDate, endDate)
+返回两个不可为空的日期之间的年份边界数。</value>
+  </data>
+  <data name="DivideDescription" xml:space="preserve">
+    <value>将第一个操作数除以第二个操作数。</value>
+  </data>
+  <data name="EnableDescription" xml:space="preserve">
+    <value>控件状态表达式</value>
+  </data>
+  <data name="EndsWithDescription" xml:space="preserve">
+    <value>EndsWith(String, EndString)
+如果String的结尾与EndString匹配，则返回True; 否则，返回False。</value>
+  </data>
+  <data name="EqualDescription" xml:space="preserve">
+    <value>如果两个操作数具有相同的值，则返回true; 否则，它返回false。</value>
+  </data>
+  <data name="ExistsAggregateDescription" xml:space="preserve">
+    <value>Exists()
+确定对象是否存在于集合中。</value>
+  </data>
+  <data name="ExpDescription" xml:space="preserve">
+    <value>Exp(Value)
+返回给定float表达式的指数值。</value>
+  </data>
+  <data name="ExpressionText" xml:space="preserve">
+    <value>表达式编辑器</value>
+  </data>
+  <data name="FalseDescription" xml:space="preserve">
+    <value>bool值“false”</value>
+  </data>
+  <data name="FieldsDescriptionPrefix" xml:space="preserve">
+    <value>该字段的类型是：</value>
+  </data>
+  <data name="FieldsText" xml:space="preserve">
+    <value>字段</value>
+  </data>
+  <data name="FloorDescription" xml:space="preserve">
+    <value>Floor(Value)
+返回小于或等于给定数值表达式的最大整数。</value>
+  </data>
+  <data name="FontDescription" xml:space="preserve">
+    <value>字体表达式</value>
+  </data>
+  <data name="FormatRuleCaption" xml:space="preserve">
+    <value>格式规则表达编辑器</value>
+  </data>
+  <data name="FunctionsText" xml:space="preserve">
+    <value>函数</value>
+  </data>
+  <data name="functionsTypesPropertiesAggregateItems" xml:space="preserve">
+    <value>聚合函数类型</value>
+  </data>
+  <data name="functionsTypesPropertiesAllItems" xml:space="preserve">
+    <value>(All)</value>
+  </data>
+  <data name="functionsTypesPropertiesDateTimeItems" xml:space="preserve">
+    <value>日期类型</value>
+  </data>
+  <data name="functionsTypesPropertiesLogicalItems" xml:space="preserve">
+    <value>逻辑类型</value>
+  </data>
+  <data name="functionsTypesPropertiesMathItems" xml:space="preserve">
+    <value>数学类型</value>
+  </data>
+  <data name="functionsTypesPropertiesStringItems" xml:space="preserve">
+    <value>字符串类型</value>
+  </data>
+  <data name="GetDateDescription" xml:space="preserve">
+    <value>GetDate(DateTime)
+从定义的DateTime中提取日期。</value>
+  </data>
+  <data name="GetDayDescription" xml:space="preserve">
+    <value>GetDay(DateTime)
+从定义的DateTime中提取一天。</value>
+  </data>
+  <data name="GetDayOfWeekDescription" xml:space="preserve">
+    <value>GetDayOfWeek(DateTime)
+从定义的DateTime中提取一周中的某一天。</value>
+  </data>
+  <data name="GetDayOfYearDescription" xml:space="preserve">
+    <value>GetDayOfYear(DateTime)
+从定义的DateTime中提取一年中的一天。</value>
+  </data>
+  <data name="GetHourDescription" xml:space="preserve">
+    <value>GetHour(DateTime)
+从定义的DateTime中提取一小时。</value>
+  </data>
+  <data name="GetMilliSecondDescription" xml:space="preserve">
+    <value>GetMilliSecond(DateTime)
+从定义的DateTime中提取毫秒数。</value>
+  </data>
+  <data name="GetMinuteDescription" xml:space="preserve">
+    <value>GetMinute(DateTime)
+从定义的DateTime中提取分钟数。</value>
+  </data>
+  <data name="GetMonthDescription" xml:space="preserve">
+    <value>GetMonth(DateTime)
+从定义的DateTime中提取一个月。</value>
+  </data>
+  <data name="GetSecondDescription" xml:space="preserve">
+    <value>GetSecond(DateTime)
+从定义的DateTime中提取秒数。</value>
+  </data>
+  <data name="GetTimeOfDayDescription" xml:space="preserve">
+    <value>GetTimeOfDay(DateTime)
+从定义的DateTime以刻度中提取一天中的时间。</value>
+  </data>
+  <data name="GetYearDescription" xml:space="preserve">
+    <value>GetYear(DateTime)
+从定义的DateTime中提取一年。</value>
+  </data>
+  <data name="GreaterDescription" xml:space="preserve">
+    <value>大于操作符</value>
+  </data>
+  <data name="GreaterOrEqualDescription" xml:space="preserve">
+    <value>大于或者等于</value>
+  </data>
+  <data name="GridFieldsDescriptionPrefix" xml:space="preserve">
+    <value>字段信息
+标题：{1}
+该字段的类型为：{2}</value>
+  </data>
+  <data name="IifDescription" xml:space="preserve">
+    <value>Iif（Expression，TruePart，FalsePart）
+返回TruePart或FalsePart，具体取决于布尔表达式的计算结果。</value>
+  </data>
+  <data name="InDescription" xml:space="preserve">
+    <value>In (,,,)
+测试对象中是否存在属性。</value>
+  </data>
+  <data name="InsertDescription" xml:space="preserve">
+    <value>Insert(String1, StartPosition, String2)
+在StartPositon指定的位置将String2插入String1</value>
+  </data>
+  <data name="IsNullDescription" xml:space="preserve">
+    <value>IsNull(Value)
+Returns True if the specified Value is NULL.</value>
+  </data>
+  <data name="IsNullOrEmptyDescription" xml:space="preserve">
+    <value>IsNullOrEmpty(String)
+如果指定的String对象为NULL或空字符串，则返回True; 否则，返回False。</value>
+  </data>
+  <data name="IsThisMonthDescription" xml:space="preserve">
+    <value>IsThisMonth(DateTime)
+如果指定的日期在当前月份内，则返回True。</value>
+  </data>
+  <data name="IsThisWeekDescription" xml:space="preserve">
+    <value>IsThisWeek(DateTime)
+如果指定的日期在当前周内，则返回True。</value>
+  </data>
+  <data name="IsThisYearDescription" xml:space="preserve">
+    <value>IsThisYear(DateTime)
+如果指定的日期在当前年份内，则返回True。</value>
+  </data>
+  <data name="LenDescription" xml:space="preserve">
+    <value>Len(Value)
+返回一个整数，该整数包含字符串中的字符数或存储变量所需的标称字节数。</value>
+  </data>
+  <data name="LessDescription" xml:space="preserve">
+    <value>不到运营商。 用于比较表达式。</value>
+  </data>
+  <data name="LessOrEqualDescription" xml:space="preserve">
+    <value>小于或等于运营商。 用于比较表达式。</value>
+  </data>
+  <data name="LikeDescription" xml:space="preserve">
+    <value>将字符串与模式进行比较。 如果字符串的值与模式匹配，则结果为true。 如果字符串与模式不匹配，则结果为false。 如果string和pattern都是空字符串，则结果为true。</value>
+  </data>
+  <data name="LocalDateTimeDayAfterTomorrowDescription" xml:space="preserve">
+    <value>LocalDateTimeDayAfterTomorrow()
+返回与明天之后的日期对应的日期时间值。</value>
+  </data>
+  <data name="LocalDateTimeLastWeekDescription" xml:space="preserve">
+    <value>LocalDateTimeLastWeek()
+返回与上一周的第一天相对应的日期时间值。</value>
+  </data>
+  <data name="LocalDateTimeNextMonthDescription" xml:space="preserve">
+    <value>LocalDateTimeNextMonth()
+返回与下个月第一天对应的日期时间值。</value>
+  </data>
+  <data name="LocalDateTimeNextWeekDescription" xml:space="preserve">
+    <value>LocalDateTimeNextWeek()
+返回与下一周的第一天相对应的日期时间值。</value>
+  </data>
+  <data name="LocalDateTimeNextYearDescription" xml:space="preserve">
+    <value>LocalDateTimeNextYear()
+返回与下一年的第一天相对应的日期时间值。</value>
+  </data>
+  <data name="LocalDateTimeNowDescription" xml:space="preserve">
+    <value>LocalDateTimeNow()
+返回与当前时刻对应的日期时间值。</value>
+  </data>
+  <data name="LocalDateTimeThisMonthDescription" xml:space="preserve">
+    <value>LocalDateTimeThisMonth()
+返回与当前月份的第一天相对应的日期时间值。</value>
+  </data>
+  <data name="LocalDateTimeThisWeekDescription" xml:space="preserve">
+    <value>LocalDateTimeThisWeek()
+返回与当前周的第一天相对应的日期时间值。</value>
+  </data>
+  <data name="LocalDateTimeThisYearDescription" xml:space="preserve">
+    <value>LocalDateTimeThisYear()
+返回与当前年份的第一天相对应的日期时间值。</value>
+  </data>
+  <data name="LocalDateTimeTodayDescription" xml:space="preserve">
+    <value>LocalDateTimeToday()
+返回与Today相对应的日期时间值。</value>
+  </data>
+  <data name="LocalDateTimeTomorrowDescription" xml:space="preserve">
+    <value>LocalDateTimeTomorrow()
+返回与Tomorrow对应的日期时间值。</value>
+  </data>
+  <data name="LocalDateTimeTwoWeeksAwayDescription" xml:space="preserve">
+    <value>LocalDateTimeTwoWeeksAway()
+返回与下周之后的第一天相对应的日期时间值。</value>
+  </data>
+  <data name="LocalDateTimeYesterdayDescription" xml:space="preserve">
+    <value>LocalDateTimeYesterday()
+返回与Yesterday对应的日期时间值。</value>
+  </data>
+  <data name="Log10Description" xml:space="preserve">
+    <value>Log10(Value)
+返回指定数字的基数10对数。</value>
+  </data>
+  <data name="Log2ParamDescription" xml:space="preserve">
+    <value>Log(Value, Base)
+返回指定Base中指定数字的对数。</value>
+  </data>
+  <data name="LogDescription" xml:space="preserve">
+    <value>Log(Value)
+返回指定数字的自然对数。</value>
+  </data>
+  <data name="LowerDescription" xml:space="preserve">
+    <value>转化为小写</value>
+  </data>
+  <data name="MaxAggregateDescription" xml:space="preserve">
+    <value>获取集合中的最大值</value>
+  </data>
+  <data name="MaxDescription" xml:space="preserve">
+    <value>包含两个参数，获取最大值</value>
+  </data>
+  <data name="MinAggregateDescription" xml:space="preserve">
+    <value>获取集合中最小值</value>
+  </data>
+  <data name="MinDescription" xml:space="preserve">
+    <value>包含两个参数，获取最小值</value>
+  </data>
+  <data name="MinusDescription" xml:space="preserve">
+    <value>找出两个数字之间的差异。</value>
+  </data>
+  <data name="ModuloDescription" xml:space="preserve">
+    <value>返回通过将一个数值表达式除以另一个数值表达式获得的余数（模数</value>
+  </data>
+  <data name="MultiplyDescription" xml:space="preserve">
+    <value>将两个表达式的值相乘。</value>
+  </data>
+  <data name="NoneEmptyDescription" xml:space="preserve">
+    <value>非空表达式</value>
+  </data>
+  <data name="NotDescription" xml:space="preserve">
+    <value>对表达式执行逻辑否定。</value>
+  </data>
+  <data name="NotEqualDescription" xml:space="preserve">
+    <value>如果操作数不具有相同的值，则返回true;否则返回true。 否则，它返回false。</value>
+  </data>
+  <data name="NowDescription" xml:space="preserve">
+    <value>Now()
+返回当前系统日期和时间。</value>
+  </data>
+  <data name="NullDescription" xml:space="preserve">
+    <value>表示空引用，不引用任何对象。</value>
+  </data>
+  <data name="OperatorsText" xml:space="preserve">
+    <value>运算操作符</value>
+  </data>
+  <data name="OrDescription" xml:space="preserve">
+    <value>对两个布尔表达式执行逻辑析取。</value>
+  </data>
+  <data name="PadLeft3ParamDescription" xml:space="preserve">
+    <value>PadLeft(String, Length, Char)
+左对齐定义的字符串中的字符，将其左侧的指定字符填充到指定的总长度。</value>
+  </data>
+  <data name="PadLeftDescription" xml:space="preserve">
+    <value>PadLeft(String, Length)
+左对齐定义的字符串中的字符，在其左侧填充空白字符，直到指定的总长度。</value>
+  </data>
+  <data name="PadRight3ParamDescription" xml:space="preserve">
+    <value>PadRight(String, Length, Char)
+右对齐定义的字符串中的字符，将其左侧的指定字符填充到指定的总长度。</value>
+  </data>
+  <data name="PadRightDescription" xml:space="preserve">
+    <value>PadRight(String, Length)
+右对齐定义的字符串中的字符，在其左侧填充空白字符，直到指定的总长度。</value>
+  </data>
+  <data name="ParametersDescriptionPrefix" xml:space="preserve">
+    <value>此参数的类型是：</value>
+  </data>
+  <data name="ParametersText" xml:space="preserve">
+    <value>参数</value>
+  </data>
+  <data name="PlusDescription" xml:space="preserve">
+    <value>将一个数值表达式的值添加到另一个数字表达式，或者连接两个字符串。</value>
+  </data>
+  <data name="PowerDescription" xml:space="preserve">
+    <value>Power(Value, Power)
+返回指定的数字，增加到指定的功率。</value>
+  </data>
+  <data name="Remove2ParamDescription" xml:space="preserve">
+    <value>Remove(String, StartPosition)
+从指定位置开始删除此实例中的所有字符。</value>
+  </data>
+  <data name="Remove3ParamDescription" xml:space="preserve">
+    <value>Remove(String, StartPosition, Length)
+从指定位置开始，从此实例中删除指定数量的字符。</value>
+  </data>
+  <data name="ReplaceDescription" xml:space="preserve">
+    <value>Replace(String, SubString2, String3)
+返回String1的副本，其中SubString2已替换为String3。</value>
+  </data>
+  <data name="ReverseDescription" xml:space="preserve">
+    <value>Reverse(String)
+反转字符串中元素的顺序。</value>
+  </data>
+  <data name="RGBDescription" xml:space="preserve">
+    <value>前景色表达式</value>
+  </data>
+  <data name="RndDescription" xml:space="preserve">
+    <value>Rnd()
+返回小于1但大于或等于零的随机数。</value>
+  </data>
+  <data name="Round2ParamDescription" xml:space="preserve">
+    <value>Round(Value, Precision)
+将给定值舍入为最接近的整数或指定的小数位数。</value>
+  </data>
+  <data name="RoundDescription" xml:space="preserve">
+    <value>Round(Value)
+将给定值舍入为最接近的整数。</value>
+  </data>
+  <data name="RowCountDescription" xml:space="preserve">
+    <value>返回数据源中的数据行总量。</value>
+  </data>
+  <data name="SignDescription" xml:space="preserve">
+    <value>Sign(Value)
+返回给定表达式的正（+1），零（0）或负（-1）符号。</value>
+  </data>
+  <data name="SinDescription" xml:space="preserve">
+    <value>Sin(Value)
+返回以弧度定义的角度的正弦值。</value>
+  </data>
+  <data name="SingleAggregateDescription" xml:space="preserve">
+    <value>Single()
+从集合中返回单个对象。</value>
+  </data>
+  <data name="SinhDescription" xml:space="preserve">
+    <value>Sinh(Value)
+返回以弧度定义的角度的双曲正弦值。</value>
+  </data>
+  <data name="SqrDescription" xml:space="preserve">
+    <value>Sqr(Value)
+返回给定数字的平方根。</value>
+  </data>
+  <data name="StartsWithDescription" xml:space="preserve">
+    <value>第一个参数是字符串，第二个目标字符串，判断是否以第二个参数开始的字符串，如果是则为true,否则false</value>
+  </data>
+  <data name="Substring2paramDescription" xml:space="preserve">
+    <value>Substring(String, StartPosition)
+从String中检索子字符串。 子字符串从StartPosition开始。</value>
+  </data>
+  <data name="Substring3paramDescription" xml:space="preserve">
+    <value>Substring(String, StartPosition, Length)
+从String中检索子字符串。 子字符串从StartPosition开始并具有指定的Length。</value>
+  </data>
+  <data name="SumAggregateDescription" xml:space="preserve">
+    <value>Sum(Value)
+返回集合中所有表达式值的总和。</value>
+  </data>
+  <data name="TanDescription" xml:space="preserve">
+    <value>Tan(Value)
+返回以弧度定义的角度的正切值。</value>
+  </data>
+  <data name="TanhDescription" xml:space="preserve">
+    <value>Tanh(Value)
+返回以弧度定义的角度的双曲正切值。</value>
+  </data>
+  <data name="TodayDescription" xml:space="preserve">
+    <value>Today()
+返回当前日期。 无论实际时间如何，此函数都会返回当前日期的午夜。</value>
+  </data>
+  <data name="ToDecimalDescription" xml:space="preserve">
+    <value>转化为金钱类型</value>
+  </data>
+  <data name="ToDoubleDescription" xml:space="preserve">
+    <value>转化为双精度浮点</value>
+  </data>
+  <data name="ToFloatDescription" xml:space="preserve">
+    <value>转化为单精度浮点</value>
+  </data>
+  <data name="ToIntDescription" xml:space="preserve">
+    <value>转化为整型</value>
+  </data>
+  <data name="ToLongDescription" xml:space="preserve">
+    <value>转化为长整型</value>
+  </data>
+  <data name="ToStrDescription" xml:space="preserve">
+    <value>转化为字符串</value>
+  </data>
+  <data name="TrimDescription" xml:space="preserve">
+    <value>去空格</value>
+  </data>
+  <data name="TrueDescription" xml:space="preserve">
+    <value>bool值“true”</value>
+  </data>
+  <data name="UnboundColumnCaption" xml:space="preserve">
+    <value>非绑定列名称</value>
+  </data>
+  <data name="UpperDescription" xml:space="preserve">
+    <value>转化为大写</value>
+  </data>
+  <data name="UtcNowDescription" xml:space="preserve">
+    <value>UtcNow()
+Returns the current system date and time, expressed as Coordinated Universal Time (UTC).</value>
+  </data>
+  <data name="ValidateDescription" xml:space="preserve">
+    <value>验证数据表达式</value>
+  </data>
+  <data name="VariablesText" xml:space="preserve">
+    <value>变量</value>
+  </data>
+  <data name="ColumnText" xml:space="preserve">
+    <value>列名称</value>
+  </data>
+</root>

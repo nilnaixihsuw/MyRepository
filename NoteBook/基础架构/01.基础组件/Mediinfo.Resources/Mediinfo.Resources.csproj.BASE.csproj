@@ -1,0 +1,1628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ACB52FD6-C4FD-4D2A-846E-2B1CB750AA05}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediinfo.Resources</RootNamespace>
+    <AssemblyName>Mediinfo.Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\AssemblyCore\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>..\..\AssemblyCore\Mediinfo.Utility.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Public\Operation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Operation.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Payment.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public\Exhibition\Mark.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Mark.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Exhibition\Personal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Personal.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Exhibition\Pic.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pic.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Public\Operation.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Operation.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Payment.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\Exhibition\Mark.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mark.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\Exhibition\Personal.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Personal.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\Exhibition\Pic.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Pic.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\bg02.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment\xkhf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment\电子账户.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment\电子账户_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment\结算单.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment\微信.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment\微信_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment\现金.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment\现金_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\_description.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\add_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\add_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\applyicon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\arrow_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\arrow_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\arrow0001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\arrow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\arrow1hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\arrow1no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\arrow0002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\arrow2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\arrow2hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\arrow2no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\arrow003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\arrow004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\Arrow-Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\batch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\bh01_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\bh02_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\bingli_binglimoban.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\bingli_lishibingli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\bingli_xinzeng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\bingli_yuyin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\binglidayin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\binglidayinhover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\bingquhushizhan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\bqqs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\button_blue02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\button_blue02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\button_gray01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\button_gray02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\button_gray02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\chufangdayin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\chufangdayinhover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\chufangicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\close_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\close_small_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\closedloopicon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\cross_circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\cross_circle_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\daozhendandayin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\daozhendandayinhover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\daozhendanicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\date_next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\date_next_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\date_pre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\date_pre_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\dayin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\duka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\duka01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\duka02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\dukahover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\dukajs01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\dukajs02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\expand_1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\expended.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\first.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\first_Unable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\fuzhenyuyue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\fuzhenyuyuehover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\gongyingshiguanli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\Grid_Added.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\guahaoshoufei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\header_bingrenpinggu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\header_bingrenxinxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\header_chuangkou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\header_chuangkou_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\header_doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\header_doctor_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\header_guanbi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\header_guanbi_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\header_xiala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\header_xiala_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\header_xiaoxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\header_xiaoxi_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\header_zuidahua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\header_zuidahua_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\header_zuixiaohua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\header_zuixiaohua_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\homepage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\homepage_disable .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\homepage_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\huliguanli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\ico_dateEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon_card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon_chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon_daoru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon_rili.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon_shenSuo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon001 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon-changyongyu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon-cyly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon-daoru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon-edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon-fangda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon-gengduocaozuo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon-huizong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon-kongchuang2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon-search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\iconsetting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon-suoxiao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon-tingzhu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon-yujiesuan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon-yujing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon历史病历.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon清空.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\icon语音.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\invalidicon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\jiachayuyue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\jianchayuyuehover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\jieshu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\jiesuan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\jiesuan_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\jiesuanicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\jiuzhenka001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\jiuzhenka002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\jixiaotongji.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\jizhenhushizhan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\jizhenyishengzhan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\jkk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\kuaisujd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\kuaisujdhover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\last_unable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\lastpage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\lastpage_disable .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\lastpage_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\ls.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\mazuiguanli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\moveBottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\moveBottom_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\moveDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\moveDown_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\moveTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\moveTop_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\moveUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\moveUp_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\mp001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\newadd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\newadd_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\next_unable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\nextpage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\nextpage_disable .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\nextpage_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\nextweek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\nextweekhover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\other.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\other_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\pagination_first.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\pagination_first_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\pagination_first_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\pagination_last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\pagination_last_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\pagination_last_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\pagination_next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\pagination_next_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\pagination_next_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\pagination_previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\pagination_previous_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\pagination_previous_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\paiduijiaohao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\perviouspage_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\popwin_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\popwin_submit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\popwindow_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\prev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\prev_Unable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\previouspage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\previouspage_disable .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\preweek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\preweekhover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\quanbudayin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\quanbudayinhover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\quntisj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\quntisjhover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\quxiao001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\quxiaotihuan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\refuseicon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\refuseicon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\replace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\saoma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\saomahover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\search_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\sfxm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\shoushuguanli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\shrink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\shualian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\shualian01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\shualian02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\shualianhover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\shualianjs01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\shualianjs02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\shuama01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\shuama02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\shuamajs01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\shuamajs02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\shuyeguanli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\ssapicon05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\step01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\step01_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\step002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\step002_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\sxjy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\tem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\tingzhi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\xgjl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\xiaoxiguanli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\xinxijichengpingtai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\xinzeng.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\yibaoxitong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\yichanzb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\yijiguanli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\yingyangshanshi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\ynzh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\yp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\yuyue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\yuyue_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\yw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\zeqi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\zifei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\zjjs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\zlb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\zlb_del01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\zlb_del02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\zlb_sm01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\zlb_sm02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\zlb_yddk01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\zlb_yddk02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\zlb_ydsm01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\zlb_ydsm02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\zxmx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\zzd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\报告单.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\报告单hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\编辑.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\病历打印.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\病人列表icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\采集.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\草药处方.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\草药处方hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\产科病历.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\产科病历hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\成药处方.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\成药处方hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\处方.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\处方打印.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\单项模板.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\导入产科病历.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\导入产科病历hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\导入口腔病历.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\导入口腔病历hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\导入组套.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\导入组套hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\导诊单打印.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\发药明细.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\发药明细gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\复诊预约.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\复诊预约hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\检查开单.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\检查开单hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\检查预约.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\检查预约hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\检查预约补打印.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\检查预约打印.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\检验开单.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\检验开单hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\口腔病历.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\口腔病历hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\历史.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\历史hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\历史病历.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\历史病历hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\排班.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\全部打印.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\删除.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\收费项目.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\收费项目gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\刷新.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\特殊处方打印.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\西成处方.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\西成处方hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\西药处方.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\西药处方hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\支付宝.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\支付宝_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\执行明细.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\执行明细gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\治疗开单.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\治疗开单hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\组套.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Operation\组套hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\adl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\allergy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\anaphylaxis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\b_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\b_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\b_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\b_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\beixue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\biguang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\bitian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\cash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\changeNumber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\changqi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\checkbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\chuguo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\cp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\daiyao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\dot_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\emergency.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\EmptyBed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\falldown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\falldown-di.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\falldownred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\geli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\header_mediinfologo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\header_xiaoxiredbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\icon_GMP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\icon_OTC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\icon_购.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\icon_门.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\icon_免.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\icon_停.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\icon_赠.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\icon_账.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\icon_招.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\icon_住.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\icon-360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\iconsx-baby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\iconsx-CP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\iconsx-huanzhexinxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\iconsx-jingmaipei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\iconsx-lvsetongdao %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\iconsx-lvsetongdao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\iconsx-yejian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\iconsx-yi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\iconsx-zhuan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\iconsx-zifei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\infection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\isolation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\ji.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\jinxingzhong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\jizhen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\lALPDgQ9rJpnlt8YDw_15_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\Lan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\level_one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\level_super.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\level_three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\level_two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\liu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\liuKP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\mazuihuizhen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\multiple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\num001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\num002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\num003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\num004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\num005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\num006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\operation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\owe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\qiang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\qiangKP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\s_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\s_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\s_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\s_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\serious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\smk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\specail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\title_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\wugeli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\xianqi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\yibao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\yztype-qita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\yztype-yaopin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\yztype-yaopin-zu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\yztype-yaopin-zu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\yztype-zhiliao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\zddr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\zhu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\zibei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌_ADL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌_病危.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌_病重.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌_跌倒.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌_二级护理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌_高温病人.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌_隔离病人.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌_过敏.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌_三级护理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌_手术病人.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌_特级护理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌_疼痛.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌_新病人.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌_新医嘱.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌_压疮.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌_一级护理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\床位牌icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\多耐.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\红点.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\候诊.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\候诊table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\候诊超时.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\候诊超时table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\急诊医嘱.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\接诊.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\接诊table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\静脉配.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\麻醉会诊.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\脉搏.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\群伤.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\收缩压.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\首次手术.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\舒张压.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\他科医嘱.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\体温.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\未分诊.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\未分诊table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\未审核.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\未做.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\无隔离.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\血糖.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\夜间医嘱.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\已启动.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\已审核.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\已诊.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\已诊table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\已做.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\婴.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\择期.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\自费.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Personal\baby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Personal\baby_nan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Personal\baby_nv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Personal\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Personal\maternal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Personal\woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\bg01.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\bg-hlrw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\bingli_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\caiwuchaxun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\changyongicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\crb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\head.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\icon_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\icon_success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\icon_warn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\keishiicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\kongye_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\kongyemian_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\Loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\login_bg%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\login_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\login_bg_halo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\logo16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\logo20.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\pishi_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\reportView.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\shijian-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\tip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\tishi-kong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\tishi-xuanzhe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\yiwen_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\yxls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\床位情况_边框.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\床位情况_提示较空.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\床位情况_提示较满.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\床位情况_提示已满.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\挂号日报tip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\锁屏bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Pic\医生签名DBA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\morenzt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xuanzhongzt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\已收费.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\输液终止.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public\Exhibition\Mark\倒计时.png" />
+    <None Include="Resources\Public\Exhibition\Mark\反馈.png" />
+    <Content Include="Resources\Public\Exhibition\Mark\已完成.png" />
+    <Content Include="Resources\Public\Exhibition\Mark\待输液.png" />
+    <Content Include="Resources\Public\Exhibition\Mark\输液中.png" />
+    <Content Include="Resources\Public\Exhibition\Mark\输液终止.png" />
+    <Content Include="Resources\Public\Exhibition\Mark\选中卡片.png" />
+    <Content Include="Resources\Public\Exhibition\Mark\选座icon.png" />
+    <Content Include="Resources\Public\Exhibition\Mark\重新计时.png" />
+    <Content Include="Resources\开始.png" />
+    <Content Include="Resources\终止.png" />
+    <Content Include="Resources\结束.png" />
+    <None Include="Resources\yb_border.png" />
+    <None Include="Resources\swich_border_right.png" />
+    <None Include="Resources\swich_border_left.png" />
+    <None Include="Resources\swich_blue_right.png" />
+    <None Include="Resources\swich_blue_left.png" />
+    <None Include="Resources\sate_bg_diable.png" />
+    <None Include="Resources\sate_bg_checked.png" />
+    <None Include="Resources\sate_bg_border.png" />
+    <None Include="Resources\选座icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0148A6D2-BC3A-4E1C-955C-0EBD9A5C27EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Mediinfo.WinForm.HIS.Update</RootNamespace>
+    <AssemblyName>Mediinfo.WinForm.HIS.Update</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\AssemblyClient\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>logo64.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Circle.cs" />
+    <Compile Include="ComHelper.cs" />
+    <Compile Include="CRC32.cs" />
+    <Compile Include="DESHelper.cs" />
+    <Compile Include="EncryptionAlgorithm.cs" />
+    <Compile Include="Events.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="ExtractExistingFileAction.cs" />
+    <Compile Include="FileSelector.cs" />
+    <Compile Include="FTPConfigFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTPConfigFrm.designer.cs">
+      <DependentUpon>FTPConfigFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTPHelper.cs" />
+    <Compile Include="HISClientHelper.cs" />
+    <Compile Include="HISClientSetting.cs" />
+    <Compile Include="HISGlobalHelper.cs" />
+    <Compile Include="HISGlobalSetting.cs" />
+    <Compile Include="HISSetting.cs" />
+    <Compile Include="HttpConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HttpConfig.Designer.cs">
+      <DependentUpon>HttpConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HTTPHelper.cs" />
+    <Compile Include="LogHelper.cs" />
+    <Compile Include="MediinfoConfig.cs" />
+    <Compile Include="MediInfoUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediInfoUpdate.Designer.cs">
+      <DependentUpon>MediInfoUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediinfoUpdateMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediinfoUpdateMainForm.Designer.cs">
+      <DependentUpon>MediinfoUpdateMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediProgressBarControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediWaitCircleControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OffsetStream.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\CommandLineSelfExtractorStub.cs" />
+    <Compile Include="Resources\FolderBrowserDialogEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\PasswordDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\PasswordDialog.Designer.cs">
+      <DependentUpon>PasswordDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\WinFormsSelfExtractorStub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\WinFormsSelfExtractorStub.Designer.cs">
+      <DependentUpon>WinFormsSelfExtractorStub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ZipContentsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\ZipContentsDialog.Designer.cs">
+      <DependentUpon>ZipContentsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shared.cs" />
+    <Compile Include="SharpZipBaseException.cs" />
+    <Compile Include="UpdateCommonHelper.cs" />
+    <Compile Include="WindowsServiceHelper.cs" />
+    <Compile Include="WinZipAes.cs" />
+    <Compile Include="ZipConstants.cs" />
+    <Compile Include="ZipCrypto.cs" />
+    <Compile Include="ZipDirEntry.cs" />
+    <Compile Include="ZipEntry.cs" />
+    <Compile Include="ZipEntry.Extract.cs" />
+    <Compile Include="ZipEntry.Read.cs" />
+    <Compile Include="ZipEntry.Write.cs" />
+    <Compile Include="ZipEntrySource.cs" />
+    <Compile Include="ZipErrorAction.cs" />
+    <Compile Include="ZipFile.AddUpdate.cs" />
+    <Compile Include="ZipFile.Check.cs" />
+    <Compile Include="ZipFile.cs" />
+    <Compile Include="ZipFile.Events.cs" />
+    <Compile Include="ZipFile.Extract.cs" />
+    <Compile Include="ZipFile.Read.cs" />
+    <Compile Include="ZipFile.Save.cs" />
+    <Compile Include="ZipFile.SaveSelfExtractor.cs" />
+    <Compile Include="ZipFile.Selector.cs" />
+    <Compile Include="ZipFile.x-IEnumerable.cs" />
+    <Compile Include="ZipInputStream.cs" />
+    <Compile Include="ZipOutputStream.cs" />
+    <Compile Include="ZipSegmentedStream.cs" />
+    <Compile Include="Zlib\Deflate.cs" />
+    <Compile Include="Zlib\DeflateStream.cs" />
+    <Compile Include="Zlib\GZipStream.cs" />
+    <Compile Include="Zlib\Inflate.cs" />
+    <Compile Include="Zlib\InfTree.cs" />
+    <Compile Include="Zlib\ParallelDeflateOutputStream.cs" />
+    <Compile Include="Zlib\Tree.cs" />
+    <Compile Include="Zlib\Zlib.cs" />
+    <Compile Include="Zlib\ZlibBaseStream.cs" />
+    <Compile Include="Zlib\ZlibCodec.cs" />
+    <Compile Include="Zlib\ZlibConstants.cs" />
+    <Compile Include="Zlib\ZlibStream.cs" />
+    <EmbeddedResource Include="FTPConfigFrm.resx">
+      <DependentUpon>FTPConfigFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HttpConfig.resx">
+      <DependentUpon>HttpConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediInfoUpdate.resx">
+      <DependentUpon>MediInfoUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediinfoUpdateMainForm.resx">
+      <DependentUpon>MediinfoUpdateMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\PasswordDialog.resx">
+      <DependentUpon>PasswordDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\WinFormsSelfExtractorStub.resx">
+      <DependentUpon>WinFormsSelfExtractorStub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ZipContentsDialog.resx">
+      <DependentUpon>ZipContentsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\zippedResources.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="16.ico" />
+    <Content Include="32.ico" />
+    <Content Include="logo64.ico" />
+    <Content Include="msbuild.flymake.xml" />
+    <None Include="Resources\32.ico" />
+    <None Include="Resources\login_up_bg.png" />
+    <Content Include="Resources\zippedFile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BZip2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,13 @@
+{
+	"sln_name": "jcjg",
+	"server_package_name": "AssemblyServer_JCJG",
+	"client_package_name": "AssemblyClient_JCJG",
+	"package_path": "开发库",
+	"ftp_server": true,
+	"ftp_client": true,
+	"isMainProgram": true,
+	"pullAnyServer": "",
+	"pullAnyClient": "",
+	"publishDllToServer": "",
+	"publishDllToClient": "Mediinfo.ServiceProxy.JCJG.GongYong.dll"	
+}

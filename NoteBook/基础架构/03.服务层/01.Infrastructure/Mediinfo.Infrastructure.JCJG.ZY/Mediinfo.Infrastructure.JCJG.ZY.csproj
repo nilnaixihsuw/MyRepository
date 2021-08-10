@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9461BE6D-19AE-4333-AF5C-FA04959EDE14}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediinfo.Infrastructure.JCJG.ZY</RootNamespace>
+    <AssemblyName>Mediinfo.Infrastructure.JCJG.ZY</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\AssemblyServer\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ZY_YINGERXX\ZY_YINGERXXRepository.cs" />
+    <Compile Include="ZY_YINGERXX\ZY_YINGERXXEntityConfiguration.cs" />
+    <Compile Include="ZY_BINGRENXX\ZY_BINGRENXXEntityConfiguration.cs" />
+    <Compile Include="ZY_BINGRENXX\ZY_BINGRENXXRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\01.基础组件\Mediinfo.Enterprise\Mediinfo.Enterprise.csproj">
+      <Project>{d207fda6-9f22-4a8a-96be-291898abdb1a}</Project>
+      <Name>Mediinfo.Enterprise</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\02.DTO\Mediinfo.DTO.Core\Mediinfo.DTO.Core.csproj">
+      <Project>{F6BA3E59-17EA-4B55-95D5-02487E6797F2}</Project>
+      <Name>Mediinfo.DTO.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\00.Core\Mediinfo.Infrastructure.Core\Mediinfo.Infrastructure.Core.csproj">
+      <Project>{1e3da3ef-fcf8-4392-9b9e-0fbb2cab8550}</Project>
+      <Name>Mediinfo.Infrastructure.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02.Domain\Mediinfo.Domain.JCJG.GY\Mediinfo.Domain.JCJG.GY.csproj">
+      <Project>{57dab894-0d9b-4298-ba9f-92545a0f9570}</Project>
+      <Name>Mediinfo.Domain.JCJG.GY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02.Domain\Mediinfo.Domain.JCJG.ZY\Mediinfo.Domain.JCJG.ZY.csproj">
+      <Project>{A4622141-DEE9-43C2-9520-6DB548C92DC8}</Project>
+      <Name>Mediinfo.Domain.JCJG.ZY</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <!--RabbitMQ集群IP列表，以逗号分隔-->
+  <hostnames>172.19.20.72,172.19.20.73,172.19.20.74</hostnames>
+
+  <!--RabbitMQ用户名-->
+  <username>administrator</username>
+
+  <!--RabbitMQ密码-->
+  <password>123456</password>
+</config>

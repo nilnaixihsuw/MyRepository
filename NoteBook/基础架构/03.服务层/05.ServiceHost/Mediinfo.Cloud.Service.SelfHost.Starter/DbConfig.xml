@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <!-- HIS6数据库连接 -->
+  <HIS6>Data Source= (DESCRIPTION =     (ADDRESS_LIST =       (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.1.159)(PORT = 1521))     )     (CONNECT_DATA =       (SERVICE_NAME = orcl)     )   );User ID=HIS6;Password=HIS6;Min Pool Size=10;Max Pool Size=50;Connection Timeout=60;Connection Lifetime=120;Incr Pool Size=5;Decr Pool Size=2;</HIS6>
+
+  <!-- HIS6刷新缓存数据库连接 -->
+  <HIS6HC>Data Source= (DESCRIPTION =     (ADDRESS_LIST =       (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.1.159)(PORT = 1521))     )     (CONNECT_DATA =       (SERVICE_NAME = orcl)     )   );User ID=HIS6;Password=HIS6;Min Pool Size=0;Max Pool Size=3;Connection Timeout=60;Connection Lifetime=120;Incr Pool Size=5;Decr Pool Size=2;</HIS6HC>
+
+  <!-- 云平台数据库 -->
+  <Cloud>Data Source= (DESCRIPTION =     (ADDRESS_LIST =       (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.1.159)(PORT = 1521))     )     (CONNECT_DATA =       (SERVICE_NAME = orcl)     )   );User ID=HIS6;Password=HIS6;Min Pool Size=0;Max Pool Size=10;Connection Timeout=60;Connection Lifetime=120;Incr Pool Size=5;Decr Pool Size=2;</Cloud>
+
+  <!-- HIS1数据库连接 -->
+  <HIS1>Data Source= (DESCRIPTION =     (ADDRESS_LIST =       (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.1.159)(PORT = 1521))     )     (CONNECT_DATA =       (SERVICE_NAME = orcl)     )   );User ID=HIS1;Password=HIS1;Min Pool Size=0;Max Pool Size=10;Connection Timeout=60;Connection Lifetime=120;Incr Pool Size=5;Decr Pool Size=2;</HIS1>
+
+  <!-- 医保数据库连接 -->
+  <YB>Data Source= (DESCRIPTION =     (ADDRESS_LIST =       (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.1.159)(PORT = 1521))     )     (CONNECT_DATA =       (SERVICE_NAME = orcl)     )   );User ID=SIIM;Password=SIIM;Min Pool Size=0;Max Pool Size=10;Connection Timeout=60;Connection Lifetime=120;Incr Pool Size=5;Decr Pool Size=2;</YB>
+
+  <!-- LIS数据库连接 -->
+  <LIS>Data Source= (DESCRIPTION =     (ADDRESS_LIST =       (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.1.159)(PORT = 1521))     )     (CONNECT_DATA =       (SERVICE_NAME = orcl)     )   );User ID=HIS6;Password=HIS6;Min Pool Size=0;Max Pool Size=10;Connection Timeout=60;Connection Lifetime=120;Incr Pool Size=5;Decr Pool Size=2;</LIS>
+
+  <!-- BA数据库连接 -->
+  <BA>Data Source= (DESCRIPTION =     (ADDRESS_LIST =       (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.1.159)(PORT = 1521))     )     (CONNECT_DATA =       (SERVICE_NAME = orcl)     )   );User ID=bajk;Password=bajk;Min Pool Size=0;Max Pool Size=10;Connection Timeout=60;Connection Lifetime=120;Incr Pool Size=5;Decr Pool Size=2;</BA>
+
+  <!-- 血液数据库连接 -->
+  <XY>Data Source= (DESCRIPTION =     (ADDRESS_LIST =       (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.1.159)(PORT = 1521))     )     (CONNECT_DATA =       (SERVICE_NAME = orcl)     )   );User ID=xueye;Password=xueye;Min Pool Size=0;Max Pool Size=10;Connection Timeout=60;Connection Lifetime=120;Incr Pool Size=5;Decr Pool Size=2;</XY>
+</config>

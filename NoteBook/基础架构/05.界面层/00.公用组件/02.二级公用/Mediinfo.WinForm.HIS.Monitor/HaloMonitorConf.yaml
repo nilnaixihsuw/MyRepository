@@ -1,0 +1,14 @@
+﻿monitorinfo:
+  ApplicationMode: Cleint  # Cleint--客户端 Server--服务端
+  writeinterval: 3000 #写日志时间间隔
+  readinterval: 5000  #读日志时间间隔
+  clientMaxThreadCount: 100  #客户端最大线程数，超过预警提示
+  serverMaxThreadCount: 100  #服务端最大线程数限制，超过预警限制
+  clientMaxMemorySize: 1024  #客户端最大内存限制，超过预警
+  serverMaxMemorySize: 1024  #服务端最大内存限制，超过预警
+  IP: 127.0.0.1   #ip地址
+  processinfo:
+    - Mediinfo.Cloud.Service.SelfHost.Starter #监控进程1
+    - Mediinfo.WinForm.HIS.Starter  #监控进程2
+    - Mediinfo.WinForm.HIS.Update  #监控进程3
+    - Mediinfo.WinForm.HIS.Main    #监控进程4

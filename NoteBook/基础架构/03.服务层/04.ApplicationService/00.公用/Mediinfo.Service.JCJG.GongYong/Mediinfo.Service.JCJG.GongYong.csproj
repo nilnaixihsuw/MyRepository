@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08500D7D-6B62-406A-A1A2-A470343219B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediinfo.Service.JCJG.GongYong</RootNamespace>
+    <AssemblyName>Mediinfo.Service.JCJG.GongYong</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\AssemblyServer\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=4.6.2.0, Culture=neutral, PublicKeyToken=17863af14b0044da" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.BL">
+      <HintPath>..\..\..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.BL.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.GY, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.GY.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.XT, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.XT.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.ZJ, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.ZJ.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.ZY, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.ZY.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JCJGBUJUQXController.cs" />
+    <Compile Include="JCJGCaiDanController.cs" />
+    <Compile Include="JCJGElasticsearchController.cs" />
+    <Compile Include="JCJGFangAnPZController.cs" />
+    <Compile Include="JCJGGongZuoTDYController.cs" />
+    <Compile Include="JCJGJueSeQXController.cs" />
+    <Compile Include="JCJGDaYinJKController.cs" />
+    <Compile Include="JCJGKeShiController.cs" />
+    <Compile Include="JCJGQuanXianController.cs" />
+    <Compile Include="JCJGYuanQuController.cs" />
+    <Compile Include="JCJGGongYongController.cs" />
+    <Compile Include="JCJGCanSuController.cs" />
+    <Compile Include="JCJGChuangKouZYController.cs" />
+    <Compile Include="JCJGDaiMaController.cs" />
+    <Compile Include="JCJGDanJuDXXXController.cs" />
+    <Compile Include="JCJGDanJuXXController.cs" />
+    <Compile Include="JCJGDataLayoutController.cs" />
+    <Compile Include="JCJGLoginController.cs" />
+    <Compile Include="JCJGPiaoJuCDCSController.cs" />
+    <Compile Include="JCJGQuanXian2NController.cs" />
+    <Compile Include="JCJGQuerySqlController.cs" />
+    <Compile Include="JCJGShuJuZDController.cs" />
+    <Compile Include="JCJGYingYongCDController.cs" />
+    <Compile Include="JCJGYingYongController.cs" />
+    <Compile Include="JCJGYongHuGRXXController.cs" />
+    <Compile Include="JCJGZhiGongController.cs" />
+    <Compile Include="OpenInterfaceController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Route\ServiceRoutePrefixAttribute.cs" />
+    <Compile Include="JCJGXiaoXiController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\01.基础组件\Mediinfo.Enterprise\Mediinfo.Enterprise.csproj">
+      <Project>{D207FDA6-9F22-4A8A-96BE-291898ABDB1A}</Project>
+      <Name>Mediinfo.Enterprise</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\01.基础组件\Mediinfo.HIS.Core\Mediinfo.HIS.Core.csproj">
+      <Project>{06719DEF-5D99-4628-B35B-AE25C0BEE420}</Project>
+      <Name>Mediinfo.HIS.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\01.基础组件\Mediinfo.Utility\Mediinfo.Utility.csproj">
+      <Project>{aa047347-0ea2-4584-817e-290f32278063}</Project>
+      <Name>Mediinfo.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\02.DTO\Mediinfo.DTO.Core\Mediinfo.DTO.Core.csproj">
+      <Project>{f6ba3e59-17ea-4b55-95d5-02487e6797f2}</Project>
+      <Name>Mediinfo.DTO.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\00.Core\Mediinfo.APIGateway.Core\Mediinfo.APIGateway.Core.csproj">
+      <Project>{3D1BDD10-5FA5-4F4B-B3BB-DD8310369CC0}</Project>
+      <Name>Mediinfo.APIGateway.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\00.Core\Mediinfo.Infrastructure.Core\Mediinfo.Infrastructure.Core.csproj">
+      <Project>{1E3DA3EF-FCF8-4392-9B9E-0FBB2CAB8550}</Project>
+      <Name>Mediinfo.Infrastructure.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\01.Infrastructure\Mediinfo.Infrastructure.JCJG.GY\Mediinfo.Infrastructure.JCJG.GY.csproj">
+      <Project>{7A5F5593-6FF1-444C-9F69-3E5D800CE0A6}</Project>
+      <Name>Mediinfo.Infrastructure.JCJG.GY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\01.Infrastructure\Mediinfo.Infrastructure.JCJG\Mediinfo.Infrastructure.JCJG.csproj">
+      <Project>{C90F9213-25E9-42A1-AFCA-D52FD449C86E}</Project>
+      <Name>Mediinfo.Infrastructure.JCJG</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\02.Domain\Mediinfo.Domain.JCJG.GY\Mediinfo.Domain.JCJG.GY.csproj">
+      <Project>{57DAB894-0D9B-4298-BA9F-92545A0F9570}</Project>
+      <Name>Mediinfo.Domain.JCJG.GY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\02.Domain\Mediinfo.Domain.JCJG.XT\Mediinfo.Domain.JCJG.XT.csproj">
+      <Project>{4AAE0AB2-1FAC-4DCA-B08A-F056AD065738}</Project>
+      <Name>Mediinfo.Domain.JCJG.XT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\03.DomainService\Mediinfo.DomainService.JCJG.GY\Mediinfo.DomainService.JCJG.GY.csproj">
+      <Project>{5d782156-44bd-4d4f-831d-4463c3c4eeec}</Project>
+      <Name>Mediinfo.DomainService.JCJG.GY</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <DomainServicePlugin></DomainServicePlugin>
+  <MessagePlugin></MessagePlugin>
+  <!--HALO中需要检测的内部消息实体-->
+  <EntityListForHIS1></EntityListForHIS1>
+  <!--需要进行异步更新服务-->
+  <AsyncInterfaceServiceList></AsyncInterfaceServiceList>
+</config>

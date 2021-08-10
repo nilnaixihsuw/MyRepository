@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A5F5593-6FF1-444C-9F69-3E5D800CE0A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediinfo.Infrastructure.JCJG.GY</RootNamespace>
+    <AssemblyName>Mediinfo.Infrastructure.JCJG.GY</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\AssemblyServer\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mediinfo.DTO.HIS.GY, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.GY.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdPartyLibraries\net45\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GY_BUJUQX\GY_BUJUQXRepository.cs" />
+<Compile Include="GY_BUJUQX\GY_BUJUQXEntityConfiguration.cs" />
+<Compile Include="GY_DAYINJK\GY_DAYINJKRepository.cs" />
+<Compile Include="GY_DAYINJK\GY_DAYINJKEntityConfiguration.cs" />
+<Compile Include="GY_GUANDAOFWDY\GY_GUANDAOFWDYRepository.cs" />
+    <Compile Include="GY_GUANDAOFWDY\GY_GUANDAOFWDYEntityConfiguration.cs" />
+    <Compile Include="GY_GUANDAOBWDY\GY_GUANDAOBWDYRepository.cs" />
+    <Compile Include="GY_GUANDAOBWDY\GY_GUANDAOBWDYEntityConfiguration.cs" />
+    <Compile Include="GY_CHANGYONGCAIDAN\GY_CHANGYONGCAIDANEntityConfiguration.cs" />
+    <Compile Include="GY_CHANGYONGCAIDAN\GY_CHANGYONGCAIDANRepository.cs" />
+    <Compile Include="GY_GUANDAOYZXMDY\GY_GUANDAOYZXMDYRepository.cs" />
+    <Compile Include="GY_GUANDAOYZXMDY\GY_GUANDAOYZXMDYEntityConfiguration.cs" />
+    <Compile Include="GY_GONGZUOTDY\GY_GONGZUOTDYRepository.cs" />
+    <Compile Include="GY_GONGZUOTDY\GY_GONGZUOTDYEntityConfiguration.cs" />
+    <Compile Include="GY_GUANDAO\GY_GUANDAORepository.cs" />
+    <Compile Include="GY_GUANDAO\GY_GUANDAOEntityConfiguration.cs" />
+    <Compile Include="GY_JIANYANXMDYSM\GY_JIANYANXMDYSMRepository.cs" />
+    <Compile Include="GY_JIANYANXMDYSM\GY_JIANYANXMDYSMEntityConfiguration.cs" />
+    <Compile Include="GY_JIANYANXMZXKS\GY_JIANYANXMZXKSRepository.cs" />
+    <Compile Include="GY_JIANYANXMZXKS\GY_JIANYANXMZXKSEntityConfiguration.cs" />
+    <Compile Include="GY_JIANYANXMXBDZ\GY_JIANYANXMXBDZRepository.cs" />
+    <Compile Include="GY_JIANYANXMXBDZ\GY_JIANYANXMXBDZEntityConfiguration.cs" />
+    <Compile Include="GY_HULIRWPZ\GY_HULIRWPZRepository.cs" />
+    <Compile Include="GY_HULIRWPZ\GY_HULIRWPZEntityConfiguration.cs" />
+    <Compile Include="GY_HULIRWPZMX\GY_HULIRWPZMXRepository.cs" />
+    <Compile Include="GY_HULIRWPZMX\GY_HULIRWPZMXEntityConfiguration.cs" />
+    <Compile Include="GY_CHUANGWEIZU\GY_CHUANGWEIZU3Repository.cs" />
+    <Compile Include="GY_CHUANGWEIZU\GY_CHUANGWEIZU3EntityConfiguration.cs" />
+    <Compile Include="GY_KANGJUNYWSPSQD\GY_KANGJUNYWSPSQDEntityConfiguration.cs" />
+    <Compile Include="GY_KANGJUNYWSPSQD\GY_KANGJUNYWSPSQDRepository.cs" />
+    <Compile Include="GY_MAZUIQXKZ\GY_MAZUIQXKZRepository.cs" />
+    <Compile Include="GY_MAZUIQXKZ\GY_MAZUIQXKZEntityConfiguration.cs" />
+    <Compile Include="GY_MAZUIQXJBDZ\GY_MAZUIQXJBDZRepository.cs" />
+    <Compile Include="GY_MAZUIQXJBDZ\GY_MAZUIQXJBDZEntityConfiguration.cs" />
+    <Compile Include="GY_YILIAOZM\GY_YILIAOZMRepository.cs" />
+    <Compile Include="GY_YILIAOZM\GY_YILIAOZMEntityConfiguration.cs" />
+    <Compile Include="GY_SHOUSHUQXKZ\GY_SHOUSHUQXKZRepository.cs" />
+    <Compile Include="GY_SHOUSHUQXKZ\GY_SHOUSHUQXKZEntityConfiguration.cs" />
+    <Compile Include="GY_YILIAOZMS\GY_YILIAOZMSRepository.cs" />
+    <Compile Include="GY_YILIAOZMS\GY_YILIAOZMSEntityConfiguration.cs" />
+    <Compile Include="GY_JIBINGBK\GY_JIBINGBKRepository.cs" />
+    <Compile Include="GY_JIBINGBK\GY_JIBINGBKEntityConfiguration.cs" />
+    <Compile Include="GY_KESHIBQ\GY_KESHIBQRepository.cs" />
+    <Compile Include="GY_KESHIBQ\GY_KESHIBQEntityConfiguration.cs" />
+    <Compile Include="GY_RONGQISFXM\GY_RONGQISFXMRepository.cs" />
+    <Compile Include="GY_RONGQISFXM\GY_RONGQISFXMEntityConfiguration.cs" />
+    <Compile Include="GY_JIANYANTCMX\GY_JIANYANTCMXRepository.cs" />
+    <Compile Include="GY_JIANYANTCMX\GY_JIANYANTCMXEntityConfiguration.cs" />
+    <Compile Include="GY_CUOWURZ\GY_CUOWURZRepository.cs" />
+    <Compile Include="GY_CUOWURZ\GY_CUOWURZEntityConfiguration.cs" />
+    <Compile Include="GY_HUIZHENDAN\GY_HUIZHENDANRepository.cs" />
+    <Compile Include="GY_HUIZHENDAN\GY_HUIZHENDANEntityConfiguration.cs" />
+    <Compile Include="GY_JIANYANXM\GY_JIANYANXMRepository.cs" />
+    <Compile Include="GY_JIANYANXM\GY_JIANYANXMEntityConfiguration.cs" />
+    <Compile Include="GY_JIANYANDMB\GY_JIANYANDMB1Repository.cs" />
+    <Compile Include="GY_JIANYANDMB\GY_JIANYANDMB1EntityConfiguration.cs" />
+    <Compile Include="GY_JIANYANDMB\GY_JIANYANDMB3Repository.cs" />
+    <Compile Include="GY_JIANYANDMB\GY_JIANYANDMB3EntityConfiguration.cs" />
+    <Compile Include="GY_JIANYANDMB\GY_JIANYANDMB2Repository.cs" />
+    <Compile Include="GY_JIANYANDMB\GY_JIANYANDMB2EntityConfiguration.cs" />
+    <Compile Include="GY_JIANYANXMSF\GY_JIANYANXMSFRepository.cs" />
+    <Compile Include="GY_JIANYANXMSF\GY_JIANYANXMSFEntityConfiguration.cs" />
+    <Compile Include="GY_JIANCHAMBDYKS\GY_JIANCHAMBDYKSRepository.cs" />
+    <Compile Include="GY_JIANCHAMBDYKS\GY_JIANCHAMBDYKSEntityConfiguration.cs" />
+    <Compile Include="GY_JIANCHAXMDYSM\GY_JIANCHAXMDYSMRepository.cs" />
+    <Compile Include="GY_JIANCHAXMDYSM\GY_JIANCHAXMDYSMEntityConfiguration.cs" />
+    <Compile Include="GY_JIANCHAMBNR\GY_JIANCHAMBNRRepository.cs" />
+    <Compile Include="GY_JIANCHAMBNR\GY_JIANCHAMBNREntityConfiguration.cs" />
+    <Compile Include="GY_JIANCHAXM\GY_JIANCHAXMRepository.cs" />
+    <Compile Include="GY_JIANCHAXM\GY_JIANCHAXMEntityConfiguration.cs" />
+    <Compile Include="GY_JIANCHAXMZXKS\GY_JIANCHAXMZXKSRepository.cs" />
+    <Compile Include="GY_JIANCHAXMZXKS\GY_JIANCHAXMZXKSEntityConfiguration.cs" />
+    <Compile Include="GY_JIANCHAXMSB\GY_JIANCHAXMSBRepository.cs" />
+    <Compile Include="GY_JIANCHAXMSB\GY_JIANCHAXMSBEntityConfiguration.cs" />
+    <Compile Include="GY_JIANCHAXMSF\GY_JIANCHAXMSFRepository.cs" />
+    <Compile Include="GY_JIANCHAXMSF\GY_JIANCHAXMSFEntityConfiguration.cs" />
+    <Compile Include="GY_JIANCHABWZXKS\GY_JIANCHABWZXKSRepository.cs" />
+    <Compile Include="GY_JIANCHABWZXKS\GY_JIANCHABWZXKSEntityConfiguration.cs" />
+    <Compile Include="GY_JIANCHAXMYPSF\GY_JIANCHAXMYPSFRepository.cs" />
+    <Compile Include="GY_JIANCHAXMYPSF\GY_JIANCHAXMYPSFEntityConfiguration.cs" />
+    <Compile Include="GY_JIANCHAXMBWDY\GY_JIANCHAXMBWDYRepository.cs" />
+    <Compile Include="GY_JIANCHAXMBWDY\GY_JIANCHAXMBWDYEntityConfiguration.cs" />
+    <Compile Include="GY_TUPIANXX\GY_TUPIANXXEntityConfiguration.cs" />
+    <Compile Include="GY_TUPIANXX\GY_TUPIANXXRepository.cs" />
+    <Compile Include="GY_YINGYONGMZLB\GY_YINGYONGMZLBRepository.cs" />
+    <Compile Include="GY_YINGYONGMZLB\GY_YINGYONGMZLBEntityConfiguration.cs" />
+    <Compile Include="GY_JIZHENPAIBAN\GY_JIZHENPAIBANRepository.cs" />
+    <Compile Include="GY_JIZHENPAIBAN\GY_JIZHENPAIBANEntityConfiguration.cs" />
+    <Compile Include="GY_JIARIPAIBAN\GY_JIARIPAIBANRepository.cs" />
+    <Compile Include="GY_JIARIPAIBAN\GY_JIARIPAIBANEntityConfiguration.cs" />
+    <Compile Include="GY_JUESEBB\GY_JUESEBBRepository.cs" />
+    <Compile Include="GY_JUESEBB\GY_JUESEBBEntityConfiguration.cs" />
+    <Compile Include="GY_BAOBIAOYY\GY_BAOBIAOYYRepository.cs" />
+    <Compile Include="GY_BAOBIAOYY\GY_BAOBIAOYYEntityConfiguration.cs" />
+    <Compile Include="GY_BAOBIAOYH\GY_BAOBIAOYHRepository.cs" />
+    <Compile Include="GY_BAOBIAOYH\GY_BAOBIAOYHEntityConfiguration.cs" />
+    <Compile Include="GY_BAOBIAOQX\GY_BAOBIAOQXRepository.cs" />
+    <Compile Include="GY_BAOBIAOQX\GY_BAOBIAOQXEntityConfiguration.cs" />
+    <Compile Include="GY_TESHUMD\GY_TESHUMDRepository.cs" />
+    <Compile Include="GY_TESHUMD\GY_TESHUMDEntityConfiguration.cs" />
+    <Compile Include="GY_TESHUMDCZRZ\GY_TESHUMDCZRZRepository.cs" />
+    <Compile Include="GY_TESHUMDCZRZ\GY_TESHUMDCZRZEntityConfiguration.cs" />
+    <Compile Include="GY_TAOCANMX\GY_TAOCANMXRepository.cs" />
+    <Compile Include="GY_TAOCANMX\GY_TAOCANMXEntityConfiguration.cs" />
+    <Compile Include="GY_TAOCAN\GY_TAOCANRepository.cs" />
+    <Compile Include="GY_TAOCAN\GY_TAOCANEntityConfiguration.cs" />
+    <Compile Include="GY_DUOJICTLXXMFLDZ\GY_DUOJICTLXXMFLDZRepository.cs" />
+    <Compile Include="GY_DUOJICTLXXMFLDZ\GY_DUOJICTLXXMFLDZEntityConfiguration.cs" />
+    <Compile Include="GY_CHUANGKOUCSDYJL\GY_CHUANGKOUCSDYJLRepository.cs" />
+    <Compile Include="GY_CHUANGKOUCSDYJL\GY_CHUANGKOUCSDYJLEntityConfiguration.cs" />
+    <Compile Include="GY_JIANMIANMX\GY_JIANMIANMXRepository.cs" />
+    <Compile Include="GY_JIANMIANMX\GY_JIANMIANMXEntityConfiguration.cs" />
+    <Compile Include="GY_RIBAOMBXM\GY_RIBAOMBXMRepository.cs" />
+    <Compile Include="GY_RIBAOMBXM\GY_RIBAOMBXMEntityConfiguration.cs" />
+    <Compile Include="GY_BINGRENBLHB\GY_BINGRENBLHBRepository.cs" />
+    <Compile Include="GY_BINGRENBLHB\GY_BINGRENBLHBEntityConfiguration.cs" />
+    <Compile Include="GY_CHUANGWEITCMX\GY_CHUANGWEITCMXRepository.cs" />
+    <Compile Include="GY_CHUANGWEITCMX\GY_CHUANGWEITCMXEntityConfiguration.cs" />
+    <Compile Include="GY_CHUANGWEITC\GY_CHUANGWEITCRepository.cs" />
+    <Compile Include="GY_CHUANGWEITC\GY_CHUANGWEITCEntityConfiguration.cs" />
+    <Compile Include="GY_SHOUFEIXMZXKS\GY_SHOUFEIXMZXKSRepository.cs" />
+    <Compile Include="GY_SHOUFEIXMZXKS\GY_SHOUFEIXMZXKSEntityConfiguration.cs" />
+    <Compile Include="GY_CHUANGWEIZU\GY_CHUANGWEIZU2Repository.cs" />
+    <Compile Include="GY_CHUANGWEIZU\GY_CHUANGWEIZU2EntityConfiguration.cs" />
+    <Compile Include="GY_CHUANGWEIZU\GY_CHUANGWEIZU1Repository.cs" />
+    <Compile Include="GY_CHUANGWEIZU\GY_CHUANGWEIZU1EntityConfiguration.cs" />
+    <Compile Include="GY_XIANGMUSPJG\GY_XIANGMUSPJGEntityConfiguration.cs" />
+    <Compile Include="GY_XIANGMUSPJG\GY_XIANGMUSPJGRepository.cs" />
+    <Compile Include="GY_XIANGMUSP\GY_XIANGMUSPEntityConfiguration.cs" />
+    <Compile Include="GY_XIANGMUSP\GY_XIANGMUSPRepository.cs" />
+    <Compile Include="GY_YINGYONGDY\GY_YINGYONGDYRepository.cs" />
+    <Compile Include="GY_YINGYONGDY\GY_YINGYONGDYEntityConfiguration.cs" />
+    <Compile Include="GY_JIEZHI\GY_JIEZHIRepository.cs" />
+    <Compile Include="GY_JIEZHI\GY_JIEZHIEntityConfiguration.cs" />
+    <Compile Include="GY_JIANDANGBR\GY_JIANDANGBRRepository.cs" />
+    <Compile Include="GY_JIANDANGBR\GY_JIANDANGBREntityConfiguration.cs" />
+    <Compile Include="GY_YKFCACHE\GY_YKFCACHERepository.cs" />
+    <Compile Include="GY_YUANQU\GY_YUANQUEntityConfiguration.cs" />
+    <Compile Include="GY_YUANQU\GY_YUANQURepository.cs" />
+    <Compile Include="GY_ZIFUBL\GY_ZIFUBLRepository.cs" />
+    <Compile Include="GY_ZIFUBL\GY_ZIFUBLEntityConfiguration.cs" />
+    <Compile Include="GY_FEIYONGKZDY\GY_FEIYONGKZDYRepository.cs" />
+    <Compile Include="GY_FEIYONGKZDY\GY_FEIYONGKZDYEntityConfiguration.cs" />
+    <Compile Include="GY_BINGRENGMS\GY_BINGRENGMSRepository.cs" />
+    <Compile Include="GY_BINGRENGMS\GY_BINGRENGMSEntityConfiguration.cs" />
+    <Compile Include="GY_PISHIJGDZ\GY_PISHIJGDZRepository.cs" />
+    <Compile Include="GY_PISHIJGDZ\GY_PISHIJGDZEntityConfiguration.cs" />
+    <Compile Include="GY_XUNIYFDY\GY_XUNIYFDYRepository.cs" />
+    <Compile Include="GY_XUNIYFDY\GY_XUNIYFDYEntityConfiguration.cs" />
+    <Compile Include="GY_BILIYH\GY_BILIYHRepository.cs" />
+    <Compile Include="GY_BILIYH\GY_BILIYHEntityConfiguration.cs" />
+    <Compile Include="GY_YAOPINZBM\GY_YAOPINZBMEntityConfiguration.cs" />
+    <Compile Include="GY_YAOPINZBM\GY_YAOPINZBMRepository.cs" />
+    <Compile Include="GY_YOUHUILB\GY_YOUHUILBRepository.cs" />
+    <Compile Include="GY_YOUHUILB\GY_YOUHUILBEntityConfiguration.cs" />
+    <Compile Include="GY_FEIYONGXZ\GY_FEIYONGXZRepository.cs" />
+    <Compile Include="GY_FEIYONGXZ\GY_FEIYONGXZEntityConfiguration.cs" />
+    <Compile Include="GY_FEIYONGKZ\GY_FEIYONGKZRepository.cs" />
+    <Compile Include="GY_FEIYONGKZ\GY_FEIYONGKZEntityConfiguration.cs" />
+    <Compile Include="GY_RIBAOSJY\GY_RIBAOSJYRepository.cs" />
+    <Compile Include="GY_RIBAOSJY\GY_RIBAOSJYEntityConfiguration.cs" />
+    <Compile Include="GY_SHOUFEITCMX\GY_SHOUFEITCMXEntityConfiguration.cs" />
+    <Compile Include="GY_SHOUFEITCMX\GY_SHOUFEITCMXRepository.cs" />
+    <Compile Include="GY_SHOUFEIXMWZDZ\GY_SHOUFEIXMWZDZEntityConfiguration.cs" />
+    <Compile Include="GY_SHOUFEIXMWZDZ\GY_SHOUFEIXMWZDZRepository.cs" />
+    <Compile Include="GY_SHOUFEIXM\GY_SHOUFEIXMEntityConfiguration.cs" />
+    <Compile Include="GY_SHOUFEIXM\GY_SHOUFEIXMRepository.cs" />
+    <Compile Include="GY_ZHANGHUJYMX\GY_ZHANGHUJYMXRepository.cs" />
+    <Compile Include="GY_ZHANGHUJYMX\GY_ZHANGHUJYMXEntityConfiguration.cs" />
+    <Compile Include="GY_ZHANGHUXXMX\GY_ZHANGHUXXMXRepository.cs" />
+    <Compile Include="GY_ZHANGHUXXMX\GY_ZHANGHUXXMXEntityConfiguration.cs" />
+    <Compile Include="GY_ZHANGHULB\GY_ZHANGHULBRepository.cs" />
+    <Compile Include="GY_ZHANGHULB\GY_ZHANGHULBEntityConfiguration.cs" />
+    <Compile Include="GY_FEIYONGLB\GY_FEIYONGLBRepository.cs" />
+    <Compile Include="GY_FEIYONGLB\GY_FEIYONGLBEntityConfiguration.cs" />
+    <Compile Include="GY_XUHAO\GY_XUHAORepository.cs" />
+    <Compile Include="GY_XUHAO\GY_XUHAOEntityConfiguration.cs" />
+    <Compile Include="GY_ZIJINMXZ\GY_ZIJINMXZRepository.cs" />
+    <Compile Include="GY_ZIJINMXZ\GY_ZIJINMXZEntityConfiguration.cs" />
+    <Compile Include="GY_BINGRENXX\GY_BINGRENXXRepository.cs" />
+    <Compile Include="GY_BINGRENXX\GY_BINGRENXXEntityConfiguration.cs" />
+    <Compile Include="GY_ZIJINZHDR\GY_ZIJINZHDREntityConfiguration.cs" />
+    <Compile Include="GY_ZIJINZHDR\GY_ZIJINZHDRRepository.cs" />
+    <Compile Include="GY_ZIJINZH\GY_ZIJINZHRepository.cs" />
+    <Compile Include="GY_ZIJINZH\GY_ZIJINZHEntityConfiguration.cs" />
+    <Compile Include="GY_CHUANGWEI\GY_CHUANGWEIEntityConfiguration.cs" />
+    <Compile Include="GY_CHUANGWEI\GY_CHUANGWEIRepository.cs" />
+    <Compile Include="GY_FANGJIAN\GY_FANGJIANEntityConfiguration.cs" />
+    <Compile Include="GY_FANGJIAN\GY_FANGJIANRepository.cs" />
+    <Compile Include="GY_WEIZHI\GY_WEIZHIRepository.cs" />
+    <Compile Include="GY_WEIZHI\GY_WEIZHIEntityConfiguration.cs" />
+    <Compile Include="GY_YONGHUPFXX\GY_YONGHUPFXXRepository.cs" />
+    <Compile Include="GY_YONGHUPFXX\GY_YONGHUPFXXEntityConfiguration.cs" />
+    <Compile Include="GY_JIBING\GY_JIBINGEntityConfiguration.cs" />
+    <Compile Include="GY_JIBING\GY_JIBINGRepository.cs" />
+    <Compile Include="GY_ZHONGYAOPFKLZD\GY_ZHONGYAOPFKLZDRepository.cs" />
+    <Compile Include="GY_ZHONGYAOPFKLZD\GY_ZHONGYAOPFKLZDEntityConfiguration.cs" />
+    <Compile Include="GY_PIAOJULY\GY_PIAOJULYRepository.cs" />
+    <Compile Include="GY_PIAOJULY\GY_PIAOJULYEntityConfiguration.cs" />
+    <Compile Include="GY_PIAOJUCDCS\GY_PIAOJUCDCSEntityConfiguration.cs" />
+    <Compile Include="GY_PIAOJUCDCS\GY_PIAOJUCDCSRepository.cs" />
+    <Compile Include="GY_QINGLINGDAN\GY_QINGLINGDAN1EntityConfiguration.cs" />
+    <Compile Include="GY_QINGLINGDAN\GY_QINGLINGDAN1Repository.cs" />
+    <Compile Include="GY_QUANXIAN2_NEW\GY_QUANXIAN2_NEWRepository.cs" />
+    <Compile Include="GY_QUANXIAN2_NEW\GY_QUANXIAN2_NEWEntityConfiguration.cs" />
+    <Compile Include="GY_YONGHUQX\GY_YONGHUQX2Repository.cs" />
+    <Compile Include="GY_YONGHUQX\GY_YONGHUQX2EntityConfiguration.cs" />
+    <Compile Include="GY_QINGLINGDAN\GY_QINGLINGDAN2Repository.cs" />
+    <Compile Include="GY_QINGLINGDAN\GY_QINGLINGDAN2EntityConfiguration.cs" />
+    <Compile Include="GY_YAOFANGKFSJ\GY_YAOFANGKFSJRepository.cs" />
+    <Compile Include="GY_YAOFANGKFSJ\GY_YAOFANGKFSJEntityConfiguration.cs" />
+    <Compile Include="GY_YAOPINTJFLDZ\GY_YAOPINTJFLDZRepository.cs" />
+    <Compile Include="GY_YAOPINTJFLDZ\GY_YAOPINTJFLDZEntityConfiguration.cs" />
+    <Compile Include="GY_YAOPINTJFL\GY_YAOPINTJFLRepository.cs" />
+    <Compile Include="GY_YAOPINTJFL\GY_YAOPINTJFLEntityConfiguration.cs" />
+    <Compile Include="GY_LVSETDYPSZ\GY_LVSETDYPSZRepository.cs" />
+    <Compile Include="GY_LVSETDYPSZ\GY_LVSETDYPSZEntityConfiguration.cs" />
+    <Compile Include="GY_YAOPINZKZYSZ\GY_YAOPINZKZYSZEntityConfiguration.cs" />
+    <Compile Include="GY_YAOPINZKZYSZ\GY_YAOPINZKZYSZRepository.cs" />
+    <Compile Include="GY_ZUIGAOPLJXGRZ\GY_ZUIGAOPLJXGRZRepository.cs" />
+    <Compile Include="GY_ZUIGAOPLJXGRZ\GY_ZUIGAOPLJXGRZEntityConfiguration.cs" />
+    <Compile Include="GY_YAOPINZZZS\GY_YAOPINZZZSRepository.cs" />
+    <Compile Include="GY_YAOPINZZZS\GY_YAOPINZZZSEntityConfiguration.cs" />
+    <Compile Include="GY_YAOPINCD\GY_YAOPINCDRepository.cs" />
+    <Compile Include="GY_YAOPINCD\GY_YAOPINCDEntityConfiguration.cs" />
+    <Compile Include="GY_YILIAOZU\GY_YILIAOZU4Repository.cs" />
+    <Compile Include="GY_YILIAOZU\GY_YILIAOZU4EntityConfiguration.cs" />
+    <Compile Include="GY_YILIAOZU\GY_YILIAOZU2Repository.cs" />
+    <Compile Include="GY_YILIAOZU\GY_YILIAOZU2EntityConfiguration.cs" />
+    <Compile Include="GY_YILIAOZU\GY_YILIAOZU1Repository.cs" />
+    <Compile Include="GY_YILIAOZU\GY_YILIAOZU1EntityConfiguration.cs" />
+    <Compile Include="GY_YILIAOZU\GY_YILIAOZU3Repository.cs" />
+    <Compile Include="GY_YILIAOZU\GY_YILIAOZU3EntityConfiguration.cs" />
+    <Compile Include="GY_DANJUDXXX\GY_DANJUDXXXEntityConfiguration.cs" />
+    <Compile Include="GY_DANJUDXXX\GY_DANJUDXXXRepository.cs" />
+    <Compile Include="GY_DANJUXX\GY_DANJUXXEntityConfiguration.cs" />
+    <Compile Include="GY_DANJUXX\GY_DANJUXXRepository.cs" />
+    <Compile Include="GY_JUESEYH\GY_JUESEYHRepository.cs" />
+    <Compile Include="GY_JUESEYH\GY_JUESEYHEntityConfiguration.cs" />
+    <Compile Include="GY_JUESE\GY_JUESERepository.cs" />
+    <Compile Include="GY_JUESE\GY_JUESEEntityConfiguration.cs" />
+    <Compile Include="GY_KUAIJIQJ\GY_KUAIJIQJRepository.cs" />
+    <Compile Include="GY_KUAIJIQJ\GY_KUAIJIQJEntityConfiguration.cs" />
+    <Compile Include="GY_CHURUKFS\GY_CHURUKFSRepository.cs" />
+    <Compile Include="GY_CHURUKFS\GY_CHURUKFSEntityConfiguration.cs" />
+    <Compile Include="GY_YAOPINCLKZ\GY_YAOPINCLKZRepository.cs" />
+    <Compile Include="GY_YAOPINCLKZ\GY_YAOPINCLKZEntityConfiguration.cs" />
+    <Compile Include="GY_DANWEI\GY_DANWEIRepository.cs" />
+    <Compile Include="GY_DANWEI\GY_DANWEIEntityConfiguration.cs" />
+    <Compile Include="GY_YAOPINJGDWDZ\GY_YAOPINJGDWDZRepository.cs" />
+    <Compile Include="GY_YAOPINJGDWDZ\GY_YAOPINJGDWDZEntityConfiguration.cs" />
+    <Compile Include="GY_JUESEQX\GY_JUESEQXRepository.cs" />
+    <Compile Include="GY_JUESEQX\GY_JUESEQXEntityConfiguration.cs" />
+    <Compile Include="GY_YAOPINFL\GY_YAOPINFLRepository.cs" />
+    <Compile Include="GY_YAOPINFL\GY_YAOPINFLEntityConfiguration.cs" />
+    <Compile Include="GY_YAOPINJGDZ\GY_YAOPINJGDZEntityConfiguration.cs" />
+    <Compile Include="GY_YAOPINJGDZ\GY_YAOPINJGDZRepository.cs" />
+    <Compile Include="GY_YAOPINLD\GY_YAOPINLDEntityConfiguration.cs" />
+    <Compile Include="GY_YAOPINLD\GY_YAOPINLDRepository.cs" />
+    <Compile Include="GY_YAOPINMCGG\GY_YAOPINMCGG2Repository.cs" />
+    <Compile Include="GY_YAOPINMCGG\GY_YAOPINMCGG2EntityConfiguration.cs" />
+    <Compile Include="GY_YAOPINMC\GY_YAOPINMCRepository.cs" />
+    <Compile Include="GY_YAOPINMC\GY_YAOPINMCEntityConfiguration.cs" />
+    <Compile Include="GY_YAOPINBFWZ\GY_YAOPINBFWZRepository.cs" />
+    <Compile Include="GY_YAOPINBFWZ\GY_YAOPINBFWZEntityConfiguration.cs" />
+    <Compile Include="GY_CHURUKDZ\GY_CHURUKDZRepository.cs" />
+    <Compile Include="GY_CHURUKDZ\GY_CHURUKDZEntityConfiguration.cs" />
+    <Compile Include="GY_YONGHUYY\GY_YONGHUYYEntityConfiguration.cs" />
+    <Compile Include="GY_YONGHUYY\GY_YONGHUYYRepository.cs" />
+    <Compile Include="GY_ZHIGONGKS\GY_ZHIGONGKSEntityConfiguration.cs" />
+    <Compile Include="GY_ZHIGONGKS\GY_ZHIGONGKSRepository.cs" />
+    <Compile Include="GY_YAOKUFYWFGDY\GY_YAOKUFYWFGDYRepository.cs" />
+    <Compile Include="GY_YAOKUFYWFGDY\GY_YAOKUFYWFGDYEntityConfiguration.cs" />
+    <Compile Include="GY_KESHI\GY_KESHIRepository.cs" />
+    <Compile Include="GY_KESHI\GY_KESHIEntityConfiguration.cs" />
+    <Compile Include="GY_BINGQU\GY_BINGQURepository.cs" />
+    <Compile Include="GY_BINGQU\GY_BINGQUEntityConfiguration.cs" />
+    <Compile Include="GY_YINGYONG\GY_YINGYONGRepository.cs" />
+    <Compile Include="GY_YINGYONG\GY_YINGYONGEntityConfiguration.cs" />
+    <Compile Include="GY_CAIDANGJL_NEW\GY_CAIDANGJL_NEWRepository.cs" />
+    <Compile Include="GY_CAIDANGJL_NEW\GY_CAIDANGJL_NEWEntityConfiguration.cs" />
+    <Compile Include="GY_CAIDAN_NEW\GY_CAIDAN_NEWRepository.cs" />
+    <Compile Include="GY_CAIDAN_NEW\GY_CAIDAN_NEWEntityConfiguration.cs" />
+    <Compile Include="GY_GEIYAOFSJFXM\GY_GEIYAOFSJFXMRepository.cs" />
+    <Compile Include="GY_GEIYAOFSJFXM\GY_GEIYAOFSJFXMEntityConfiguration.cs" />
+    <Compile Include="GY_JIXINGDZ\GY_JIXINGDZRepository.cs" />
+    <Compile Include="GY_JIXINGDZ\GY_JIXINGDZEntityConfiguration.cs" />
+    <Compile Include="GY_DAIMALB\GY_DAIMALBRepository.cs" />
+    <Compile Include="GY_DAIMALB\GY_DAIMALBEntityConfiguration.cs" />
+    <Compile Include="GY_GEIYAOFSDZ\GY_GEIYAOFSDZRepository.cs" />
+    <Compile Include="GY_GEIYAOFSDZ\GY_GEIYAOFSDZEntityConfiguration.cs" />
+    <Compile Include="GY_CAOZUORZ\GY_CAOZUORZRepository.cs" />
+    <Compile Include="GY_CAOZUORZ\GY_CAOZUORZEntityConfiguration.cs" />
+    <Compile Include="GY_CHUANGKOUZY_NEW\GY_CHUANGKOUZY_NEWEntityConfiguration.cs" />
+    <Compile Include="GY_CHUANGKOUZY_NEW\GY_CHUANGKOUZY_NEWRepository.cs" />
+    <Compile Include="GY_GONGZUOZHAN\GY_GONGZUOZHANRepository.cs" />
+    <Compile Include="GY_GONGZUOZHAN\GY_GONGZUOZHANEntityConfiguration.cs" />
+    <Compile Include="GY_QUANXIAN\GY_QUANXIANEntityConfiguration.cs" />
+    <Compile Include="GY_QUANXIAN\GY_QUANXIANRepository.cs" />
+    <Compile Include="GY_YEWUDJ\GY_YEWUDJEntityConfiguration.cs" />
+    <Compile Include="GY_YEWUDJ\GY_YEWUDJRepository.cs" />
+    <Compile Include="GY_YEWUPC\GY_YEWUPCEntityConfiguration.cs" />
+    <Compile Include="GY_YEWUPC\GY_YEWUPCRepository.cs" />
+    <Compile Include="GY_YONGHUXX\GY_YONGHUXXEntityConfiguration.cs" />
+    <Compile Include="GY_YONGHUXX\GY_YONGHUXXRepository.cs" />
+    <Compile Include="GY_YAOPINCDJG\GY_YAOPINCDJG2Repository.cs" />
+    <Compile Include="GY_YAOPINCDJG\GY_YAOPINCDJG2EntityConfiguration.cs" />
+    <Compile Include="SXZZ_ZHUANZHENGSQD\SXZZ_ZHUANZHENGSQDEntityConfiguration.cs" />
+    <Compile Include="SXZZ_ZHUANZHENGSQD\SXZZ_ZHUANZHENGSQDRepository.cs" />
+    <Compile Include="XT_SELECTSQL\XT_SELECTSQL3Repository.cs" />
+    <Compile Include="XT_SELECTSQL\XT_SELECTSQL3EntityConfiguration.cs" />
+    <Compile Include="GY_ZHIGONGXX\GY_ZHIGONGXXRepository.cs" />
+    <Compile Include="GY_ZHIGONGXX\GY_ZHIGONGXXEntityConfiguration.cs" />
+    <Compile Include="GY_DATALAYOUT\GY_DATALAYOUT2Repository.cs" />
+    <Compile Include="GY_DATALAYOUT\GY_DATALAYOUT2EntityConfiguration.cs" />
+    <Compile Include="GY_DATALAYOUT\GY_DATALAYOUT1Repository.cs" />
+    <Compile Include="GY_DATALAYOUT\GY_DATALAYOUT1EntityConfiguration.cs" />
+    <Compile Include="GY_CANSHU\GY_CANSHUEntityConfiguration.cs" />
+    <Compile Include="GY_CANSHU\GY_CANSHURepository.cs" />
+    <Compile Include="GY_DAIMA\GY_DAIMAEntityConfiguration.cs" />
+    <Compile Include="GY_DAIMA\GY_DAIMARepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\01.基础组件\Mediinfo.Enterprise\Mediinfo.Enterprise.csproj">
+      <Project>{D207FDA6-9F22-4A8A-96BE-291898ABDB1A}</Project>
+      <Name>Mediinfo.Enterprise</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\01.基础组件\Mediinfo.Utility\Mediinfo.Utility.csproj">
+      <Project>{aa047347-0ea2-4584-817e-290f32278063}</Project>
+      <Name>Mediinfo.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\02.DTO\Mediinfo.DTO.Core\Mediinfo.DTO.Core.csproj">
+      <Project>{F6BA3E59-17EA-4B55-95D5-02487E6797F2}</Project>
+      <Name>Mediinfo.DTO.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\00.Core\Mediinfo.Infrastructure.Core\Mediinfo.Infrastructure.Core.csproj">
+      <Project>{1E3DA3EF-FCF8-4392-9B9E-0FBB2CAB8550}</Project>
+      <Name>Mediinfo.Infrastructure.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02.Domain\Mediinfo.Domain.JCJG.GY\Mediinfo.Domain.JCJG.GY.csproj">
+      <Project>{57DAB894-0D9B-4298-BA9F-92545A0F9570}</Project>
+      <Name>Mediinfo.Domain.JCJG.GY</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

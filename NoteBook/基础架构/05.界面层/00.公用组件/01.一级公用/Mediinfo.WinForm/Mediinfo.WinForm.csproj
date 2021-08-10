@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3D971F2-5DDF-4336-86B9-463EB826E1FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediinfo.WinForm</RootNamespace>
+    <AssemblyName>Mediinfo.WinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\AssemblyClient\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Mediinfo.DTO.HIS.GY, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\AssemblyBase\Core\Mediinfo.DTO.HIS.GY.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net40\Microsoft.Threading.Tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO, Version=2.6.8.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net40\Microsoft.Bcl.Build\lib\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime, Version=2.6.8.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net40\Microsoft.Bcl.Build\lib\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks, Version=2.6.8.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ThirdPartyLibraries\net40\Microsoft.Bcl.Build\lib\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\MediCheckButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediDelayTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediDelayTextBox.Designer.cs">
+      <DependentUpon>MediDelayTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FilePathOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\FilePathOptions.designer.cs">
+      <DependentUpon>FilePathOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MediBarManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediBlueButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediButtonEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediCheckedComboBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediButton.Designer.cs">
+      <DependentUpon>MediButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MediCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediCheckedListBoxControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediColorEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediColorPickEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediDateEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediDropDownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediDropDownButton.Designer.cs">
+      <DependentUpon>MediDropDownButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MediFlowRadioGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediImageComBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediNavBarControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediSplitLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layout\MaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\MaskForm.designer.cs">
+      <DependentUpon>MaskForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\MediFlyoutPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\MediGroupControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediLayoutControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediListView.Designer.cs">
+      <DependentUpon>MediListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MediMemoEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediPanelControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediPictureEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediProgressBarControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediPropertyGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediPropertyGrid.Designer.cs">
+      <DependentUpon>MediPropertyGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MediRadioGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediScrollablePanelControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediSplitLineControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediTimeEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediTimer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediToggleSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediWaitCircleControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediSuperCircleProgressControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomExpressionAttribute\ExpressionEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomExpressionAttribute\ExpressionEditor.designer.cs">
+      <DependentUpon>ExpressionEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomExpressionAttribute\ExpressionResource.Designer.cs" />
+    <Compile Include="CustomExpressionAttribute\IExpressionInterface.cs" />
+    <Compile Include="CustomExpressionAttribute\UnboundExpressionEditor.cs" />
+    <Compile Include="DeveloperHelper\DevHelperFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeveloperHelper\DevHelperFrm.Designer.cs">
+      <DependentUpon>DevHelperFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeveloperHelper\IDeveloperHelper.cs" />
+    <Compile Include="DeveloperHelper\SystemInfoHelper.cs" />
+    <Compile Include="ExpressionCustomControl\CellExpressionShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpressionCustomControl\CellExpressionShowFrm.Designer.cs">
+      <DependentUpon>CellExpressionShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpressionCustomControl\ExpressionResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExpressionResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ExpressionCustomControl\ExpressionCustomControlEditor.cs" />
+    <Compile Include="Common\MediCalcEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediPopupMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResourceImage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceImage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SkinExt\ControlCommonHelper.cs" />
+    <Compile Include="SkinExt\MediSearchControlSkin.cs" />
+    <Compile Include="SkinExt\MediTextBoxSkin.cs" />
+    <Compile Include="TSF\MSCTF.cs" />
+    <Compile Include="TSF\TSFFacade.cs" />
+    <Compile Include="WaitForm\MediProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WaitForm\MediProgressBar.Designer.cs">
+      <DependentUpon>MediProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm\MediProgressPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediSearchControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediSplitContainerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MediTreeList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WaitForm\MediWaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm\MediWaitForm.Designer.cs">
+      <DependentUpon>MediWaitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\MediTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layout\MediTabControl.Designer.cs">
+      <DependentUpon>MediTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MediTitleBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Layout\MediForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\MediForm.Designer.cs">
+      <DependentUpon>MediForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\FilePathOptions.resx">
+      <DependentUpon>FilePathOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MediBlueButton.resx">
+      <DependentUpon>MediBlueButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MediButton.resx">
+      <DependentUpon>MediButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MediCheckBox.resx">
+      <DependentUpon>MediCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MediCheckedComboBoxEdit.resx">
+      <DependentUpon>MediCheckedComboBoxEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MediCheckedListBoxControl.resx">
+      <DependentUpon>MediCheckedListBoxControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MediMemoEdit.resx">
+      <DependentUpon>MediMemoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MediRadioGroup.resx">
+      <DependentUpon>MediRadioGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MediSearchControl.resx">
+      <DependentUpon>MediSearchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MediTextBox.resx">
+      <DependentUpon>MediTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomExpressionAttribute\ExpressionEditor.resx">
+      <DependentUpon>ExpressionEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomExpressionAttribute\ExpressionResource.resx" />
+    <EmbeddedResource Include="DeveloperHelper\DevHelperFrm.resx">
+      <DependentUpon>DevHelperFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpressionCustomControl\CellExpressionShowFrm.resx">
+      <DependentUpon>CellExpressionShowFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpressionCustomControl\ExpressionResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ExpressionResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\MaskForm.resx">
+      <DependentUpon>MaskForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceImage.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceImage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm\MediWaitForm.resx">
+      <DependentUpon>MediWaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\MediForm.resx">
+      <DependentUpon>MediForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_dateEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folderClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folderOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\01.基础组件\Mediinfo.Enterprise\Mediinfo.Enterprise.csproj">
+      <Project>{D207FDA6-9F22-4A8A-96BE-291898ABDB1A}</Project>
+      <Name>Mediinfo.Enterprise</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\01.基础组件\Mediinfo.HIS.Core\Mediinfo.HIS.Core.csproj">
+      <Project>{06719def-5d99-4628-b35b-ae25c0bee420}</Project>
+      <Name>Mediinfo.HIS.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\01.基础组件\Mediinfo.Utility\Mediinfo.Utility.csproj">
+      <Project>{aa047347-0ea2-4584-817e-290f32278063}</Project>
+      <Name>Mediinfo.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\04.ServiceProxy\Mediinfo.ServiceProxy.Core\Mediinfo.ServiceProxy.Core.csproj">
+      <Project>{4F7EEA75-54A8-4C5A-BF23-AA63C202A69B}</Project>
+      <Name>Mediinfo.ServiceProxy.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clearinfohover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clearinfoNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_button_hover.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\..\..\ThirdPartyLibraries\net40\Microsoft.Bcl.Build\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\..\..\ThirdPartyLibraries\net40\Microsoft.Bcl.Build\tools\Microsoft.Bcl.Build.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

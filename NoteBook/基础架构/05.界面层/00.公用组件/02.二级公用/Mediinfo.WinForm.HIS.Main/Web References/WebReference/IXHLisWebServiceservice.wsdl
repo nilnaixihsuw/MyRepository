@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="IXHLisWebServiceservice" targetNamespace="http://tempuri.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types />
+  <message name="GatherSpecimen0Request">
+    <part name="Data" type="xs:string" />
+  </message>
+  <message name="GatherSpecimen0Response">
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="GetAmountOfTube1Request">
+    <part name="Data" type="xs:string" />
+  </message>
+  <message name="GetAmountOfTube1Response">
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="LisDataPrint2Request">
+    <part name="Data" type="xs:string" />
+  </message>
+  <message name="LisDataPrint2Response">
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="LisDataRePrint3Request">
+    <part name="Data" type="xs:string" />
+  </message>
+  <message name="LisDataRePrint3Response">
+    <part name="return" type="xs:string" />
+  </message>
+  <message name="Refund4Request">
+    <part name="Data" type="xs:string" />
+  </message>
+  <message name="Refund4Response">
+    <part name="return" type="xs:string" />
+  </message>
+  <portType name="IXHLisWebService">
+    <operation name="GatherSpecimen">
+      <input message="tns:GatherSpecimen0Request" />
+      <output message="tns:GatherSpecimen0Response" />
+    </operation>
+    <operation name="GetAmountOfTube">
+      <input message="tns:GetAmountOfTube1Request" />
+      <output message="tns:GetAmountOfTube1Response" />
+    </operation>
+    <operation name="LisDataPrint">
+      <input message="tns:LisDataPrint2Request" />
+      <output message="tns:LisDataPrint2Response" />
+    </operation>
+    <operation name="LisDataRePrint">
+      <input message="tns:LisDataRePrint3Request" />
+      <output message="tns:LisDataRePrint3Response" />
+    </operation>
+    <operation name="Refund">
+      <input message="tns:Refund4Request" />
+      <output message="tns:Refund4Response" />
+    </operation>
+  </portType>
+  <binding name="IXHLisWebServicebinding" type="tns:IXHLisWebService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <operation name="GatherSpecimen">
+      <soap:operation soapAction="urn:XHLisWebServiceIntf-IXHLisWebService#GatherSpecimen" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:XHLisWebServiceIntf-IXHLisWebService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:XHLisWebServiceIntf-IXHLisWebService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GetAmountOfTube">
+      <soap:operation soapAction="urn:XHLisWebServiceIntf-IXHLisWebService#GetAmountOfTube" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:XHLisWebServiceIntf-IXHLisWebService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:XHLisWebServiceIntf-IXHLisWebService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="LisDataPrint">
+      <soap:operation soapAction="urn:XHLisWebServiceIntf-IXHLisWebService#LisDataPrint" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:XHLisWebServiceIntf-IXHLisWebService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:XHLisWebServiceIntf-IXHLisWebService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="LisDataRePrint">
+      <soap:operation soapAction="urn:XHLisWebServiceIntf-IXHLisWebService#LisDataRePrint" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:XHLisWebServiceIntf-IXHLisWebService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:XHLisWebServiceIntf-IXHLisWebService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="Refund">
+      <soap:operation soapAction="urn:XHLisWebServiceIntf-IXHLisWebService#Refund" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="urn:XHLisWebServiceIntf-IXHLisWebService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="urn:XHLisWebServiceIntf-IXHLisWebService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="IXHLisWebServiceservice">
+    <port name="IXHLisWebServicePort" binding="tns:IXHLisWebServicebinding">
+      <soap:address location="http://192.123.123.14:8028/XHLisWebServiceDll.dll/soap/IXHLisWebService" />
+    </port>
+  </service>
+</definitions>

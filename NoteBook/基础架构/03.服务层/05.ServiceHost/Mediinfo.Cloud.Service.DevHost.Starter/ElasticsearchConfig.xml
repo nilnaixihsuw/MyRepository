@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <!--Elasticsearch服务器地址-->
+  <address>172.19.20.118:9200</address>
+  
+  <!--Elasticsearch用户名-->
+  <username>elastic</username>
+
+  <!--Elasticsearch密码-->
+  <password>123456</password>
+</config>
