@@ -1,0 +1,18 @@
+        /// <summary>
+        /// 获取当前字符串的像素长度
+        ///将字符串画在图片上面计算像素
+        /// create by gaoxing
+        /// </summary>
+        /// <param name="str">输入字符串</param>
+        /// <param name="picPath">传入图片路径</param>
+        /// <returns>当前字符串的长度</returns>
+        private  float GetStringLength(string str)
+        {
+
+            Graphics graphics =this.CreateGraphics();
+
+            SizeF sizeF = graphics.MeasureString(str, mediCheckedLXB.Appearance.Font);// new Font("宋体", 9)
+
+            return sizeF.Width;
+
+        }
